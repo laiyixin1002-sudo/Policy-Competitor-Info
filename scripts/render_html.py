@@ -5,6 +5,7 @@ import html
 import json
 from collections import OrderedDict
 from pathlib import Path
+from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +24,18 @@ def clip_text(value: str, max_chars: int) -> str:
 
 def esc(value: object) -> str:
     return html.escape(str(value or ""), quote=True)
+
+
+def report_filename(data: dict) -> str:
+    return f"药学情报周报_{data['period_start']}_{data['period_end']}.html"
+
+
+def report_share_title(data: dict) -> str:
+    return f"{data.get('report_title', '药学情报周报')}（{data['period_start']} ~ {data['period_end']}）"
+
+
+def report_share_url(filename: str) -> str:
+    return f"{BASE_URL}/{quote(filename)}"
 
 
 def render_highlights(items: list[str]) -> str:
@@ -86,8 +99,6 @@ def category_anchor(category: str) -> str:
         return "yiyao"
     if "政策" in category:
         return "policy"
-    if "采购" in category:
-        return "bidding"
     return ""
 
 
@@ -156,6 +167,7 @@ def build_report_html(data: dict) -> str:
     period_start = data["period_start"]
     period_end = data["period_end"]
     page_title = f"药学情报周报_{period_start}_{period_end}"
+    output_name = report_filename(data)
     replacements = {
         "page_title": page_title,
         "report_title": esc(data.get("report_title", "药学情报周报")),
@@ -163,6 +175,8 @@ def build_report_html(data: dict) -> str:
         "period_start": esc(period_start),
         "period_end": esc(period_end),
         "generated_at": esc(data.get("generated_at", "")),
+        "share_title": esc(report_share_title(data)),
+        "share_url": esc(report_share_url(output_name)),
         "highlights_html": render_highlights(data.get("highlights") or []),
         "facts_html": render_grouped_cards(data.get("facts") or []),
         "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
@@ -174,15 +188,34 @@ def build_report_html(data: dict) -> str:
     return template
 
 
-def build_index(report_files: list[Path]) -> str:
-    links = []
-    for file_path in sorted(report_files, reverse=True):
-        name = file_path.name
-        url = f"{BASE_URL}/{name}"
-        label = html.escape(file_path.stem, quote=True)
-        links.append(f'<li><a href="{html.escape(name, quote=True)}">{label}</a><span>{html.escape(url)}</span></li>')
+def extract_report_meta(report_path: Path) -> dict:
+    name = report_path.name
+    stem = report_path.stem
+    parts = stem.split("_")
+    period_start = parts[-2] if len(parts) >= 3 else ""
+    period_end = parts[-1] if len(parts) >= 3 else ""
+    title = f"药学情报周报（{period_start} ~ {period_end}）" if period_start and period_end else stem
+    return {
+        "name": name,
+        "title": title,
+        "url": report_share_url(name),
+        "period_start": period_start,
+        "period_end": period_end,
+    }
 
-    items = "\n        ".join(links) if links else "<li>暂无周报</li>"
+
+def build_index(report_files: list[Path]) -> str:
+    items_html = []
+    for file_path in sorted(report_files, reverse=True):
+        meta = extract_report_meta(file_path)
+        items_html.append(
+            f"""<li>
+          <a href="{esc(meta['name'])}">{esc(meta['title'])}</a>
+          <span>{esc(meta['url'])}</span>
+        </li>"""
+        )
+
+    items = "\n        ".join(items_html) if items_html else "<li>暂无周报</li>"
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -190,12 +223,12 @@ def build_index(report_files: list[Path]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>药学情报周报列表</title>
   <style>
-    body {{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; background: #f6f7f9; color: #17202a; }}
-    main {{ width: min(900px, 100%); margin: 0 auto; padding: 24px 16px 40px; }}
+    body {{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; background: #eef6f7; color: #17202a; }}
+    main {{ width: min(900px, calc(100vw - 24px)); margin: 0 auto; padding: 24px 0 40px; }}
     h1 {{ margin: 0 0 18px; font-size: clamp(24px, 5vw, 34px); letter-spacing: 0; }}
     ul {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }}
-    li {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; padding: 14px; display: grid; gap: 6px; }}
-    a {{ color: #176b87; font-weight: 700; text-decoration: none; }}
+    li {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 12px; padding: 14px; display: grid; gap: 6px; box-shadow: 0 10px 26px rgba(28, 73, 89, .07); }}
+    a {{ color: #0f6f7c; font-weight: 800; text-decoration: none; }}
     span {{ color: #65717f; font-size: 13px; overflow-wrap: anywhere; }}
   </style>
 </head>
@@ -220,7 +253,7 @@ def main() -> None:
     validate_report(data)
 
     REPORTS_DIR.mkdir(exist_ok=True)
-    output_name = f"药学情报周报_{data['period_start']}_{data['period_end']}.html"
+    output_name = report_filename(data)
     output_path = REPORTS_DIR / output_name
     output_path.write_text(build_report_html(data), encoding="utf-8")
 
@@ -229,7 +262,8 @@ def main() -> None:
 
     print(f"Rendered: {output_path}")
     print(f"Index: {REPORTS_DIR / 'index.html'}")
-    print(f"Share URL: {BASE_URL}/{output_name}")
+    print(f"Share title: {report_share_title(data)}")
+    print(f"Share URL: {report_share_url(output_name)}")
 
 
 if __name__ == "__main__":

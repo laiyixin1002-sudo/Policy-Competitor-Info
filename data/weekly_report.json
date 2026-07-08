@@ -25,7 +25,12 @@
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
-      "system_modules": ["合理用药", "处方点评", "集采管控", "运营监管"],
+      "system_modules": [
+        "合理用药",
+        "处方点评",
+        "集采管控",
+        "运营监管"
+      ],
       "sales_insight": "可包装医保目录匹配、院内目录提醒与点评规则更新。",
       "dedupe_fingerprint": "demo-20260629-nhsa-directory-review"
     },
@@ -40,7 +45,11 @@
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
-      "system_modules": ["合理用药", "处方点评", "运营监管"],
+      "system_modules": [
+        "合理用药",
+        "处方点评",
+        "运营监管"
+      ],
       "sales_insight": "强调医保监管规则与审方、点评、药品追溯联动。",
       "dedupe_fingerprint": "demo-20260629-nhsa-smart-supervision"
     },
@@ -55,7 +64,11 @@
       "source_domain": "www.nhc.gov.cn",
       "source_url": "https://www.nhc.gov.cn/",
       "url_status": "ok",
-      "system_modules": ["运营监管", "处方点评", "集采管控"],
+      "system_modules": [
+        "运营监管",
+        "处方点评",
+        "集采管控"
+      ],
       "sales_insight": "可切入药品准入、用量异常和点评整改闭环。",
       "dedupe_fingerprint": "demo-20260609-nhc-compliance"
     },
@@ -70,7 +83,11 @@
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
-      "system_modules": ["居家药学", "药学服务", "运营监管"],
+      "system_modules": [
+        "居家药学",
+        "药学服务",
+        "运营监管"
+      ],
       "sales_insight": "面向医共体推居家用药随访与药师服务记录。",
       "dedupe_fingerprint": "demo-20260706-local-ltc-home-pharmacy"
     },
@@ -87,7 +104,11 @@
       "source_domain": "m.dav01.com",
       "source_url": "https://m.dav01.com/bid/2026/05/b903958.html",
       "url_status": "ok",
-      "system_modules": ["运营监管", "药学服务", "合理用药"],
+      "system_modules": [
+        "运营监管",
+        "药学服务",
+        "合理用药"
+      ],
       "sales_insight": "美康监管侧项目能力强，需强调医院药学与监管数据联动。",
       "dedupe_fingerprint": "demo-20260522-medicom-cde-system"
     },
@@ -104,7 +125,11 @@
       "source_domain": "www.scjysrmyy.cn",
       "source_url": "https://www.scjysrmyy.cn/html/News/GongGao/CaiGouZhaoBiao/202606/202606116Lg1Ec4Gt7Hq5154930.html",
       "url_status": "ok",
-      "system_modules": ["合理用药", "前置审方", "运营监管"],
+      "system_modules": [
+        "合理用药",
+        "前置审方",
+        "运营监管"
+      ],
       "sales_insight": "存量维护窗口可切入规则更新、医保监管和国产化迁移。",
       "dedupe_fingerprint": "demo-20260611-medicom-jiangyou-maintenance"
     },
@@ -121,7 +146,12 @@
       "source_domain": "www.medicom.com.cn",
       "source_url": "https://www.medicom.com.cn/News/Details?newsId=142",
       "url_status": "ok",
-      "system_modules": ["前置审方", "处方点评", "药学服务", "运营监管"],
+      "system_modules": [
+        "前置审方",
+        "处方点评",
+        "药学服务",
+        "运营监管"
+      ],
       "sales_insight": "区域项目需准备医共体审方中心和药事质控中心方案。",
       "dedupe_fingerprint": "demo-20260521-medicom-training-ai-pharmacy"
     },
@@ -138,7 +168,11 @@
       "source_domain": "www.cmmizw.com",
       "source_url": "https://www.cmmizw.com/Company_45987.html",
       "url_status": "ok",
-      "system_modules": ["前置审方", "合理用药", "处方点评"],
+      "system_modules": [
+        "前置审方",
+        "合理用药",
+        "处方点评"
+      ],
       "sales_insight": "逸曜维保型项目多，替换需提供低风险迁移计划。",
       "dedupe_fingerprint": "demo-202605-yiyao-maintenance-series"
     },
@@ -155,7 +189,11 @@
       "source_domain": "www.cmmizw.com",
       "source_url": "https://www.cmmizw.com/Company_45987.html",
       "url_status": "ok",
-      "system_modules": ["合理用药", "前置审方", "运营监管"],
+      "system_modules": [
+        "合理用药",
+        "前置审方",
+        "运营监管"
+      ],
       "sales_insight": "合理用药维保预算可作为同类客户报价参照。",
       "dedupe_fingerprint": "demo-202604-yiyao-tianjin-maintenance"
     }

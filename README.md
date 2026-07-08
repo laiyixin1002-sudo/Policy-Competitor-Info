@@ -16,3 +16,17 @@
 python scripts/render_html.py
 ```
 
+每周自动发布：
+
+- GitHub Actions: `.github/workflows/weekly-report.yml`
+- 触发时间：每周一 09:00（Asia/Shanghai），对应 cron `0 1 * * 1`
+- 统计区间：上周一 09:00 前推 7 天，页面正文显示为 `YYYY-MM-DD ~ YYYY-MM-DD`
+- 输出路径：`reports/药学情报周报_YYYY-MM-DD_YYYY-MM-DD.html`
+- 转发链接：页面首屏和 `reports/index.html` 均展示“周报标题 + URL”
+
+手动生成下一期：
+
+```powershell
+python scripts/update_report_period.py
+python scripts/render_html.py
+```

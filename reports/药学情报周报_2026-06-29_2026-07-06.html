@@ -77,6 +77,25 @@
       color: var(--muted);
       font-size: 12px;
     }
+    .share-box {
+      display: grid;
+      gap: 6px;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #bedce2;
+      background: rgba(255, 255, 255, .84);
+    }
+    .share-box strong {
+      color: var(--accent-strong);
+      font-size: 14px;
+    }
+    .share-box a {
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+      line-height: 1.4;
+    }
     .toc {
       margin-top: 14px;
     }
@@ -117,37 +136,6 @@
       margin: 24px 0 12px;
       font-size: 19px;
       letter-spacing: 0;
-    }
-    .brief {
-      background: rgba(255,255,255,.94);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 12px;
-      box-shadow: 0 12px 28px rgba(28, 73, 89, .06);
-      min-width: 0;
-      width: 100%;
-    }
-    .brief-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
-    }
-    .brief-item {
-      background: #fbfcfd;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 10px 12px;
-      min-width: 0;
-    }
-    .brief-item strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--accent);
-    }
-    .brief-item p {
-      margin: 0;
-      color: #405060;
-      font-size: 14px;
     }
     .highlights {
       margin: 0;
@@ -357,7 +345,7 @@
         width: calc(100vw - 24px);
         padding: 12px 0 34px;
       }
-      .grid, .actions, .brief-grid { grid-template-columns: 1fr; }
+      .grid, .actions { grid-template-columns: 1fr; }
       .hero-panel { border-radius: 16px; }
       .meta {
         display: grid;
@@ -414,6 +402,10 @@
         <span class="pill">周报 + 统计区间 2026-06-29 ~ 2026-07-06</span>
         <span class="pill">出报时间 2026-07-06 09:00</span>
         <span class="pill">手机速读</span>
+      </div>
+      <div class="share-box">
+        <strong>药学政策与竞品动向周报（2026-06-29 ~ 2026-07-06）</strong>
+        <a href="https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-06-29_2026-07-06.html">https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-06-29_2026-07-06.html</a>
       </div>
       <nav class="toc" aria-label="目录">
         <a href="#highlights">要点</a>
