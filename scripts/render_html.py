@@ -79,6 +79,18 @@ def group_facts(items: list[dict]) -> OrderedDict[str, list[dict]]:
     return grouped
 
 
+def category_anchor(category: str) -> str:
+    if "美康" in category:
+        return "medicom"
+    if "逸曜" in category or "逸耀" in category:
+        return "yiyao"
+    if "政策" in category:
+        return "policy"
+    if "采购" in category:
+        return "bidding"
+    return ""
+
+
 def render_grouped_cards(items: list[dict]) -> str:
     if not items:
         return '<div class="empty">暂无信息</div>'
@@ -86,8 +98,10 @@ def render_grouped_cards(items: list[dict]) -> str:
     groups = []
     for category, facts in group_facts(items).items():
         cards = "\n        ".join(render_fact_card(item) for item in facts)
+        anchor = category_anchor(category)
+        anchor_attr = f' id="{anchor}"' if anchor else ""
         groups.append(
-            f"""<div class="group">
+            f"""<div class="group"{anchor_attr}>
         <h3>{esc(category)}</h3>
         <div class="grid">
         {cards}
