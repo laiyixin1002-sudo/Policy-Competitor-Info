@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+from collections import OrderedDict
 from pathlib import Path
 
 
@@ -25,7 +26,16 @@ def esc(value: object) -> str:
 
 
 def render_highlights(items: list[str]) -> str:
-    return "\n        ".join(f"<li>{esc(clip_text(item, 90))}</li>" for item in items[:8])
+    return "\n        ".join(f"<li>{esc(clip_text(item, 96))}</li>" for item in items[:8])
+
+
+def render_source_grades(items: list[dict]) -> str:
+    if not items:
+        return '<div class="brief-item"><strong>暂无说明</strong><p>待补充</p></div>'
+    return "\n          ".join(
+        f'<div class="brief-item"><strong>{esc(item.get("grade"))}</strong><p>{esc(item.get("description"))}</p></div>'
+        for item in items
+    )
 
 
 def render_fact_card(fact: dict, pending: bool = False) -> str:
@@ -43,7 +53,7 @@ def render_fact_card(fact: dict, pending: bool = False) -> str:
     class_name = "card pending" if pending else "card"
 
     return f"""<article class="{class_name}">
-          <h3>{title}</h3>
+          <h4>{title}</h4>
           <p class="fact">{summary}</p>
           <div class="sub">{publisher} · {region} · {date}</div>
           <div class="tags">
@@ -57,10 +67,43 @@ def render_fact_card(fact: dict, pending: bool = False) -> str:
         </article>"""
 
 
-def render_cards(items: list[dict], pending: bool = False) -> str:
+def group_facts(items: list[dict]) -> OrderedDict[str, list[dict]]:
+    grouped: OrderedDict[str, list[dict]] = OrderedDict()
+    for item in items:
+        category = str(item.get("category") or "未分组")
+        grouped.setdefault(category, []).append(item)
+    return grouped
+
+
+def render_grouped_cards(items: list[dict], pending: bool = False) -> str:
     if not items:
         return '<div class="empty">暂无信息</div>'
-    return "\n        ".join(render_fact_card(item, pending=pending) for item in items)
+
+    groups = []
+    for category, facts in group_facts(items).items():
+        cards = "\n        ".join(render_fact_card(item, pending=pending) for item in facts)
+        groups.append(
+            f"""<div class="group">
+        <h3>{esc(category)}</h3>
+        <div class="grid">
+        {cards}
+        </div>
+      </div>"""
+        )
+    return "\n      ".join(groups)
+
+
+def render_opportunity_actions(items: list[dict]) -> str:
+    if not items:
+        return '<div class="empty">暂无建议</div>'
+    return "\n        ".join(
+        f"""<article class="action">
+          <span class="priority">{esc(item.get("priority"))}</span>
+          <h3>{esc(item.get("title"))}</h3>
+          <p>{esc(item.get("description"))}</p>
+        </article>"""
+        for item in items
+    )
 
 
 def validate_report(data: dict) -> None:
@@ -88,6 +131,10 @@ def validate_report(data: dict) -> None:
                 raise ValueError(f"{section_name}[{index}] missing fields: {sorted(missing)}")
             if len(fact.get("system_modules") or []) > 4:
                 raise ValueError(f"{section_name}[{index}] has more than 4 system modules")
+            if section_name == "facts" and fact.get("url_status") != "ok":
+                raise ValueError(f"{section_name}[{index}] must have url_status ok")
+            if section_name == "pending_facts" and fact.get("url_status") == "ok":
+                raise ValueError(f"{section_name}[{index}] with ok URL should move to facts")
 
 
 def build_report_html(data: dict) -> str:
@@ -97,12 +144,15 @@ def build_report_html(data: dict) -> str:
     replacements = {
         "page_title": page_title,
         "report_title": esc(data.get("report_title", "药学情报周报")),
+        "collection_note": esc(data.get("collection_note", "")),
         "period_start": esc(period_start),
         "period_end": esc(period_end),
         "generated_at": esc(data.get("generated_at", "")),
+        "source_grade_html": render_source_grades(data.get("source_grade_notes") or []),
         "highlights_html": render_highlights(data.get("highlights") or []),
-        "facts_html": render_cards(data.get("facts") or [], pending=False),
-        "pending_facts_html": render_cards(data.get("pending_facts") or [], pending=True),
+        "facts_html": render_grouped_cards(data.get("facts") or [], pending=False),
+        "pending_facts_html": render_grouped_cards(data.get("pending_facts") or [], pending=True),
+        "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
     }
 
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
@@ -171,4 +221,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

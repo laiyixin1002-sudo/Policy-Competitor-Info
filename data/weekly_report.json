@@ -1,83 +1,243 @@
 {
-  "report_title": "药学情报周报",
+  "report_title": "药学政策与竞品动向周报",
   "period_start": "2026-06-29",
   "period_end": "2026-07-06",
   "generated_at": "2026-07-06 09:00",
+  "collection_note": "示例阶段：参考既有周报的信息层级，先跑通结构化事实表、分组渲染、待核实区与 GitHub Pages 静态发布。",
+  "source_grade_notes": [
+    {
+      "grade": "精确来源",
+      "description": "URL 可访问，且来源域名与配置规则一致；进入正式事实区。"
+    },
+    {
+      "grade": "线索来源",
+      "description": "信息具备跟进价值，但 URL 暂未校验或仅为聚合页；只进入待核实信息。"
+    },
+    {
+      "grade": "禁用来源",
+      "description": "命中错误域名或不合规域名时直接剔除，不进入本期页面。"
+    }
+  ],
   "highlights": [
-    "国家级政策继续强调处方审核、合理用药与药事质控闭环。",
-    "省级药学服务试点开始向居家药学、慢病随访等院外场景延伸。",
-    "竞品动态集中在前置审方、处方点评和药学服务一体化方案。",
-    "采购公告显示医院更关注系统与HIS、电子病历、集采目录联动。",
-    "未通过URL校验的信息已单独进入待核实区，不进入正式事实区。"
+    "医保目录、智能监管“两库”、集采与纠风政策持续强化，药学系统要覆盖事前审方、事中预警、事后点评。",
+    "地方医保与卫健场景向长期护理、居家服务、基层用药管理延伸，药学服务从院内走向院外连续管理。",
+    "四川美康继续强化 PASS、MTM、居家药学与 AI 赋能叙事，竞争重点从单点审方转向药学闭环平台。",
+    "杭州逸耀强调智慧药学、智能审方、电子药历与区域云经验，县域医共体和区域药学中心值得重点关注。",
+    "采购与运维线索显示医院关注系统续约、规则库更新、HIS/EMR/医保目录联动和药师工作量留痕。",
+    "售前侧应补齐医保目录调整、老年合理用药、集采用药监测、居家药学服务四类方案话术。",
+    "URL 校验失败、聚合页或来源不稳定的信息不进入正式事实区，仅作为待核实销售线索。"
   ],
   "facts": [
     {
-      "title": "某省推进医疗机构处方审核质控闭环",
-      "fact_summary": "省级通知要求完善处方审核、点评反馈与整改追踪，强化重点药品用药监管。",
-      "publisher": "示例省卫生健康委",
-      "region": "示例省",
-      "date": "2026-07-02",
-      "source_domain": "www.nhc.gov.cn",
-      "source_url": "https://www.nhc.gov.cn/",
-      "url_status": "ok",
-      "system_modules": ["前置审方", "处方点评", "合理用药", "运营监管"],
-      "sales_insight": "可主推审方规则、点评闭环和整改追踪能力。",
-      "dedupe_fingerprint": "demo-20260702-prescription-review-nhc"
-    },
-    {
-      "title": "某市药学服务试点覆盖居家用药随访",
-      "fact_summary": "市级试点将慢病用药指导、居家随访和药师服务记录纳入药学服务评价。",
-      "publisher": "示例市医疗保障局",
-      "region": "示例市",
-      "date": "2026-07-03",
+      "category": "国家药学政策动态",
+      "title": "医保目录初审公示带动目录管理需求",
+      "fact_summary": "国家医保局公示目录初审信息，药品准入、商保创新药与院内目录联动成为管理重点。",
+      "publisher": "国家医保局",
+      "region": "全国",
+      "date": "2026-06-29",
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
-      "system_modules": ["药学服务", "居家药学", "运营监管"],
-      "sales_insight": "适合包装院内外连续药学服务场景。",
-      "dedupe_fingerprint": "demo-20260703-home-pharmacy-nhsa"
+      "system_modules": ["合理用药", "处方点评", "集采管控", "运营监管"],
+      "sales_insight": "可包装医保目录匹配、院内目录提醒与点评规则更新。",
+      "dedupe_fingerprint": "demo-20260629-nhsa-directory-review"
     },
     {
-      "title": "四川美康展示合理用药相关产品能力",
-      "fact_summary": "官网示例信息显示其围绕合理用药、审方和临床药学提供产品方案。",
+      "category": "国家药学政策动态",
+      "title": "医保智能监管规则持续更新",
+      "fact_summary": "医保智能监管规则库与知识点持续发布，超量开药、回流药和异常结算成为关注点。",
+      "publisher": "国家医保局",
+      "region": "全国",
+      "date": "2026-06-29",
+      "source_domain": "www.nhsa.gov.cn",
+      "source_url": "https://www.nhsa.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["合理用药", "处方点评", "运营监管"],
+      "sales_insight": "强调医保监管规则与审方、点评、药品追溯联动。",
+      "dedupe_fingerprint": "demo-20260629-nhsa-smart-supervision"
+    },
+    {
+      "category": "国家药学政策动态",
+      "title": "纠风常态化影响院内药品准入",
+      "fact_summary": "医药购销与医疗服务纠风趋于制度化，院内准入、药品使用和代表行为监管收紧。",
+      "publisher": "国家卫健委等部门",
+      "region": "全国",
+      "date": "2026-06-09",
+      "source_domain": "www.nhc.gov.cn",
+      "source_url": "https://www.nhc.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["运营监管", "处方点评", "集采管控"],
+      "sales_insight": "可切入药品准入、用量异常和点评整改闭环。",
+      "dedupe_fingerprint": "demo-20260609-nhc-compliance"
+    },
+    {
+      "category": "国家药学政策动态",
+      "title": "儿童用药供应保障改革强化专科审方",
+      "fact_summary": "儿童用药供应保障政策强调目录、综合评价和临床使用管理，儿科审方规则价值提升。",
+      "publisher": "国家医保局等部门",
+      "region": "全国",
+      "date": "2026-05-15",
+      "source_domain": "www.nhsa.gov.cn",
+      "source_url": "https://www.nhsa.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["前置审方", "合理用药", "处方点评"],
+      "sales_insight": "补充儿童剂量、禁忌、超说明书用药规则包。",
+      "dedupe_fingerprint": "demo-20260515-child-medication"
+    },
+    {
+      "category": "地方药学政策动态",
+      "title": "地方长护险政策带动居家药学场景",
+      "fact_summary": "多地长期护理保险政策推进，居家照护、慢病用药和药师随访具备延伸空间。",
+      "publisher": "地方医保部门",
+      "region": "贵州、内蒙古等",
+      "date": "2026-07-06",
+      "source_domain": "www.nhsa.gov.cn",
+      "source_url": "https://www.nhsa.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["居家药学", "药学服务", "运营监管"],
+      "sales_insight": "面向医共体推居家用药随访与药师服务记录。",
+      "dedupe_fingerprint": "demo-20260706-local-ltc-home-pharmacy"
+    },
+    {
+      "category": "地方药学政策动态",
+      "title": "基层医保支付改革牵引用药管理下沉",
+      "fact_summary": "基层服务与医保支付改革推进，基层机构需要更轻量的审方、用药教育和药品监管能力。",
+      "publisher": "国家医保局及地方医保部门",
+      "region": "全国及地方",
+      "date": "2026-06-29",
+      "source_domain": "www.nhsa.gov.cn",
+      "source_url": "https://www.nhsa.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["前置审方", "药学服务", "运营监管"],
+      "sales_insight": "县域项目可打医共体统一审方和基层药学服务牌。",
+      "dedupe_fingerprint": "demo-20260629-primary-care-pharmacy"
+    },
+    {
+      "category": "竞品 · 四川美康",
+      "title": "美康继续强化 PASS 与 MTM 组合叙事",
+      "fact_summary": "官网展示合理用药、临床药学、药物治疗管理等产品能力，强调药学全流程建设。",
       "publisher": "四川美康",
       "region": "四川",
       "date": "2026-07-04",
       "source_domain": "www.medicom.com.cn",
       "source_url": "https://www.medicom.com.cn/",
       "url_status": "ok",
-      "system_modules": ["合理用药", "前置审方", "药学服务"],
-      "sales_insight": "竞品叙事强调药学全流程，需突出差异化集成与落地案例。",
-      "dedupe_fingerprint": "demo-20260704-medicom-product"
+      "system_modules": ["合理用药", "前置审方", "药学服务", "处方点评"],
+      "sales_insight": "对标时突出规则更新、闭环落地和院外服务能力。",
+      "dedupe_fingerprint": "demo-20260704-medicom-pass-mtm"
     },
     {
-      "title": "杭州逸耀强调智慧药学服务能力",
-      "fact_summary": "官网示例信息显示其关注智慧药学、审方和药学服务平台建设。",
+      "category": "竞品 · 四川美康",
+      "title": "美康居家药学方向需重点跟踪",
+      "fact_summary": "参考周报显示美康将药学门诊、诊后回访和居家服务组合成连续药学服务方案。",
+      "publisher": "四川美康",
+      "region": "四川",
+      "date": "2026-06-29",
+      "source_domain": "www.medicom.com.cn",
+      "source_url": "https://www.medicom.com.cn/",
+      "url_status": "ok",
+      "system_modules": ["居家药学", "药学服务", "运营监管"],
+      "sales_insight": "需准备 MTM、随访任务、患者端服务对标话术。",
+      "dedupe_fingerprint": "demo-20260629-medicom-home-care"
+    },
+    {
+      "category": "竞品 · 杭州逸耀",
+      "title": "逸耀定位智慧药学与智能审方",
+      "fact_summary": "官网强调合理用药服务、智能审方和药学知识库能力，形成专业服务定位。",
       "publisher": "杭州逸耀",
       "region": "浙江",
       "date": "2026-07-04",
       "source_domain": "www.ipharmacare.net",
       "source_url": "https://www.ipharmacare.net/",
       "url_status": "ok",
-      "system_modules": ["药学服务", "前置审方", "处方点评"],
-      "sales_insight": "可对标智慧药学平台，强化本地化政策响应。",
-      "dedupe_fingerprint": "demo-20260704-ipharmacare-product"
+      "system_modules": ["前置审方", "合理用药", "处方点评"],
+      "sales_insight": "对标知识库时突出本地规则、部署效率和客户成功。",
+      "dedupe_fingerprint": "demo-20260704-ipharmacare-smart-review"
+    },
+    {
+      "category": "竞品 · 杭州逸耀",
+      "title": "逸耀区域与县域项目值得持续盯防",
+      "fact_summary": "参考周报显示其在智能审方、电子药历、区域药学平台等方向有采购线索。",
+      "publisher": "杭州逸耀",
+      "region": "浙江及多地",
+      "date": "2026-07-04",
+      "source_domain": "www.ipharmacare.net",
+      "source_url": "https://www.ipharmacare.net/",
+      "url_status": "ok",
+      "system_modules": ["前置审方", "药学服务", "运营监管"],
+      "sales_insight": "县域医共体投标需准备区域审方中心差异化方案。",
+      "dedupe_fingerprint": "demo-20260704-ipharmacare-county"
+    },
+    {
+      "category": "采购与招投标线索",
+      "title": "采招侧药学系统运维续约线索活跃",
+      "fact_summary": "合理用药、审方、药学系统运维类项目常见单一来源或续约特征，存量客户防守重要。",
+      "publisher": "采招网",
+      "region": "多地",
+      "date": "2026-07-04",
+      "source_domain": "www.bidcenter.com.cn",
+      "source_url": "https://www.bidcenter.com.cn/",
+      "url_status": "ok",
+      "system_modules": ["合理用药", "前置审方", "运营监管"],
+      "sales_insight": "建立续约预警清单，提前三个月触达药剂科。",
+      "dedupe_fingerprint": "demo-20260704-bidcenter-maintenance"
     }
   ],
   "pending_facts": [
     {
-      "title": "某医院药学系统采购传闻",
-      "fact_summary": "搜索摘要提到药学系统采购，但示例URL未通过校验，暂不进入正式事实区。",
-      "publisher": "待核实",
+      "category": "待核实采购线索",
+      "title": "某院智能审方系统升级项目",
+      "fact_summary": "参考周报提及采购线索，但当前未定位到可直接校验的单条公告 URL。",
+      "publisher": "待核实医院",
       "region": "待核实",
       "date": "2026-07-05",
       "source_domain": "example.invalid",
-      "source_url": "https://example.invalid/pharmacy",
+      "source_url": "https://example.invalid/pharmacy-review",
       "url_status": "failed",
-      "system_modules": ["合理用药"],
-      "sales_insight": "待确认真实公告后再判断跟进价值。",
-      "dedupe_fingerprint": "demo-20260705-pending-invalid"
+      "system_modules": ["前置审方", "合理用药"],
+      "sales_insight": "用项目编号、医院名、中标人三要素二次检索。",
+      "dedupe_fingerprint": "demo-20260705-pending-review-upgrade"
+    },
+    {
+      "category": "待核实采购线索",
+      "title": "某医共体审方中心运维续约",
+      "fact_summary": "线索显示可能为既有系统运维续约，正式公告 URL 仍需采购平台复核。",
+      "publisher": "待核实医共体",
+      "region": "待核实",
+      "date": "2026-07-05",
+      "source_domain": "example.invalid",
+      "source_url": "https://example.invalid/maintenance",
+      "url_status": "failed",
+      "system_modules": ["前置审方", "运营监管"],
+      "sales_insight": "重点判断竞品存量、续约金额与替换窗口。",
+      "dedupe_fingerprint": "demo-20260705-pending-maintenance"
+    }
+  ],
+  "opportunity_actions": [
+    {
+      "priority": "P0",
+      "title": "医保目录调整应对方案",
+      "description": "准备院内目录、医保目录、商保创新药目录联动能力说明，面向医保办和药剂科联合沟通。"
+    },
+    {
+      "priority": "P0",
+      "title": "老年与居家合理用药专区",
+      "description": "围绕慢病多药联用、居家随访、用药教育和药师服务记录，包装可落地演示。"
+    },
+    {
+      "priority": "P1",
+      "title": "集采药品使用监测",
+      "description": "突出集采目录、替代药品、异常用量、处方点评和科室整改的闭环监管。"
+    },
+    {
+      "priority": "P1",
+      "title": "竞品对标材料更新",
+      "description": "补充美康 PASS/MTM/居家药学、逸耀区域审方和知识库能力的对标话术。"
+    },
+    {
+      "priority": "P2",
+      "title": "运维续约防守清单",
+      "description": "按客户、合同到期日、规则库更新频率、使用科室活跃度建立续约预警。"
     }
   ]
 }
-
