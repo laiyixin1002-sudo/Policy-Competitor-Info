@@ -1,0 +1,65 @@
+policy_keywords:
+  core:
+    - 合理用药
+    - 前置审方
+    - 审方
+    - 处方点评
+    - 药学服务
+    - 药品不良反应
+    - ADR
+    - 中心药房
+    - 集采管控
+    - 居家药学
+    - 慢病用药
+    - 药事管理
+    - 处方流转
+  policy_stage:
+    - 通知
+    - 指南
+    - 规范
+    - 实施细则
+    - 解读
+    - 试点
+    - 采购意向
+    - 招标公告
+    - 中标公告
+    - 合同公告
+
+competitors:
+  四川美康:
+    official_domain: www.medicom.com.cn
+    aliases:
+      - 四川美康
+      - 美康医药软件
+      - 美康合理用药
+    product_keywords:
+      - 合理用药
+      - 前置审方
+      - 药学服务
+      - 处方点评
+      - 临床药学
+  杭州逸耀:
+    official_domain: www.ipharmacare.net
+    aliases:
+      - 杭州逸耀
+      - 逸耀
+      - iPharmaCare
+    product_keywords:
+      - 智慧药学
+      - 审方
+      - 药学服务
+      - 医院案例
+      - 学术活动
+
+system_modules:
+  - 合理用药
+  - 前置审方
+  - 处方点评
+  - 药学服务
+  - ADR监测
+  - 中心药房
+  - 集采管控
+  - 居家药学
+  - 处方流转
+  - 运营监管
+

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #65717f;
+      --line: #dfe4ea;
+      --accent: #176b87;
+      --accent-soft: #e7f3f6;
+      --warn: #8a5a00;
+      --warn-soft: #fff4d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    header {
+      padding: 20px 0 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 5vw, 36px);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .section-title {
+      margin: 26px 0 12px;
+      font-size: 18px;
+    }
+    .highlights {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+    .highlights li {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      min-height: 244px;
+    }
+    .card.pending {
+      border-color: #ead9a7;
+      background: #fffdf7;
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .fact {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 4px 0 10px;
+    }
+    .tag {
+      max-width: 100%;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .insight {
+      margin: 0 0 12px;
+      color: #33414f;
+      font-size: 14px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+    .status {
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .pending .btn {
+      background: var(--warn);
+    }
+    .empty {
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 560px) {
+      .wrap { padding: 18px 12px 32px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { min-height: 0; }
+      .card-footer {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>{{ report_title }}</h1>
+      <div class="meta">周报 + 统计区间 {{ period_start }} ~ {{ period_end }} · 生成时间 {{ generated_at }}</div>
+    </header>
+
+    <section>
+      <h2 class="section-title">本周要点</h2>
+      <ul class="highlights">
+        {{ highlights_html }}
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">正式事实</h2>
+      <div class="grid">
+        {{ facts_html }}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">待核实信息</h2>
+      <div class="grid">
+        {{ pending_facts_html }}
+      </div>
+    </section>
+
+    <footer>
+      数据流：结构化事实表 weekly_report.json → HTML 渲染。URL 校验失败的信息仅展示在待核实区。
+    </footer>
+  </main>
+</body>
+</html>
+

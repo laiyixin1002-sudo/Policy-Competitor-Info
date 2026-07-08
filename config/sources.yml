@@ -1,0 +1,62 @@
+project:
+  name: Policy-Competitor-Info
+  report_name: 药学情报周报
+  schedule:
+    cron: "0 9 * * 1"
+    timezone: Asia/Shanghai
+    window:
+      start: 上周一 00:00
+      end: 本周一 09:00
+
+source_rules:
+  url_validation_required: true
+  failed_url_destination: 待核实信息
+  official_domains:
+    四川美康: www.medicom.com.cn
+    杭州逸耀: www.ipharmacare.net
+  preferred_domains:
+    采招网: www.bidcenter.com.cn
+    中国政府采购网: www.ccgp.gov.cn
+    全国公共资源交易平台: www.ggzy.gov.cn
+    国家医保局: www.nhsa.gov.cn
+    国家卫健委: www.nhc.gov.cn
+  blocked_domains:
+    - medicool.cn
+    - mksoft.com.cn
+    - medicomcn.com
+    - iyiyao.com
+    - iyiyao.cn
+    - bidchuang.com
+    - bidcheng.com
+
+policy_levels:
+  - 国家级
+  - 省级
+  - 市级
+  - 区县级
+
+source_categories:
+  policy:
+    - name: 国家医保局
+      domain: www.nhsa.gov.cn
+      scope: 国家级政策
+    - name: 国家卫健委
+      domain: www.nhc.gov.cn
+      scope: 国家级政策
+    - name: 中国政府采购网
+      domain: www.ccgp.gov.cn
+      scope: 政府采购
+    - name: 全国公共资源交易平台
+      domain: www.ggzy.gov.cn
+      scope: 公共资源交易
+  competitor:
+    - name: 四川美康官网
+      domain: www.medicom.com.cn
+      company: 四川美康
+    - name: 杭州逸耀官网
+      domain: www.ipharmacare.net
+      company: 杭州逸耀
+    - name: 采招网
+      domain: www.bidcenter.com.cn
+      scope: 招投标与中标公告
+

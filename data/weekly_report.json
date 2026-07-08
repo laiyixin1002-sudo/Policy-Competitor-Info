@@ -1,0 +1,83 @@
+{
+  "report_title": "药学情报周报",
+  "period_start": "2026-06-29",
+  "period_end": "2026-07-06",
+  "generated_at": "2026-07-06 09:00",
+  "highlights": [
+    "国家级政策继续强调处方审核、合理用药与药事质控闭环。",
+    "省级药学服务试点开始向居家药学、慢病随访等院外场景延伸。",
+    "竞品动态集中在前置审方、处方点评和药学服务一体化方案。",
+    "采购公告显示医院更关注系统与HIS、电子病历、集采目录联动。",
+    "未通过URL校验的信息已单独进入待核实区，不进入正式事实区。"
+  ],
+  "facts": [
+    {
+      "title": "某省推进医疗机构处方审核质控闭环",
+      "fact_summary": "省级通知要求完善处方审核、点评反馈与整改追踪，强化重点药品用药监管。",
+      "publisher": "示例省卫生健康委",
+      "region": "示例省",
+      "date": "2026-07-02",
+      "source_domain": "www.nhc.gov.cn",
+      "source_url": "https://www.nhc.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["前置审方", "处方点评", "合理用药", "运营监管"],
+      "sales_insight": "可主推审方规则、点评闭环和整改追踪能力。",
+      "dedupe_fingerprint": "demo-20260702-prescription-review-nhc"
+    },
+    {
+      "title": "某市药学服务试点覆盖居家用药随访",
+      "fact_summary": "市级试点将慢病用药指导、居家随访和药师服务记录纳入药学服务评价。",
+      "publisher": "示例市医疗保障局",
+      "region": "示例市",
+      "date": "2026-07-03",
+      "source_domain": "www.nhsa.gov.cn",
+      "source_url": "https://www.nhsa.gov.cn/",
+      "url_status": "ok",
+      "system_modules": ["药学服务", "居家药学", "运营监管"],
+      "sales_insight": "适合包装院内外连续药学服务场景。",
+      "dedupe_fingerprint": "demo-20260703-home-pharmacy-nhsa"
+    },
+    {
+      "title": "四川美康展示合理用药相关产品能力",
+      "fact_summary": "官网示例信息显示其围绕合理用药、审方和临床药学提供产品方案。",
+      "publisher": "四川美康",
+      "region": "四川",
+      "date": "2026-07-04",
+      "source_domain": "www.medicom.com.cn",
+      "source_url": "https://www.medicom.com.cn/",
+      "url_status": "ok",
+      "system_modules": ["合理用药", "前置审方", "药学服务"],
+      "sales_insight": "竞品叙事强调药学全流程，需突出差异化集成与落地案例。",
+      "dedupe_fingerprint": "demo-20260704-medicom-product"
+    },
+    {
+      "title": "杭州逸耀强调智慧药学服务能力",
+      "fact_summary": "官网示例信息显示其关注智慧药学、审方和药学服务平台建设。",
+      "publisher": "杭州逸耀",
+      "region": "浙江",
+      "date": "2026-07-04",
+      "source_domain": "www.ipharmacare.net",
+      "source_url": "https://www.ipharmacare.net/",
+      "url_status": "ok",
+      "system_modules": ["药学服务", "前置审方", "处方点评"],
+      "sales_insight": "可对标智慧药学平台，强化本地化政策响应。",
+      "dedupe_fingerprint": "demo-20260704-ipharmacare-product"
+    }
+  ],
+  "pending_facts": [
+    {
+      "title": "某医院药学系统采购传闻",
+      "fact_summary": "搜索摘要提到药学系统采购，但示例URL未通过校验，暂不进入正式事实区。",
+      "publisher": "待核实",
+      "region": "待核实",
+      "date": "2026-07-05",
+      "source_domain": "example.invalid",
+      "source_url": "https://example.invalid/pharmacy",
+      "url_status": "failed",
+      "system_modules": ["合理用药"],
+      "sales_insight": "待确认真实公告后再判断跟进价值。",
+      "dedupe_fingerprint": "demo-20260705-pending-invalid"
+    }
+  ]
+}
+
