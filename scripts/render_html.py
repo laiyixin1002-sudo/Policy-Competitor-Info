@@ -49,7 +49,6 @@ def render_fact_card(fact: dict) -> str:
     region = esc(fact.get("region"))
     date = esc(fact.get("date"))
     domain = esc(fact.get("source_domain"))
-    source_type = esc(fact.get("source_type", "来源"))
     source_url = esc(fact.get("source_url"))
     status = esc(fact.get("url_status"))
     insight = esc(clip_text(fact.get("sales_insight", ""), 60))
@@ -66,7 +65,7 @@ def render_fact_card(fact: dict) -> str:
           </div>
           <p class="insight"><strong>销售启发：</strong>{insight}</p>
           <div class="card-footer">
-            <span class="status">{source_type} · {domain} · {status}</span>
+            <span class="status">{domain} · {status}</span>
             <a class="btn" href="{source_url}" target="_blank" rel="noopener">🔗 来源</a>
           </div>
         </article>"""
