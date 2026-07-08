@@ -29,15 +29,6 @@ def render_highlights(items: list[str]) -> str:
     return "\n        ".join(f"<li>{esc(clip_text(item, 98))}</li>" for item in items[:8])
 
 
-def render_source_grades(items: list[dict]) -> str:
-    if not items:
-        return '<div class="brief-item"><strong>暂无说明</strong><p>待补充</p></div>'
-    return "\n          ".join(
-        f'<div class="brief-item"><strong>{esc(item.get("grade"))}</strong><p>{esc(item.get("description"))}</p></div>'
-        for item in items
-    )
-
-
 def render_deal_strip(fact: dict) -> str:
     amount = fact.get("amount")
     stage = fact.get("stage")
@@ -159,7 +150,6 @@ def build_report_html(data: dict) -> str:
         "period_start": esc(period_start),
         "period_end": esc(period_end),
         "generated_at": esc(data.get("generated_at", "")),
-        "source_grade_html": render_source_grades(data.get("source_grade_notes") or []),
         "highlights_html": render_highlights(data.get("highlights") or []),
         "facts_html": render_grouped_cards(data.get("facts") or []),
         "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
