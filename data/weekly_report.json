@@ -157,21 +157,6 @@
       "system_modules": ["合理用药", "前置审方", "运营监管"],
       "sales_insight": "合理用药维保预算可作为同类客户报价参照。",
       "dedupe_fingerprint": "demo-202604-yiyao-tianjin-maintenance"
-    },
-    {
-      "category": "采购与招投标线索",
-      "title": "采招侧药学系统运维续约线索活跃",
-      "fact_summary": "合理用药、审方、药学系统运维类项目常见单一来源或续约特征，存量客户防守重要。",
-      "publisher": "采招网",
-      "region": "多地",
-      "date": "2026-07-04",
-      "source_type": "公开摘要",
-      "source_domain": "www.bidcenter.com.cn",
-      "source_url": "https://www.bidcenter.com.cn/",
-      "url_status": "ok",
-      "system_modules": ["合理用药", "前置审方", "运营监管"],
-      "sales_insight": "建立续约预警清单，提前三个月触达药剂科。",
-      "dedupe_fingerprint": "demo-20260704-bidcenter-maintenance"
     }
   ],
   "opportunity_actions": [
