@@ -7,88 +7,125 @@
   <style>
     :root {
       color-scheme: light;
-      --bg: #f5f7f8;
+      --bg: #eef6f7;
       --panel: #ffffff;
       --ink: #17202a;
-      --muted: #637181;
-      --line: #dfe5ea;
-      --accent: #116a7b;
-      --accent-soft: #e7f4f6;
+      --muted: #647382;
+      --line: #dce7eb;
+      --accent: #0f6f7c;
+      --accent-strong: #064c59;
+      --accent-soft: #e6f5f7;
+      --amber: #a56500;
+      --amber-soft: #fff4dc;
       --green: #2f6f4e;
       --green-soft: #edf7f0;
-      --warn: #8a5a00;
-      --warn-soft: #fff4d6;
     }
     * { box-sizing: border-box; }
+    h1, h2, h3, h4, p, span, strong, a, li { overflow-wrap: anywhere; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
-      background: var(--bg);
+      background:
+        radial-gradient(circle at 0 0, rgba(15, 111, 124, .2), transparent 34%),
+        linear-gradient(180deg, #e5f5f6 0, var(--bg) 280px, #f7fafb 100%);
       color: var(--ink);
       line-height: 1.55;
+      overflow-x: hidden;
     }
     .wrap {
-      width: min(1120px, 100%);
+      width: min(1120px, calc(100vw - 24px));
       margin: 0 auto;
-      padding: 24px 16px 42px;
+      padding: 16px 0 48px;
+      overflow: hidden;
     }
-    header {
-      padding: 20px 0 16px;
-      border-bottom: 1px solid var(--line);
+    .hero-panel {
+      margin: 8px 0 20px;
+      border: 1px solid rgba(15, 111, 124, .18);
+      border-radius: 18px;
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(231,245,247,.92));
+      box-shadow: 0 18px 44px rgba(25, 76, 92, .14);
+      min-width: 0;
     }
     h1 {
       margin: 0 0 8px;
-      font-size: clamp(25px, 5vw, 38px);
-      line-height: 1.18;
+      font-size: clamp(25px, 6vw, 38px);
+      line-height: 1.16;
       letter-spacing: 0;
     }
     .lead {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       color: #33414f;
-      font-size: 16px;
+      font-size: 15px;
     }
-    .meta {
+    .meta, .toc {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      color: var(--muted);
-      font-size: 13px;
     }
     .pill {
       display: inline-flex;
       align-items: center;
+      min-width: 0;
+      max-width: 100%;
       min-height: 28px;
       padding: 4px 10px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: #fff;
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font-size: 12px;
     }
     .toc {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 16px;
+      margin-top: 14px;
     }
     .toc a {
+      flex: 0 0 auto;
+      min-width: 0;
       color: var(--accent);
       text-decoration: none;
       border: 1px solid #bedce2;
-      background: var(--accent-soft);
+      background: rgba(255,255,255,.78);
       border-radius: 999px;
-      padding: 6px 10px;
+      padding: 7px 11px;
       font-size: 13px;
+      font-weight: 700;
+    }
+    .float-nav {
+      position: fixed;
+      z-index: 20;
+      right: 8px;
+      top: 35%;
+      display: grid;
+      gap: 6px;
+    }
+    .float-nav a {
+      width: 44px;
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(6, 76, 89, .92);
+      box-shadow: 0 10px 24px rgba(6, 76, 89, .2);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
     }
     .section-title {
-      margin: 26px 0 12px;
+      margin: 24px 0 12px;
       font-size: 19px;
       letter-spacing: 0;
     }
     .brief {
-      background: var(--panel);
+      background: rgba(255,255,255,.94);
       border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 14px;
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 12px 28px rgba(28, 73, 89, .06);
+      min-width: 0;
+      width: 100%;
     }
     .brief-grid {
       display: grid;
@@ -98,8 +135,9 @@
     .brief-item {
       background: #fbfcfd;
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 10px 12px;
+      min-width: 0;
     }
     .brief-item strong {
       display: block;
@@ -116,22 +154,23 @@
       padding: 0;
       list-style: none;
       display: grid;
-      gap: 8px;
+      gap: 9px;
       counter-reset: item;
     }
     .highlights li {
       counter-increment: item;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px 12px 10px 42px;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 111, 124, .16);
+      border-radius: 14px;
+      padding: 11px 12px 11px 42px;
       position: relative;
+      box-shadow: 0 10px 28px rgba(25, 76, 92, .07);
     }
     .highlights li::before {
       content: counter(item);
       position: absolute;
       left: 12px;
-      top: 10px;
+      top: 12px;
       width: 22px;
       height: 22px;
       border-radius: 50%;
@@ -140,7 +179,7 @@
       background: var(--accent);
       color: #fff;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 800;
     }
     .group {
       margin-top: 18px;
@@ -149,24 +188,32 @@
       margin: 0 0 10px;
       font-size: 16px;
       color: #263542;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .group h3::before {
+      content: "";
+      width: 8px;
+      height: 22px;
+      border-radius: 999px;
+      background: var(--accent);
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(286px, 100%), 1fr));
       gap: 14px;
     }
     .card {
-      background: var(--panel);
+      background: rgba(255,255,255,.96);
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 16px;
       padding: 14px;
       display: flex;
       flex-direction: column;
-      min-height: 252px;
-    }
-    .card.pending {
-      border-color: #ead9a7;
-      background: #fffdf7;
+      min-height: 262px;
+      box-shadow: 0 12px 30px rgba(28, 73, 89, .08);
+      min-width: 0;
     }
     .card h4 {
       margin: 0 0 8px;
@@ -182,6 +229,37 @@
       color: var(--muted);
       font-size: 13px;
       margin-bottom: 10px;
+    }
+    .deal-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 0 0 10px;
+    }
+    .deal {
+      border-radius: 11px;
+      background: #f4fafb;
+      border: 1px solid #d7ebef;
+      padding: 7px 8px;
+      min-width: 0;
+    }
+    .deal.stage {
+      background: var(--amber-soft);
+      border-color: #f0d9aa;
+    }
+    .deal span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+    }
+    .deal strong {
+      display: block;
+      margin-top: 2px;
+      color: var(--accent-strong);
+      font-size: 13px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
     }
     .tags {
       display: flex;
@@ -223,24 +301,25 @@
       justify-content: center;
       min-height: 36px;
       padding: 8px 12px;
-      border-radius: 8px;
-      background: var(--accent);
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
       color: #fff;
       text-decoration: none;
       font-size: 14px;
       white-space: nowrap;
+      font-weight: 700;
     }
-    .pending .btn { background: var(--warn); }
     .actions {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 12px;
     }
     .action {
-      background: var(--panel);
+      background: rgba(255,255,255,.96);
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 14px;
       padding: 12px;
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
     }
     .priority {
       display: inline-flex;
@@ -250,7 +329,7 @@
       background: var(--green-soft);
       color: var(--green);
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 800;
     }
     .action h3 {
       margin: 0 0 6px;
@@ -264,7 +343,7 @@
     .empty {
       background: var(--panel);
       border: 1px dashed var(--line);
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 16px;
       color: var(--muted);
     }
@@ -274,36 +353,81 @@
       font-size: 12px;
     }
     @media (max-width: 560px) {
-      .wrap { padding: 18px 12px 32px; }
+      .wrap {
+        width: calc(100vw - 24px);
+        padding: 12px 0 34px;
+      }
       .grid, .actions, .brief-grid { grid-template-columns: 1fr; }
+      .hero-panel { border-radius: 16px; }
+      .meta {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .pill {
+        width: 100%;
+        justify-content: flex-start;
+        white-space: normal;
+      }
       .card { min-height: 0; }
       .card-footer {
         align-items: stretch;
         flex-direction: column;
       }
       .btn { width: 100%; }
-      .toc a { flex: 1 1 auto; text-align: center; }
+      .toc {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .toc a {
+        width: 100%;
+        text-align: center;
+      }
+      .float-nav {
+        right: 8px;
+        left: auto;
+        top: 52%;
+        bottom: auto;
+        transform: none;
+        grid-template-columns: 1fr;
+        width: 44px;
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: blur(12px);
+        box-shadow: none;
+      }
+      .float-nav a {
+        width: 44px;
+        min-height: 38px;
+        border-radius: 13px 0 0 13px;
+      }
+      footer { padding-bottom: 12px; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <header>
+    <header class="hero-panel">
       <h1>{{ report_title }}</h1>
       <p class="lead">{{ collection_note }}</p>
       <div class="meta">
         <span class="pill">周报 + 统计区间 {{ period_start }} ~ {{ period_end }}</span>
         <span class="pill">出报时间 {{ generated_at }}</span>
-        <span class="pill">结构化事实表 → HTML</span>
+        <span class="pill">手机速读</span>
       </div>
       <nav class="toc" aria-label="目录">
-        <a href="#source-grade">真实性分级</a>
-        <a href="#highlights">本周要点</a>
-        <a href="#facts">正式事实</a>
-        <a href="#pending">待核实</a>
-        <a href="#actions">售前动作</a>
+        <a href="#source-grade">真实性</a>
+        <a href="#highlights">要点</a>
+        <a href="#facts">政策/中标</a>
+        <a href="#actions">动作</a>
       </nav>
     </header>
+
+    <nav class="float-nav" aria-label="浮动快速目录">
+      <a href="#highlights">要点</a>
+      <a href="#facts">中标</a>
+      <a href="#actions">动作</a>
+    </nav>
 
     <section id="source-grade">
       <h2 class="section-title">URL 真实性分级</h2>
@@ -326,11 +450,6 @@
       {{ facts_html }}
     </section>
 
-    <section id="pending">
-      <h2 class="section-title">待核实信息</h2>
-      {{ pending_facts_html }}
-    </section>
-
     <section id="actions">
       <h2 class="section-title">售前机会与建议</h2>
       <div class="actions">
@@ -339,9 +458,8 @@
     </section>
 
     <footer>
-      数据流：结构化事实表 weekly_report.json → HTML 渲染。URL 校验失败的信息仅展示在待核实区。
+      数据流：结构化事实表 weekly_report.json → HTML 渲染。URL 无法访问或命中禁用域名的信息不进入本页。
     </footer>
   </main>
 </body>
 </html>
-

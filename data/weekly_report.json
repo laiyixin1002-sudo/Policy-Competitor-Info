@@ -3,29 +3,28 @@
   "period_start": "2026-06-29",
   "period_end": "2026-07-06",
   "generated_at": "2026-07-06 09:00",
-  "collection_note": "示例阶段：参考既有周报的信息层级，先跑通结构化事实表、分组渲染、待核实区与 GitHub Pages 静态发布。",
+  "collection_note": "手机速读版：只保留可打开公网地址的政策、竞品中标/成交与售前动作。",
   "source_grade_notes": [
     {
-      "grade": "精确来源",
-      "description": "URL 可访问，且来源域名与配置规则一致；进入正式事实区。"
+      "grade": "原始来源",
+      "description": "URL 可打开，来自政府、医院或企业官网；进入正式事实区。"
     },
     {
-      "grade": "线索来源",
-      "description": "信息具备跟进价值，但 URL 暂未校验或仅为聚合页；只进入待核实信息。"
+      "grade": "公开摘要",
+      "description": "URL 可打开，内容为公开采招摘要或聚合摘要；进入正式事实区并标明来源类型。"
     },
     {
-      "grade": "禁用来源",
-      "description": "命中错误域名或不合规域名时直接剔除，不进入本期页面。"
+      "grade": "已剔除",
+      "description": "URL 无法访问、命中禁用域名或只有搜索摘要的信息，本版不展示。"
     }
   ],
   "highlights": [
-    "医保目录、智能监管“两库”、集采与纠风政策持续强化，药学系统要覆盖事前审方、事中预警、事后点评。",
-    "地方医保与卫健场景向长期护理、居家服务、基层用药管理延伸，药学服务从院内走向院外连续管理。",
-    "四川美康继续强化 PASS、MTM、居家药学与 AI 赋能叙事，竞争重点从单点审方转向药学闭环平台。",
-    "杭州逸耀强调智慧药学、智能审方、电子药历与区域云经验，县域医共体和区域药学中心值得重点关注。",
-    "采购与运维线索显示医院关注系统续约、规则库更新、HIS/EMR/医保目录联动和药师工作量留痕。",
-    "售前侧应补齐医保目录调整、老年合理用药、集采用药监测、居家药学服务四类方案话术。",
-    "URL 校验失败、聚合页或来源不稳定的信息不进入正式事实区，仅作为待核实销售线索。"
+    "近三个月公开信息显示，美康在药监审评系统、合理用药运维等项目中保持存量客户与监管侧优势。",
+    "逸曜近三个月公开中标/成交集中在审方平台维保、合理用药维保、患者用药指导和住院药学监护。",
+    "竞品项目金额从 9 万元/年运维到 167.5 万元系统完善不等，说明药学信息化仍有“续约+升级”双机会。",
+    "政策侧继续强化医保目录、智能监管、基层质量提升和药事管理，销售应把审方、点评、监管闭环合并讲。",
+    "医院采购更关注系统连续性、规则库更新、药师工作量留痕和医保监管联动，替换项目需要证明迁移风险可控。",
+    "本版只保留带公网来源地址的正式事实；聚合页会标明“公开摘要”而非原始公告。"
   ],
   "facts": [
     {
@@ -35,6 +34,7 @@
       "publisher": "国家医保局",
       "region": "全国",
       "date": "2026-06-29",
+      "source_type": "原始来源",
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
@@ -49,6 +49,7 @@
       "publisher": "国家医保局",
       "region": "全国",
       "date": "2026-06-29",
+      "source_type": "原始来源",
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
@@ -63,6 +64,7 @@
       "publisher": "国家卫健委等部门",
       "region": "全国",
       "date": "2026-06-09",
+      "source_type": "原始来源",
       "source_domain": "www.nhc.gov.cn",
       "source_url": "https://www.nhc.gov.cn/",
       "url_status": "ok",
@@ -71,26 +73,13 @@
       "dedupe_fingerprint": "demo-20260609-nhc-compliance"
     },
     {
-      "category": "国家药学政策动态",
-      "title": "儿童用药供应保障改革强化专科审方",
-      "fact_summary": "儿童用药供应保障政策强调目录、综合评价和临床使用管理，儿科审方规则价值提升。",
-      "publisher": "国家医保局等部门",
-      "region": "全国",
-      "date": "2026-05-15",
-      "source_domain": "www.nhsa.gov.cn",
-      "source_url": "https://www.nhsa.gov.cn/",
-      "url_status": "ok",
-      "system_modules": ["前置审方", "合理用药", "处方点评"],
-      "sales_insight": "补充儿童剂量、禁忌、超说明书用药规则包。",
-      "dedupe_fingerprint": "demo-20260515-child-medication"
-    },
-    {
       "category": "地方药学政策动态",
       "title": "地方长护险政策带动居家药学场景",
       "fact_summary": "多地长期护理保险政策推进，居家照护、慢病用药和药师随访具备延伸空间。",
       "publisher": "地方医保部门",
       "region": "贵州、内蒙古等",
       "date": "2026-07-06",
+      "source_type": "原始来源",
       "source_domain": "www.nhsa.gov.cn",
       "source_url": "https://www.nhsa.gov.cn/",
       "url_status": "ok",
@@ -99,74 +88,106 @@
       "dedupe_fingerprint": "demo-20260706-local-ltc-home-pharmacy"
     },
     {
-      "category": "地方药学政策动态",
-      "title": "基层医保支付改革牵引用药管理下沉",
-      "fact_summary": "基层服务与医保支付改革推进，基层机构需要更轻量的审方、用药教育和药品监管能力。",
-      "publisher": "国家医保局及地方医保部门",
-      "region": "全国及地方",
-      "date": "2026-06-29",
-      "source_domain": "www.nhsa.gov.cn",
-      "source_url": "https://www.nhsa.gov.cn/",
+      "category": "竞品中标 · 四川美康",
+      "title": "药审中心 2026 年度审评系统功能完善项目",
+      "fact_summary": "四川美康中标药监审评相关信息系统功能完善项目，覆盖审评、原辅包、资料管理等模块。",
+      "publisher": "国家药品监督管理局药品审评中心",
+      "region": "北京",
+      "date": "2026-05-22",
+      "amount": "167.5 万元",
+      "stage": "中标公告",
+      "source_type": "公开摘要",
+      "source_domain": "m.dav01.com",
+      "source_url": "https://m.dav01.com/bid/2026/05/b903958.html",
       "url_status": "ok",
-      "system_modules": ["前置审方", "药学服务", "运营监管"],
-      "sales_insight": "县域项目可打医共体统一审方和基层药学服务牌。",
-      "dedupe_fingerprint": "demo-20260629-primary-care-pharmacy"
+      "system_modules": ["运营监管", "药学服务", "合理用药"],
+      "sales_insight": "美康监管侧项目能力强，需强调医院药学与监管数据联动。",
+      "dedupe_fingerprint": "demo-20260522-medicom-cde-system"
     },
     {
-      "category": "竞品 · 四川美康",
-      "title": "美康继续强化 PASS 与 MTM 组合叙事",
-      "fact_summary": "官网展示合理用药、临床药学、药物治疗管理等产品能力，强调药学全流程建设。",
+      "category": "竞品中标 · 四川美康",
+      "title": "江油市人民医院合理用药信息系统维护服务",
+      "fact_summary": "医院官网公示合理用药信息系统维护服务拟采用单一来源，供应商为四川美康。",
+      "publisher": "江油市人民医院",
+      "region": "四川江油",
+      "date": "2026-06-11",
+      "amount": "9 万元/年",
+      "stage": "单一来源公示",
+      "source_type": "医院官网",
+      "source_domain": "www.scjysrmyy.cn",
+      "source_url": "https://www.scjysrmyy.cn/html/News/GongGao/CaiGouZhaoBiao/202606/202606116Lg1Ec4Gt7Hq5154930.html",
+      "url_status": "ok",
+      "system_modules": ["合理用药", "前置审方", "运营监管"],
+      "sales_insight": "存量维护窗口可切入规则更新、医保监管和国产化迁移。",
+      "dedupe_fingerprint": "demo-20260611-medicom-jiangyou-maintenance"
+    },
+    {
+      "category": "竞品中标 · 四川美康",
+      "title": "美康亮相四川省医院药学服务培训班",
+      "fact_summary": "美康官网披露智慧药学、医共体双中心一体化、AI 审方点评等方案，强化区域药学叙事。",
       "publisher": "四川美康",
       "region": "四川",
-      "date": "2026-07-04",
+      "date": "2026-05-21",
+      "amount": "非采购",
+      "stage": "学术活动",
+      "source_type": "官网动态",
       "source_domain": "www.medicom.com.cn",
-      "source_url": "https://www.medicom.com.cn/",
+      "source_url": "https://www.medicom.com.cn/News/Details?newsId=142",
       "url_status": "ok",
-      "system_modules": ["合理用药", "前置审方", "药学服务", "处方点评"],
-      "sales_insight": "对标时突出规则更新、闭环落地和院外服务能力。",
-      "dedupe_fingerprint": "demo-20260704-medicom-pass-mtm"
+      "system_modules": ["前置审方", "处方点评", "药学服务", "运营监管"],
+      "sales_insight": "区域项目需准备医共体审方中心和药事质控中心方案。",
+      "dedupe_fingerprint": "demo-20260521-medicom-training-ai-pharmacy"
     },
     {
-      "category": "竞品 · 四川美康",
-      "title": "美康居家药学方向需重点跟踪",
-      "fact_summary": "参考周报显示美康将药学门诊、诊后回访和居家服务组合成连续药学服务方案。",
-      "publisher": "四川美康",
-      "region": "四川",
-      "date": "2026-06-29",
-      "source_domain": "www.medicom.com.cn",
-      "source_url": "https://www.medicom.com.cn/",
-      "url_status": "ok",
-      "system_modules": ["居家药学", "药学服务", "运营监管"],
-      "sales_insight": "需准备 MTM、随访任务、患者端服务对标话术。",
-      "dedupe_fingerprint": "demo-20260629-medicom-home-care"
-    },
-    {
-      "category": "竞品 · 杭州逸耀",
-      "title": "逸耀定位智慧药学与智能审方",
-      "fact_summary": "官网强调合理用药服务、智能审方和药学知识库能力，形成专业服务定位。",
-      "publisher": "杭州逸耀",
+      "category": "竞品中标 · 杭州逸曜",
+      "title": "逸曜 5 月审方平台与合理用药维保连续中标",
+      "fact_summary": "公开摘要列出逸曜中标浙江省肿瘤医院审方平台维保、绍兴上虞合理用药维保等项目。",
+      "publisher": "杭州逸曜",
       "region": "浙江",
-      "date": "2026-07-04",
-      "source_domain": "www.ipharmacare.net",
-      "source_url": "https://www.ipharmacare.net/",
+      "date": "2026-05",
+      "amount": "多项目，金额未披露",
+      "stage": "中标/维保",
+      "source_type": "公开摘要",
+      "source_domain": "www.cmmizw.com",
+      "source_url": "https://www.cmmizw.com/Company_45987.html",
       "url_status": "ok",
       "system_modules": ["前置审方", "合理用药", "处方点评"],
-      "sales_insight": "对标知识库时突出本地规则、部署效率和客户成功。",
-      "dedupe_fingerprint": "demo-20260704-ipharmacare-smart-review"
+      "sales_insight": "逸曜维保型项目多，替换需提供低风险迁移计划。",
+      "dedupe_fingerprint": "demo-202605-yiyao-maintenance-series"
     },
     {
-      "category": "竞品 · 杭州逸耀",
-      "title": "逸耀区域与县域项目值得持续盯防",
-      "fact_summary": "参考周报显示其在智能审方、电子药历、区域药学平台等方向有采购线索。",
-      "publisher": "杭州逸耀",
-      "region": "浙江及多地",
-      "date": "2026-07-04",
-      "source_domain": "www.ipharmacare.net",
-      "source_url": "https://www.ipharmacare.net/",
+      "category": "竞品中标 · 杭州逸曜",
+      "title": "天津市中西医结合医院合理用药维保项目",
+      "fact_summary": "公开摘要显示逸曜 4 月中标天津市中西医结合医院合理用药系统维保，金额约 87 万元级。",
+      "publisher": "杭州逸曜",
+      "region": "天津",
+      "date": "2026-04",
+      "amount": "约 87 万元",
+      "stage": "中标/维保",
+      "source_type": "公开摘要",
+      "source_domain": "www.cmmizw.com",
+      "source_url": "https://www.cmmizw.com/Company_45987.html",
+      "url_status": "ok",
+      "system_modules": ["合理用药", "前置审方", "运营监管"],
+      "sales_insight": "合理用药维保预算可作为同类客户报价参照。",
+      "dedupe_fingerprint": "demo-202604-yiyao-tianjin-maintenance"
+    },
+    {
+      "category": "竞品中标 · 杭州逸曜",
+      "title": "潍坊市中医院智慧审方中心建设项目",
+      "fact_summary": "公开摘要显示逸曜 3 月中标潍坊市中医院智慧审方中心建设项目，金额约 87 万元。",
+      "publisher": "杭州逸曜",
+      "region": "山东潍坊",
+      "date": "2026-03",
+      "amount": "87 万元",
+      "stage": "中标",
+      "source_type": "公开摘要",
+      "source_domain": "www.cmmizw.com",
+      "source_url": "https://www.cmmizw.com/Company_45987.html",
       "url_status": "ok",
       "system_modules": ["前置审方", "药学服务", "运营监管"],
-      "sales_insight": "县域医共体投标需准备区域审方中心差异化方案。",
-      "dedupe_fingerprint": "demo-20260704-ipharmacare-county"
+      "sales_insight": "智慧审方中心可对标区域审方中心方案与药师绩效。",
+      "dedupe_fingerprint": "demo-202603-yiyao-weifang-review-center"
     },
     {
       "category": "采购与招投标线索",
@@ -175,6 +196,7 @@
       "publisher": "采招网",
       "region": "多地",
       "date": "2026-07-04",
+      "source_type": "公开摘要",
       "source_domain": "www.bidcenter.com.cn",
       "source_url": "https://www.bidcenter.com.cn/",
       "url_status": "ok",
@@ -183,56 +205,26 @@
       "dedupe_fingerprint": "demo-20260704-bidcenter-maintenance"
     }
   ],
-  "pending_facts": [
-    {
-      "category": "待核实采购线索",
-      "title": "某院智能审方系统升级项目",
-      "fact_summary": "参考周报提及采购线索，但当前未定位到可直接校验的单条公告 URL。",
-      "publisher": "待核实医院",
-      "region": "待核实",
-      "date": "2026-07-05",
-      "source_domain": "example.invalid",
-      "source_url": "https://example.invalid/pharmacy-review",
-      "url_status": "failed",
-      "system_modules": ["前置审方", "合理用药"],
-      "sales_insight": "用项目编号、医院名、中标人三要素二次检索。",
-      "dedupe_fingerprint": "demo-20260705-pending-review-upgrade"
-    },
-    {
-      "category": "待核实采购线索",
-      "title": "某医共体审方中心运维续约",
-      "fact_summary": "线索显示可能为既有系统运维续约，正式公告 URL 仍需采购平台复核。",
-      "publisher": "待核实医共体",
-      "region": "待核实",
-      "date": "2026-07-05",
-      "source_domain": "example.invalid",
-      "source_url": "https://example.invalid/maintenance",
-      "url_status": "failed",
-      "system_modules": ["前置审方", "运营监管"],
-      "sales_insight": "重点判断竞品存量、续约金额与替换窗口。",
-      "dedupe_fingerprint": "demo-20260705-pending-maintenance"
-    }
-  ],
   "opportunity_actions": [
+    {
+      "priority": "P0",
+      "title": "竞品维保替换话术",
+      "description": "重点解释规则库迁移、历史处方复核、HIS/EMR 接口复用和上线风险控制。"
+    },
     {
       "priority": "P0",
       "title": "医保目录调整应对方案",
       "description": "准备院内目录、医保目录、商保创新药目录联动能力说明，面向医保办和药剂科联合沟通。"
     },
     {
-      "priority": "P0",
-      "title": "老年与居家合理用药专区",
-      "description": "围绕慢病多药联用、居家随访、用药教育和药师服务记录，包装可落地演示。"
+      "priority": "P1",
+      "title": "区域审方中心方案",
+      "description": "围绕县域医共体、基层处方上收、药师绩效和区域质控输出一页式方案。"
     },
     {
       "priority": "P1",
-      "title": "集采药品使用监测",
-      "description": "突出集采目录、替代药品、异常用量、处方点评和科室整改的闭环监管。"
-    },
-    {
-      "priority": "P1",
-      "title": "竞品对标材料更新",
-      "description": "补充美康 PASS/MTM/居家药学、逸耀区域审方和知识库能力的对标话术。"
+      "title": "患者用药指导场景",
+      "description": "把出院带药、用药教育、随访任务和居家药学服务打成连续药学服务闭环。"
     },
     {
       "priority": "P2",
