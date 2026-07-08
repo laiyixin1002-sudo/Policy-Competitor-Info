@@ -173,23 +173,6 @@
       "dedupe_fingerprint": "demo-202604-yiyao-tianjin-maintenance"
     },
     {
-      "category": "竞品中标 · 杭州逸曜",
-      "title": "潍坊市中医院智慧审方中心建设项目",
-      "fact_summary": "公开摘要显示逸曜 3 月中标潍坊市中医院智慧审方中心建设项目，金额约 87 万元。",
-      "publisher": "杭州逸曜",
-      "region": "山东潍坊",
-      "date": "2026-03",
-      "amount": "87 万元",
-      "stage": "中标",
-      "source_type": "公开摘要",
-      "source_domain": "www.cmmizw.com",
-      "source_url": "https://www.cmmizw.com/Company_45987.html",
-      "url_status": "ok",
-      "system_modules": ["前置审方", "药学服务", "运营监管"],
-      "sales_insight": "智慧审方中心可对标区域审方中心方案与药师绩效。",
-      "dedupe_fingerprint": "demo-202603-yiyao-weifang-review-center"
-    },
-    {
       "category": "采购与招投标线索",
       "title": "采招侧药学系统运维续约线索活跃",
       "fact_summary": "合理用药、审方、药学系统运维类项目常见单一来源或续约特征，存量客户防守重要。",
