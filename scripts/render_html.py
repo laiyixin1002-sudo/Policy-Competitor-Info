@@ -26,7 +26,7 @@ def esc(value: object) -> str:
 
 
 def render_highlights(items: list[str]) -> str:
-    return "\n        ".join(f"<li>{esc(clip_text(item, 96))}</li>" for item in items[:8])
+    return "\n        ".join(f"<li>{esc(clip_text(item, 98))}</li>" for item in items[:8])
 
 
 def render_source_grades(items: list[dict]) -> str:
@@ -38,30 +38,44 @@ def render_source_grades(items: list[dict]) -> str:
     )
 
 
-def render_fact_card(fact: dict, pending: bool = False) -> str:
+def render_deal_strip(fact: dict) -> str:
+    amount = fact.get("amount")
+    stage = fact.get("stage")
+    if not amount and not stage:
+        return ""
+    amount = amount or "未披露"
+    stage = stage or fact.get("source_type") or "信息"
+    return f"""<div class="deal-strip">
+            <div class="deal"><span>金额</span><strong>{esc(amount)}</strong></div>
+            <div class="deal stage"><span>阶段</span><strong>{esc(stage)}</strong></div>
+          </div>"""
+
+
+def render_fact_card(fact: dict) -> str:
     title = esc(fact.get("title"))
     summary = esc(clip_text(fact.get("fact_summary", ""), 80))
     publisher = esc(fact.get("publisher"))
     region = esc(fact.get("region"))
     date = esc(fact.get("date"))
     domain = esc(fact.get("source_domain"))
+    source_type = esc(fact.get("source_type", "来源"))
     source_url = esc(fact.get("source_url"))
     status = esc(fact.get("url_status"))
     insight = esc(clip_text(fact.get("sales_insight", ""), 60))
     modules = fact.get("system_modules") or []
     tags = "\n          ".join(f'<span class="tag">{esc(module)}</span>' for module in modules[:4])
-    class_name = "card pending" if pending else "card"
 
-    return f"""<article class="{class_name}">
+    return f"""<article class="card">
           <h4>{title}</h4>
           <p class="fact">{summary}</p>
           <div class="sub">{publisher} · {region} · {date}</div>
+          {render_deal_strip(fact)}
           <div class="tags">
           {tags}
           </div>
           <p class="insight"><strong>销售启发：</strong>{insight}</p>
           <div class="card-footer">
-            <span class="status">{domain} · {status}</span>
+            <span class="status">{source_type} · {domain} · {status}</span>
             <a class="btn" href="{source_url}" target="_blank" rel="noopener">🔗 来源</a>
           </div>
         </article>"""
@@ -75,13 +89,13 @@ def group_facts(items: list[dict]) -> OrderedDict[str, list[dict]]:
     return grouped
 
 
-def render_grouped_cards(items: list[dict], pending: bool = False) -> str:
+def render_grouped_cards(items: list[dict]) -> str:
     if not items:
         return '<div class="empty">暂无信息</div>'
 
     groups = []
     for category, facts in group_facts(items).items():
-        cards = "\n        ".join(render_fact_card(item, pending=pending) for item in facts)
+        cards = "\n        ".join(render_fact_card(item) for item in facts)
         groups.append(
             f"""<div class="group">
         <h3>{esc(category)}</h3>
@@ -124,17 +138,14 @@ def validate_report(data: dict) -> None:
     if not 5 <= len(highlights) <= 8:
         raise ValueError("highlights must contain 5 to 8 items")
 
-    for section_name in ("facts", "pending_facts"):
-        for index, fact in enumerate(data.get(section_name) or [], start=1):
-            missing = required_fact_fields - set(fact)
-            if missing:
-                raise ValueError(f"{section_name}[{index}] missing fields: {sorted(missing)}")
-            if len(fact.get("system_modules") or []) > 4:
-                raise ValueError(f"{section_name}[{index}] has more than 4 system modules")
-            if section_name == "facts" and fact.get("url_status") != "ok":
-                raise ValueError(f"{section_name}[{index}] must have url_status ok")
-            if section_name == "pending_facts" and fact.get("url_status") == "ok":
-                raise ValueError(f"{section_name}[{index}] with ok URL should move to facts")
+    for index, fact in enumerate(data.get("facts") or [], start=1):
+        missing = required_fact_fields - set(fact)
+        if missing:
+            raise ValueError(f"facts[{index}] missing fields: {sorted(missing)}")
+        if len(fact.get("system_modules") or []) > 4:
+            raise ValueError(f"facts[{index}] has more than 4 system modules")
+        if fact.get("url_status") != "ok":
+            raise ValueError(f"facts[{index}] must have url_status ok")
 
 
 def build_report_html(data: dict) -> str:
@@ -150,8 +161,7 @@ def build_report_html(data: dict) -> str:
         "generated_at": esc(data.get("generated_at", "")),
         "source_grade_html": render_source_grades(data.get("source_grade_notes") or []),
         "highlights_html": render_highlights(data.get("highlights") or []),
-        "facts_html": render_grouped_cards(data.get("facts") or [], pending=False),
-        "pending_facts_html": render_grouped_cards(data.get("pending_facts") or [], pending=True),
+        "facts_html": render_grouped_cards(data.get("facts") or []),
         "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
     }
 
