@@ -169,6 +169,33 @@
       font-size: 12px;
       font-weight: 800;
     }
+    .procurement-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .procurement-table {
+      width: 100%;
+      min-width: 970px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .procurement-table th, .procurement-table td {
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+    .procurement-table th {
+      background: #e8f5f7;
+      color: var(--accent-strong);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .procurement-table tr:last-child td { border-bottom: 0; }
+    .procurement-table a { color: var(--accent); font-weight: 700; }
     .group {
       margin-top: 18px;
     }
@@ -429,6 +456,11 @@
       <ol class="highlights">
         {{ highlights_html }}
       </ol>
+    </section>
+
+    <section id="regional-procurements">
+      <h2 class="section-title">区域药学系统招标、挂网与预采购</h2>
+      {{ regional_procurements_html }}
     </section>
 
     <section id="facts">

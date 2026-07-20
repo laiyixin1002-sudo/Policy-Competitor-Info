@@ -42,6 +42,43 @@ def render_highlights(items: list[str]) -> str:
     return "\n        ".join(f"<li>{esc(clip_text(item, 98))}</li>" for item in items[:8])
 
 
+def render_regional_procurements(items: list[dict]) -> str:
+    if not items:
+        return '<div class="empty">本期未检出可公开核验的区域药学系统招标、挂网或预采购信息。</div>'
+
+    rows = []
+    for item in items:
+        source_url = esc(item.get("source_url"))
+        source_name = esc(item.get("source_name") or item.get("source_domain") or "查看出处")
+        source_level = esc(item.get("source_level") or "未标注")
+        rows.append(
+            f"""<tr>
+              <td>{esc(item.get('region'))}</td>
+              <td>{esc(item.get('stage'))}</td>
+              <td>{esc(item.get('purchaser'))}</td>
+              <td>{esc(item.get('project_name'))}</td>
+              <td>{esc(item.get('products'))}</td>
+              <td>{esc(item.get('budget') or '未披露')}</td>
+              <td>{esc(item.get('registration_deadline') or '未披露')}</td>
+              <td>{esc(item.get('bid_opening_time') or '未披露')}</td>
+              <td>{source_level}<br><a href=\"{source_url}\" target=\"_blank\" rel=\"noopener\">{source_name}</a></td>
+            </tr>"""
+        )
+    return f"""<div class="procurement-table-wrap">
+        <table class="procurement-table">
+          <thead>
+            <tr>
+              <th>区域</th><th>阶段</th><th>招标/采购单位</th><th>项目名称</th><th>涉及产品/模块</th>
+              <th>预算</th><th>报名截止</th><th>开标/解密时间</th><th>出处 URL / 核验级别</th>
+            </tr>
+          </thead>
+          <tbody>
+            {''.join(rows)}
+          </tbody>
+        </table>
+      </div>"""
+
+
 def render_deal_strip(fact: dict) -> str:
     amount = fact.get("amount")
     stage = fact.get("stage")
@@ -67,13 +104,14 @@ def render_fact_card(fact: dict) -> str:
     insight = esc(clip_text(fact.get("sales_insight", ""), 60))
     modules = fact.get("system_modules") or []
     tags = "\n          ".join(f'<span class="tag">{esc(module)}</span>' for module in modules[:4])
+    deal_strip = render_deal_strip(fact)
+    deal_markup = f"          {deal_strip}\n" if deal_strip else ""
 
     return f"""<article class="card">
           <h4>{title}</h4>
           <p class="fact">{summary}</p>
           <div class="sub">{publisher} · {region} · {date}</div>
-          {render_deal_strip(fact)}
-          <div class="tags">
+{deal_markup}          <div class="tags">
           {tags}
           </div>
           <p class="insight"><strong>销售启发：</strong>{insight}</p>
@@ -162,6 +200,21 @@ def validate_report(data: dict) -> None:
         if fact.get("url_status") != "ok":
             raise ValueError(f"facts[{index}] must have url_status ok")
 
+    required_procurement_fields = {
+        "region",
+        "stage",
+        "purchaser",
+        "project_name",
+        "products",
+        "source_url",
+        "source_name",
+        "source_level",
+    }
+    for index, procurement in enumerate(data.get("regional_procurements") or [], start=1):
+        missing = required_procurement_fields - set(procurement)
+        if missing:
+            raise ValueError(f"regional_procurements[{index}] missing fields: {sorted(missing)}")
+
 
 def build_report_html(data: dict) -> str:
     period_start = data["period_start"]
@@ -178,6 +231,7 @@ def build_report_html(data: dict) -> str:
         "share_title": esc(report_share_title(data)),
         "share_url": esc(report_share_url(output_name)),
         "highlights_html": render_highlights(data.get("highlights") or []),
+        "regional_procurements_html": render_regional_procurements(data.get("regional_procurements") or []),
         "facts_html": render_grouped_cards(data.get("facts") or []),
         "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
     }
