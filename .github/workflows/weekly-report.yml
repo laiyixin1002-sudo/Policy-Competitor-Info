@@ -30,6 +30,12 @@ jobs:
       - name: Update report period
         run: python scripts/update_report_period.py
 
+      - name: Collect official procurement notices
+        run: python scripts/collect_weekly_sources.py --min-new-items 1
+
+      - name: Validate collection freshness
+        run: python scripts/validate_collection.py --min-new-items 1
+
       - name: Render report
         run: python scripts/render_html.py
 
@@ -44,5 +50,8 @@ jobs:
           fi
           git commit -m "Generate weekly pharmacy report"
           git push origin HEAD:main
+          git fetch origin gh-pages
+          git switch -C gh-pages origin/gh-pages
+          git merge --no-edit main
           git push origin HEAD:gh-pages
 

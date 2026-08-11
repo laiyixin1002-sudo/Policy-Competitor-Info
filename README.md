@@ -19,6 +19,8 @@ python scripts/render_html.py
 每周自动发布：
 
 - GitHub Actions: `.github/workflows/weekly-report.yml`
+- 官方采集：`python scripts/collect_weekly_sources.py --min-new-items 1`
+- 新鲜度门禁：`python scripts/validate_collection.py --min-new-items 1`；本期未采集到新条目时构建失败，不会发布旧内容。
 - 触发时间：每周一 09:00（Asia/Shanghai），对应 cron `0 1 * * 1`
 - 统计区间：上周一 09:00 前推 7 天，页面正文显示为 `YYYY-MM-DD ~ YYYY-MM-DD`
 - 输出路径：`reports/药学情报周报_YYYY-MM-DD_YYYY-MM-DD.html`
