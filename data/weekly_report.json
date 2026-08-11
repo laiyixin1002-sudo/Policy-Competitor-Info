@@ -3,298 +3,177 @@
   "period_start": "2026-08-03",
   "period_end": "2026-08-10",
   "generated_at": "2026-08-10 09:00",
-  "collection_note": "手机速读版：只保留可打开公网地址的政策、竞品中标/成交与售前动作。",
+  "collection_note": "本期统计区间 2026-08-03 至 2026-08-10；内容由官方来源实时采集，回溯 60 天，新增入库 4 条。",
   "regional_procurements": [
     {
-      "region": "上海",
-      "stage": "公开招标（已截止）",
-      "purchaser": "上海市浦东医院",
-      "project_name": "处方前置审核医联体单位全覆盖",
-      "products": "智慧审方系统：处方/医嘱智能审核、合理用药监测、处方点评、药品数据治理、患者用药教育",
-      "budget": "163.30万元",
-      "registration_deadline": "2026-01-15",
-      "bid_opening_time": "2026-02-03 10:00",
-      "source_name": "公开转载详情（原招标入口：上海市政府采购网）",
-      "source_level": "转载信息；需以政采原文复核",
-      "source_domain": "www.sohu.com",
-      "source_url": "https://www.sohu.com/a/973765350_122434053"
-    },
-    {
-      "region": "广州",
-      "stage": "市场调研/预采购（已截止）",
-      "purchaser": "广州市番禺区中医院",
-      "project_name": "药学信息化系统采购项目",
-      "products": "合理用药、前置审方、药师工作站、处方/医嘱点评、集采药品管理、不良反应上报、移动查房与用药监护",
+      "region": "广东（广州）",
+      "stage": "官方挂网/集采公告",
+      "purchaser": "广东省药品交易中心公告",
+      "project_name": "关于开展“四同”药品挂网价格确认工作的通知（20260807批次）",
+      "products": "药品挂网/集采信息（详见原文及附件）",
       "budget": "未披露",
-      "registration_deadline": "2026-03-19",
-      "bid_opening_time": "不适用（市场调研）",
-      "source_name": "番禺区中医院公告",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "不适用或以原公告为准",
+      "source_name": "广东省药品交易中心公告",
       "source_level": "官方公告",
-      "source_domain": "www.gzpyzy.cn",
-      "source_url": "https://www.gzpyzy.cn/index.php?ac=article&at=read&did=5606"
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085660675375370240"
     },
     {
-      "region": "广州",
-      "stage": "公开比选（已截止）",
-      "purchaser": "广州数据交易有限公司",
-      "project_name": "外购药处方流转系统建设项目（YG1202600154）",
-      "products": "外购药处方流转系统建设服务",
-      "budget": "89.00万元（最高限价，含税）",
-      "registration_deadline": "2026-04-08 18:00",
-      "bid_opening_time": "2026-04-09 09:00（解密至10:00）",
-      "source_name": "广州阳光采购服务平台",
-      "source_level": "官方采购平台",
-      "source_domain": "www.gzsun.com.cn",
-      "source_url": "https://www.gzsun.com.cn/cgdt/001002/001002001/20260403/09b46d82-8e4c-49a7-9273-e091829b3ed9.html"
-    },
-    {
-      "region": "成都",
-      "stage": "市场调研/预采购",
-      "purchaser": "成都市公共卫生临床医疗中心",
-      "project_name": "PASS临床药学管理系统维保服务",
-      "products": "PASS临床药学管理系统维保服务",
+      "region": "广东（广州）",
+      "stage": "官方挂网/集采公告",
+      "purchaser": "广东省药品交易中心公告",
+      "project_name": "关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）",
+      "products": "药品挂网/集采信息（详见原文及附件）",
       "budget": "未披露",
-      "registration_deadline": "未在公开公告正文披露",
-      "bid_opening_time": "不适用（市场调研）",
-      "source_name": "成都市公共卫生临床医疗中心官网",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "不适用或以原公告为准",
+      "source_name": "广东省药品交易中心公告",
       "source_level": "官方公告",
-      "source_domain": "www.phcc120.com",
-      "source_url": "https://www.phcc120.com/news_show.aspx?channel=station&id=92948"
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085730894395478016"
     },
     {
-      "region": "沈阳、锦州",
-      "stage": "药品增补挂网采购（省级平台，覆盖辽宁）",
-      "purchaser": "辽宁省药品和医用耗材集中采购网",
-      "project_name": "2026年度药品增补（第四批）挂网采购结果及中药配方颗粒增补挂网项目",
-      "products": "药品增补挂网、中药配方颗粒增补挂网；本期未检出两市药学信息系统单独招标公告",
-      "budget": "不适用（挂网采购）",
-      "registration_deadline": "以省级招采子系统通知为准",
-      "bid_opening_time": "不适用",
-      "source_name": "辽宁省药品和医用耗材集中采购网",
-      "source_level": "官方挂网平台",
-      "source_domain": "ggzy.ln.gov.cn",
-      "source_url": "https://ggzy.ln.gov.cn/yphc/"
+      "region": "广东（广州）",
+      "stage": "官方挂网/集采公告",
+      "purchaser": "广东省药品交易中心公告",
+      "project_name": "广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）",
+      "products": "药品挂网/集采信息（详见原文及附件）",
+      "budget": "未披露",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "不适用或以原公告为准",
+      "source_name": "广东省药品交易中心公告",
+      "source_level": "官方公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085289642671738880"
+    },
+    {
+      "region": "广东（广州）",
+      "stage": "官方挂网/集采公告",
+      "purchaser": "广东省药品交易中心公告",
+      "project_name": "关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）",
+      "products": "药品挂网/集采信息（详见原文及附件）",
+      "budget": "未披露",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "不适用或以原公告为准",
+      "source_name": "广东省药品交易中心公告",
+      "source_level": "官方公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085284857591631872"
     }
   ],
   "highlights": [
-    "近三个月公开信息显示，美康在药监审评系统、合理用药运维等项目中保持存量客户与监管侧优势。",
-    "逸曜近三个月公开中标/成交集中在审方平台维保、合理用药维保、患者用药指导和住院药学监护。",
-    "竞品项目金额从 9 万元/年运维到 167.5 万元系统完善不等，说明药学信息化仍有“续约+升级”双机会。",
-    "政策侧继续强化医保目录、智能监管、基层质量提升和药事管理，销售应把审方、点评、监管闭环合并讲。",
-    "医院采购更关注系统连续性、规则库更新、药师工作量留痕和医保监管联动，替换项目需要证明迁移风险可控。",
-    "美康官网近期强化智慧药学、医共体双中心一体化、AI 审方点评等方案叙事，区域药学项目需重点对标。",
-    "逸曜官网持续强化智能审方、合理用药与药学服务平台定位，维保与升级项目应重点关注知识库和迁移风险。"
+    "本次成功抓取 1 个官方来源，识别 4 条此前未入库的挂网/集采动态。",
+    "本期内容按官方公告发布日期去重；产品清单、价格和执行范围仍需打开原文附件核验。",
+    "2026-08-07：关于开展“四同”药品挂网价格确认工作的通知（20260807批次）",
+    "2026-08-07：关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）",
+    "2026-08-06：广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）",
+    "2026-08-06：关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）"
   ],
   "facts": [
     {
-      "category": "国家药学政策动态",
-      "title": "医保目录初审公示带动目录管理需求",
-      "fact_summary": "国家医保局公示目录初审信息，药品准入、商保创新药与院内目录联动成为管理重点。",
-      "publisher": "国家医保局",
-      "region": "全国",
-      "date": "2026-06-29",
-      "source_type": "原始来源",
-      "source_domain": "www.nhsa.gov.cn",
-      "source_url": "https://www.nhsa.gov.cn/",
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于开展“四同”药品挂网价格确认工作的通知（20260807批次）",
+      "fact_summary": "关于开展“四同”药品挂网价格确认工作的通知（20260807批次）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-07",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085660675375370240",
       "url_status": "ok",
       "system_modules": [
-        "合理用药",
-        "处方点评",
         "集采管控",
         "运营监管"
       ],
-      "sales_insight": "可包装医保目录匹配、院内目录提醒与点评规则更新。",
-      "dedupe_fingerprint": "demo-20260629-nhsa-directory-review"
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "45b1b47f71cd4c7884cfa1cdd5fff698c36c37372a5a045152893d8a34f069ec"
     },
     {
-      "category": "国家药学政策动态",
-      "title": "医保智能监管规则持续更新",
-      "fact_summary": "医保智能监管规则库与知识点持续发布，超量开药、回流药和异常结算成为关注点。",
-      "publisher": "国家医保局",
-      "region": "全国",
-      "date": "2026-06-29",
-      "source_type": "原始来源",
-      "source_domain": "www.nhsa.gov.cn",
-      "source_url": "https://www.nhsa.gov.cn/",
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）",
+      "fact_summary": "关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-07",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085730894395478016",
       "url_status": "ok",
       "system_modules": [
-        "合理用药",
-        "处方点评",
+        "集采管控",
         "运营监管"
       ],
-      "sales_insight": "强调医保监管规则与审方、点评、药品追溯联动。",
-      "dedupe_fingerprint": "demo-20260629-nhsa-smart-supervision"
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "b618ab46de7b0108d20b6ee28644dfcdc2662b709e897f9805cf0d58388404c8"
     },
     {
-      "category": "国家药学政策动态",
-      "title": "纠风常态化影响院内药品准入",
-      "fact_summary": "医药购销与医疗服务纠风趋于制度化，院内准入、药品使用和代表行为监管收紧。",
-      "publisher": "国家卫健委等部门",
-      "region": "全国",
-      "date": "2026-06-09",
-      "source_type": "原始来源",
-      "source_domain": "www.nhc.gov.cn",
-      "source_url": "https://www.nhc.gov.cn/",
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）",
+      "fact_summary": "广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-06",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085289642671738880",
       "url_status": "ok",
       "system_modules": [
-        "运营监管",
-        "处方点评",
-        "集采管控"
-      ],
-      "sales_insight": "可切入药品准入、用量异常和点评整改闭环。",
-      "dedupe_fingerprint": "demo-20260609-nhc-compliance"
-    },
-    {
-      "category": "地方药学政策动态",
-      "title": "地方长护险政策带动居家药学场景",
-      "fact_summary": "多地长期护理保险政策推进，居家照护、慢病用药和药师随访具备延伸空间。",
-      "publisher": "地方医保部门",
-      "region": "贵州、内蒙古等",
-      "date": "2026-07-06",
-      "source_type": "原始来源",
-      "source_domain": "www.nhsa.gov.cn",
-      "source_url": "https://www.nhsa.gov.cn/",
-      "url_status": "ok",
-      "system_modules": [
-        "居家药学",
-        "药学服务",
+        "集采管控",
         "运营监管"
       ],
-      "sales_insight": "面向医共体推居家用药随访与药师服务记录。",
-      "dedupe_fingerprint": "demo-20260706-local-ltc-home-pharmacy"
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "793e2fd91715b6479a9dacb4944f63ea6f529255c36dbd605016f0b29d05e804"
     },
     {
-      "category": "竞品中标 · 四川美康",
-      "title": "药审中心 2026 年度审评系统功能完善项目",
-      "fact_summary": "四川美康中标药监审评相关信息系统功能完善项目，覆盖审评、原辅包、资料管理等模块。",
-      "publisher": "国家药品监督管理局药品审评中心",
-      "region": "北京",
-      "date": "2026-05-22",
-      "amount": "167.5 万元",
-      "stage": "中标公告",
-      "source_type": "公开摘要",
-      "source_domain": "m.dav01.com",
-      "source_url": "https://m.dav01.com/bid/2026/05/b903958.html",
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）",
+      "fact_summary": "关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-06",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085284857591631872",
       "url_status": "ok",
       "system_modules": [
-        "运营监管",
-        "药学服务",
-        "合理用药"
-      ],
-      "sales_insight": "美康监管侧项目能力强，需强调医院药学与监管数据联动。",
-      "dedupe_fingerprint": "demo-20260522-medicom-cde-system"
-    },
-    {
-      "category": "竞品中标 · 四川美康",
-      "title": "江油市人民医院合理用药信息系统维护服务",
-      "fact_summary": "医院官网公示合理用药信息系统维护服务拟采用单一来源，供应商为四川美康。",
-      "publisher": "江油市人民医院",
-      "region": "四川江油",
-      "date": "2026-06-11",
-      "amount": "9 万元/年",
-      "stage": "单一来源公示",
-      "source_type": "医院官网",
-      "source_domain": "www.scjysrmyy.cn",
-      "source_url": "https://www.scjysrmyy.cn/html/News/GongGao/CaiGouZhaoBiao/202606/202606116Lg1Ec4Gt7Hq5154930.html",
-      "url_status": "ok",
-      "system_modules": [
-        "合理用药",
-        "前置审方",
+        "集采管控",
         "运营监管"
       ],
-      "sales_insight": "存量维护窗口可切入规则更新、医保监管和国产化迁移。",
-      "dedupe_fingerprint": "demo-20260611-medicom-jiangyou-maintenance"
-    },
-    {
-      "category": "竞品中标 · 四川美康",
-      "title": "美康亮相四川省医院药学服务培训班",
-      "fact_summary": "美康官网披露智慧药学、医共体双中心一体化、AI 审方点评等方案，强化区域药学叙事。",
-      "publisher": "四川美康",
-      "region": "四川",
-      "date": "2026-05-21",
-      "amount": "非采购",
-      "stage": "学术活动",
-      "source_type": "官网动态",
-      "source_domain": "www.medicom.com.cn",
-      "source_url": "https://www.medicom.com.cn/News/Details?newsId=142",
-      "url_status": "ok",
-      "system_modules": [
-        "前置审方",
-        "处方点评",
-        "药学服务",
-        "运营监管"
-      ],
-      "sales_insight": "区域项目需准备医共体审方中心和药事质控中心方案。",
-      "dedupe_fingerprint": "demo-20260521-medicom-training-ai-pharmacy"
-    },
-    {
-      "category": "竞品中标 · 杭州逸曜",
-      "title": "逸曜 5 月审方平台与合理用药维保连续中标",
-      "fact_summary": "公开摘要列出逸曜中标浙江省肿瘤医院审方平台维保、绍兴上虞合理用药维保等项目。",
-      "publisher": "杭州逸曜",
-      "region": "浙江",
-      "date": "2026-05",
-      "amount": "多项目，金额未披露",
-      "stage": "中标/维保",
-      "source_type": "公开摘要",
-      "source_domain": "www.cmmizw.com",
-      "source_url": "https://www.cmmizw.com/Company_45987.html",
-      "url_status": "ok",
-      "system_modules": [
-        "前置审方",
-        "合理用药",
-        "处方点评"
-      ],
-      "sales_insight": "逸曜维保型项目多，替换需提供低风险迁移计划。",
-      "dedupe_fingerprint": "demo-202605-yiyao-maintenance-series"
-    },
-    {
-      "category": "竞品中标 · 杭州逸曜",
-      "title": "天津市中西医结合医院合理用药维保项目",
-      "fact_summary": "公开摘要显示逸曜 4 月中标天津市中西医结合医院合理用药系统维保，金额约 87 万元级。",
-      "publisher": "杭州逸曜",
-      "region": "天津",
-      "date": "2026-04",
-      "amount": "约 87 万元",
-      "stage": "中标/维保",
-      "source_type": "公开摘要",
-      "source_domain": "www.cmmizw.com",
-      "source_url": "https://www.cmmizw.com/Company_45987.html",
-      "url_status": "ok",
-      "system_modules": [
-        "合理用药",
-        "前置审方",
-        "运营监管"
-      ],
-      "sales_insight": "合理用药维保预算可作为同类客户报价参照。",
-      "dedupe_fingerprint": "demo-202604-yiyao-tianjin-maintenance"
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "21de70f1770c50fdceb64654950e962fbd8d429ad176274c7674e351cb70d0a9"
     }
   ],
   "opportunity_actions": [
     {
       "priority": "P0",
-      "title": "竞品维保替换话术",
-      "description": "重点解释规则库迁移、历史处方复核、HIS/EMR 接口复用和上线风险控制。"
-    },
-    {
-      "priority": "P0",
-      "title": "医保目录调整应对方案",
-      "description": "准备院内目录、医保目录、商保创新药目录联动能力说明，面向医保办和药剂科联合沟通。"
+      "title": "核验新增挂网产品",
+      "description": "逐条打开官方公告及附件，确认产品、价格、医保编码、配送关系和执行时间后再进入客户简报。"
     },
     {
       "priority": "P1",
-      "title": "区域审方中心方案",
-      "description": "围绕县域医共体、基层处方上收、药师绩效和区域质控输出一页式方案。"
+      "title": "建立区域目录差异表",
+      "description": "对广东及后续接入区域记录新增、价格确认、中选补充和撤网状态，避免只记录公告标题。"
     },
     {
       "priority": "P1",
-      "title": "患者用药指导场景",
-      "description": "把出院带药、用药教育、随访任务和居家药学服务打成连续药学服务闭环。"
-    },
-    {
-      "priority": "P2",
-      "title": "运维续约防守清单",
-      "description": "按客户、合同到期日、规则库更新频率、使用科室活跃度建立续约预警。"
+      "title": "跟进集采落地节点",
+      "description": "把中选产品信息与医院目录、供应清单、配送关系及合理用药场景关联起来。"
     }
-  ]
+  ],
+  "collection_meta": {
+    "run_at": "2026-08-11 14:35:00+0800",
+    "lookback_days": 60,
+    "source_fetch_status": [
+      {
+        "id": "gdmede-announcements",
+        "status": "ok",
+        "items": 4,
+        "new_items": 4
+      }
+    ],
+    "source_count": 1,
+    "new_item_count": 4,
+    "fresh_item_count": 4
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "lookback_days": 60,
+  "minimum_new_items": 1,
+  "sources": [
+    {
+      "id": "gdmede-announcements",
+      "name": "广东省药品交易中心公告",
+      "url": "https://www.gdmede.com.cn/announcement/announcement/index",
+      "kind": "gdmede_announcements",
+      "official_domain": "www.gdmede.com.cn",
+      "required": true,
+      "keywords": [
+        "药品挂网",
+        "药品集采",
+        "同步药品挂网",
+        "药品价格确认",
+        "中选产品信息"
+      ]
+    }
+  ]
+}

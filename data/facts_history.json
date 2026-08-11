@@ -1,6 +1,79 @@
 {
   "schema_version": "1.0",
-  "dedupe_rule": "dedupe_fingerprint = sha256(normalized_fact_statement + source_domain)",
-  "facts": []
+  "dedupe_rule": "sha256(title|date|domain)",
+  "last_collection_at": "2026-08-11 14:35 +0800",
+  "facts": [
+    {
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于开展“四同”药品挂网价格确认工作的通知（20260807批次）",
+      "fact_summary": "关于开展“四同”药品挂网价格确认工作的通知（20260807批次）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-07",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085660675375370240",
+      "url_status": "ok",
+      "system_modules": [
+        "集采管控",
+        "运营监管"
+      ],
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "45b1b47f71cd4c7884cfa1cdd5fff698c36c37372a5a045152893d8a34f069ec"
+    },
+    {
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）",
+      "fact_summary": "关于广东省第三方药品电子交易平台同步药品挂网数据信息的通知（20260731批次）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-07",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085730894395478016",
+      "url_status": "ok",
+      "system_modules": [
+        "集采管控",
+        "运营监管"
+      ],
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "b618ab46de7b0108d20b6ee28644dfcdc2662b709e897f9805cf0d58388404c8"
+    },
+    {
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）",
+      "fact_summary": "广东省药品交易中心关于公布广东联盟药品集中带量采购新增中选产品信息的通知（七）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-06",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085289642671738880",
+      "url_status": "ok",
+      "system_modules": [
+        "集采管控",
+        "运营监管"
+      ],
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "793e2fd91715b6479a9dacb4944f63ea6f529255c36dbd605016f0b29d05e804"
+    },
+    {
+      "category": "区域挂网动态 · 广东省药品交易中心",
+      "title": "关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）",
+      "fact_summary": "关于公布阿莫西林和阿比特龙等药品集采增补中选产品信息的通知（五）。该条来自广东省药品交易中心官方公告列表，具体产品、价格和执行范围以原文及附件为准。",
+      "publisher": "广东省药品交易中心公告",
+      "region": "广东（广州）",
+      "date": "2026-08-06",
+      "source_type": "官方挂网/集采公告",
+      "source_domain": "www.gdmede.com.cn",
+      "source_url": "https://www.gdmede.com.cn/announcement/announcement/detail?id=2085284857591631872",
+      "url_status": "ok",
+      "system_modules": [
+        "集采管控",
+        "运营监管"
+      ],
+      "sales_insight": "重点核对挂网批次、价格确认、中选产品及后续配送关系，避免把公告发布误判为已完成采购执行。",
+      "dedupe_fingerprint": "21de70f1770c50fdceb64654950e962fbd8d429ad176274c7674e351cb70d0a9"
+    }
+  ]
 }
-
