@@ -1,9 +1,9 @@
 {
   "report_title": "药学政策与竞品动向周报",
-  "period_start": "2026-08-03",
-  "period_end": "2026-08-10",
-  "generated_at": "2026-08-10 09:00",
-  "collection_note": "本期统计区间 2026-08-03 至 2026-08-10；内容由官方来源采集，回溯 60 天，新增入库 2 条药学信息化项目，已屏蔽纯药品采购内容。",
+  "period_start": "2026-08-10",
+  "period_end": "2026-08-17",
+  "generated_at": "2026-08-17 09:00",
+  "collection_note": "本期统计区间 2026-08-10 至 2026-08-17；内容由官方来源采集，回溯 60 天，新增入库 1 条药学信息化项目，已屏蔽纯药品采购内容。",
   "regional_procurements": [
     {
       "region": "辽宁·盘锦",
@@ -32,14 +32,29 @@
       "source_level": "官方项目公告",
       "source_domain": "www.sysu5.cn",
       "source_url": "https://www.sysu5.cn/biddingment/announcement/14131"
+    },
+    {
+      "region": "内蒙古·锡林郭勒盟",
+      "stage": "中标（成交）结果公告",
+      "purchaser": "锡林郭勒盟安神医院",
+      "project_name": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
+      "products": "HIS、合理用药、处方点评、门诊叫号、线上挂号缴费、临床路径、院感、传染病上报等全院智慧医疗信息化体系维保",
+      "budget": "未披露",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm"
     }
   ],
   "highlights": [
-    "本次成功抓取 2 个官方来源，识别 2 条此前未入库的药学信息化项目动态。",
+    "本次成功抓取 3 个官方来源，识别 1 条此前未入库的药学信息化项目动态。",
     "本期只保留药学信息化项目；采购标的、接口和执行边界仍需核验原文附件。",
     "当前重点方向：住院药学监护、合理用药审查、药物重整、药学记录、HIS接口与药学管理模块。",
     "2026-07-20：药学信息化系统（住院药学监护与院内管控）第三次招标公告",
-    "2026-07-13：中山五院HIS系统维保（含药学管理模块）采购意向"
+    "2026-07-13：中山五院HIS系统维保（含药学管理模块）采购意向",
+    "2026-07-06：锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告"
   ],
   "facts": [
     {
@@ -93,6 +108,32 @@
       ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "9055a27bd93dbcddd36d9bafe4e32896f34e196b829900ee78e210d481d3ec8b"
+    },
+    {
+      "category": "药学信息化项目 · 内蒙古·锡林郭勒盟",
+      "title": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
+      "source_title": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
+      "fact_summary": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告。项目范围聚焦HIS、合理用药、处方点评、门诊叫号、线上挂号缴费、临床路径、院感、传染病上报等全院智慧医疗信息化体系维保，具体采购边界、接口要求和执行时间以官方原文及附件为准。",
+      "publisher": "中国政府采购网",
+      "region": "内蒙古·锡林郭勒盟",
+      "date": "2026-07-06",
+      "source_type": "中标（成交）结果公告",
+      "system_scope": "HIS、合理用药、处方点评、门诊叫号、线上挂号缴费、临床路径、院感、传染病上报等全院智慧医疗信息化体系维保",
+      "purchaser": "锡林郭勒盟安神医院",
+      "budget": "未披露",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
+      "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
+      "dedupe_fingerprint": "cb610967fdc6a26b5b3a678782c1ed4ab0b71768dac23908e6e5c64388450b40"
     }
   ],
   "opportunity_actions": [
@@ -113,7 +154,7 @@
     }
   ],
   "collection_meta": {
-    "run_at": "2026-08-11 16:05:00+0800",
+    "run_at": "2026-08-17 09:00:00+0800",
     "lookback_days": 60,
     "source_fetch_status": [
       {
@@ -126,12 +167,18 @@
         "id": "verified-pharmacy-information-projects",
         "status": "ok",
         "items": 2,
-        "new_items": 2
+        "new_items": 0
+      },
+      {
+        "id": "verified-hospital-pharmacy-information-maintenance",
+        "status": "ok",
+        "items": 1,
+        "new_items": 1
       }
     ],
-    "source_count": 2,
-    "new_item_count": 2,
-    "fresh_item_count": 2,
+    "source_count": 3,
+    "new_item_count": 1,
+    "fresh_item_count": 3,
     "content_scope": "pharmacy_information_systems_only"
   }
 }

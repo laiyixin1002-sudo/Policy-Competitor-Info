@@ -67,6 +67,30 @@
           "bid_opening_time": "预计2026年08月"
         }
       ]
+    },
+    {
+      "id": "verified-hospital-pharmacy-information-maintenance",
+      "name": "中国政府采购网医院药学信息化维保公告",
+      "kind": "verified_items",
+      "official_domain": "www.ccgp.gov.cn",
+      "required": true,
+      "items": [
+        {
+          "title": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
+          "source_title": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
+          "date": "2026-07-06",
+          "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm",
+          "source_name": "中国政府采购网",
+          "official_domain": "www.ccgp.gov.cn",
+          "region": "内蒙古·锡林郭勒盟",
+          "source_type": "中标（成交）结果公告",
+          "purchaser": "锡林郭勒盟安神医院",
+          "system_scope": "HIS、合理用药、处方点评、门诊叫号、线上挂号缴费、临床路径、院感、传染病上报等全院智慧医疗信息化体系维保",
+          "budget": "未披露",
+          "registration_deadline": "以原公告为准",
+          "bid_opening_time": "以原公告为准"
+        }
+      ]
     }
   ]
 }
