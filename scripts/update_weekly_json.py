@@ -1,0 +1,158 @@
+"""Update weekly_report.json with newly verified facts."""
+import json
+from pathlib import Path
+from datetime import datetime
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data" / "weekly_report.json"
+
+data = json.loads(DATA.read_text(encoding="utf-8"))
+
+# Update metadata
+data["generated_at"] = "2026-08-21T11:12:00+08:00"
+data["summary"] = "本期累计新增入库11条药学信息化项目与3条政策动态。本次08-21更新新增5条事实：三部门基本药物优先配备使用通知（国卫药政发〔2026〕20号）、广水全市审方中心中标179.98万元（美康品牌）、运城盐湖区中心药房招标102.65万元、贵州医科大三附院PASS维保3.5万元/年（三次采购）、华润滨湖双鹤美康维保。"
+
+# Update facts list with new facts
+new_facts = [
+    {
+        "id": "F-20260819-004",
+        "category": "政策动态",
+        "title": "三部门部署基本药物优先配备使用：信息系统须标识提示",
+        "region": "全国",
+        "institution": "国家卫生健康委、国家中医药局、国家疾控局",
+        "project_name": "关于做好基本药物优先配备使用工作的通知",
+        "scope": "信息系统基本药物标识、处方审核点评重点纳入、用药目录动态管理",
+        "budget": "未披露",
+        "deadline": "2026-08-19成文",
+        "bid_opening": "未披露",
+        "source": "河北省卫健委官网（转发全文）",
+        "source_url": "https://wsjkw.hebei.gov.cn/zcfg2/421156.jhtml",
+        "publish_date": "2026-08-19",
+        "verification_status": "ok",
+        "insight": "基本药物信息系统标识、处方审核点评重点纳入、用药目录动态管理成为刚性要求，直接拉动HIS/合理用药系统的目录管理与审方规则升级需求。",
+        "tags": ["基本药物", "信息系统标识", "处方审核点评", "医联体用药目录"]
+    },
+    {
+        "id": "F-20260819-005",
+        "category": "药学信息化项目",
+        "title": "广水市第一人民医院全市审方中心系统购置项目",
+        "region": "湖北·广水",
+        "institution": "广水市第一人民医院",
+        "project_name": "广水市第一人民医院全市审方中心系统购置项目",
+        "scope": "全市审方中心系统、市直医疗机构及卫生院审方信息化",
+        "budget": "190万元",
+        "deadline": "2026-08-19中标",
+        "bid_opening": "已开标",
+        "source": "中国政府采购网",
+        "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27163737.htm",
+        "publish_date": "2026-08-19",
+        "verification_status": "ok",
+        "insight": "全市审方中心覆盖市直+卫生院，区域审方平台型项目体量可观；美康以品牌方切入，需关注其区域审方方案的定价与交付模式。",
+        "tags": ["审方中心", "全市覆盖", "美康品牌", "处方审核"],
+        "winner": "湖北乾讯网络科技有限公司",
+        "winning_amount": "179.98万元",
+        "brand": "四川美康"
+    },
+    {
+        "id": "F-20260820-001",
+        "category": "药学信息化项目",
+        "title": "运城市盐湖区医疗集团中心药房信息系统采购项目（二次）",
+        "region": "山西·运城",
+        "institution": "运城市盐湖区医疗集团",
+        "project_name": "运城市盐湖区医疗集团中心药房信息系统采购项目（二次）",
+        "scope": "医疗集团中心药房信息系统",
+        "budget": "102.65万元",
+        "deadline": "2026-08-28（文件获取截止）",
+        "bid_opening": "2026-09-10 09:00",
+        "source": "中国政府采购网",
+        "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260820_27176882.htm",
+        "publish_date": "2026-08-20",
+        "verification_status": "ok",
+        "insight": "二次招标项目需关注首次流标原因；医疗集团中心药房系统强调统一药品目录管理与上下级用药衔接能力。",
+        "tags": ["中心药房", "医疗集团", "二次招标", "中小企业"]
+    },
+    {
+        "id": "F-20260820-002",
+        "category": "药学信息化项目",
+        "title": "贵州医科大学第三附属医院合理用药+PASS临床药学管理系统维保（三次）",
+        "region": "贵州·都匀",
+        "institution": "贵州医科大学第三附属医院",
+        "project_name": "合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（三次）",
+        "scope": "合理用药监测系统V4.3、PASS临床药学管理系统V.30维保",
+        "budget": "3.5万元/年（服务期3年）",
+        "deadline": "2026-08-24",
+        "bid_opening": "2026-08-25 10:00",
+        "source": "贵州医科大学第三附属医院官网",
+        "source_url": "https://www.sfy-gmc.com/listitem.php?cid=4&sid=31&id=8074",
+        "publish_date": "2026-08-20",
+        "verification_status": "ok",
+        "insight": "三次采购且此前废标，说明维保供应商衔接存在问题；可关注PASS系统维保市场的替代机会。",
+        "tags": ["合理用药", "PASS临床药学", "系统维保", "三次采购"]
+    },
+    {
+        "id": "F-20260812-001",
+        "category": "药学信息化项目",
+        "title": "武汉滨湖双鹤药业2026年合理用药系统维保采购项目",
+        "region": "湖北·武汉",
+        "institution": "武汉滨湖双鹤药业有限责任公司",
+        "project_name": "滨湖双鹤2026年合理用药系统维保采购项目",
+        "scope": "合理用药系统维保",
+        "budget": "未披露",
+        "deadline": "以原公告为准",
+        "bid_opening": "以原公告为准",
+        "source": "华润集团守正电子招标平台",
+        "source_url": "http://szecp.crc.com.cn/zbxx/006002/006002003/20260812/SHCJGG202608120006.html",
+        "publish_date": "2026-08-12",
+        "verification_status": "ok",
+        "insight": "美康在华润体系内持续拓展维保客户，单源直接采购模式说明其合理用药系统在华润系医院有较高存量渗透率。",
+        "tags": ["合理用药", "系统维保", "单源采购", "华润体系"],
+        "winner": "四川美康医药软件研究开发股份有限公司"
+    }
+]
+
+# Replace facts list
+data["facts"] = new_facts
+
+# Update competitor info
+data["competitors"] = {
+    "medicom": {
+        "summary": "美康本周三线并进：存量客户以「软件著作权 + 单一来源」锁定维保续约（成都七院 8.7 万元、华润滨湖双鹤），同时以品牌方身份中标广水全市审方中心系统 179.98 万元；药品目录智能匹配专利公开，知识库映射自动化与 AI 布局持续加码。",
+        "facts": ["F-20260819-005", "F-20260812-001"]
+    },
+    "yiyao": {
+        "summary": "逸曜本周两中标——绍兴市人民医院合理用药及临床药师系统维保 26.7 万元（评审 95.4 分）、南京鼓楼医院临床药物警戒智慧平台 41.8 万元，在合理用药维保与药物警戒平台两条线持续扩张。",
+        "facts": []
+    }
+}
+
+# Update actions
+data["actions"] = [
+    {
+        "priority": "P0",
+        "title": "对齐基本药物信息系统标识与审方点评要求",
+        "detail": "国卫药政发〔2026〕20号要求信息系统对基本药物标识提示优先使用、处方审核点评纳入基本药物优先使用情况。立即梳理我方合理用药系统的基药标识、审方规则与点评模板能力，形成合规升级方案。"
+    },
+    {
+        "priority": "P0",
+        "title": "跟进县域医共体「审方中心 + 中心药房」打包机会",
+        "detail": "郴州北湖项目 140 万元已于 08-18 开标，跟踪结果公告与采购人动态；息烽项目 269 万元 08-25 开标，仍在窗口期。运城盐湖区中心药房 102.65 万元 09-10 开标。三地均为医共体/医疗集团一体化打包。"
+    },
+    {
+        "priority": "P1",
+        "title": "应对美康品牌方+维保双线扩张",
+        "detail": "美康本周三线并进：成都七院维保锁定、广水审方中心品牌方中标 179.98 万元、华润滨湖双鹤维保承接。在区域审方与维保市场均形成攻势，需重点准备差异化竞争方案。"
+    },
+    {
+        "priority": "P1",
+        "title": "提前布局药物警戒平台细分",
+        "detail": "南京鼓楼医院案例确认 ADR 监测智慧平台已成医院级独立采购标的（预算 50 万元档），逸曜已入局。建议梳理我方不良反应监测、智能上报与预警能力，形成可投标方案。"
+    },
+    {
+        "priority": "P2",
+        "title": "产品话术对齐药学服务价格新政",
+        "detail": "重庆 12 项药学服务价格项目 09-10 执行，居家药学服务费、药学门诊诊查费落地。面向西南区域客户，将居家药学服务记录、药学门诊工作站等模块价值与收费项目直接对应。"
+    }
+]
+
+DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+print("weekly_report.json updated successfully")
