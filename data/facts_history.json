@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "dedupe_rule": "sha256(title|date|domain)",
-  "last_collection_at": "2026-08-21 11:12 +0800",
+  "last_collection_at": "2026-08-22 13:53 +0800",
   "facts": [
     {
       "category": "药学信息化项目 · 湖北·广水",
@@ -20,12 +20,7 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27163737.htm",
       "url_status": "ok",
-      "system_modules": [
-        "审方中心",
-        "处方审核",
-        "药学信息化",
-        "合理用药"
-      ],
+      "system_modules": ["审方中心", "处方审核", "药学信息化", "合理用药"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "d4a6ee897fb9b3c9963dfa97dc0afbe51ac6d76ddc7835842ddcecc8bad957a4"
     },
@@ -46,12 +41,7 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260820_27176882.htm",
       "url_status": "ok",
-      "system_modules": [
-        "中心药房",
-        "药房信息化",
-        "药学信息化",
-        "HIS接口"
-      ],
+      "system_modules": ["中心药房", "药房信息化", "药学信息化", "HIS接口"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "9c0d4d2119d9d887391a5b93708564370d65f8b8f9b92d56664a8d94c6b13d72"
     },
@@ -72,12 +62,7 @@
       "source_domain": "www.sfy-gmc.com",
       "source_url": "https://www.sfy-gmc.com/listitem.php?cid=4&sid=31&id=8074",
       "url_status": "ok",
-      "system_modules": [
-        "合理用药",
-        "临床药学",
-        "药学信息化",
-        "系统维保"
-      ],
+      "system_modules": ["合理用药", "临床药学", "药学信息化", "系统维保"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "ff7b49bad1c9247e5cd481981795e886399eec3aaf56b9839b9abe3c5ee7ae26"
     },
@@ -98,12 +83,7 @@
       "source_domain": "wsjkw.hebei.gov.cn",
       "source_url": "https://wsjkw.hebei.gov.cn/zcfg2/421156.jhtml",
       "url_status": "ok",
-      "system_modules": [
-        "基本药物标识",
-        "处方审核",
-        "药学信息化",
-        "合理用药"
-      ],
+      "system_modules": ["基本药物标识", "处方审核", "药学信息化", "合理用药"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "bf764c4bd32dd2c2c50b3d8a2fb84ebc051e361faef66e216aef5822600e31a2"
     },
@@ -124,11 +104,7 @@
       "source_domain": "szecp.crc.com.cn",
       "source_url": "http://szecp.crc.com.cn/zbxx/006002/006002003/20260812/SHCJGG202608120006.html",
       "url_status": "ok",
-      "system_modules": [
-        "合理用药",
-        "药学信息化",
-        "系统维保"
-      ],
+      "system_modules": ["合理用药", "药学信息化", "系统维保"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "06fcb0e829d19c25c30637e100592e9057bf9e8e9f62df7e678f2d06a6a24ae4"
     },
@@ -149,12 +125,7 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202607/t20260720_26965406.htm",
       "url_status": "ok",
-      "system_modules": [
-        "药学信息化",
-        "合理用药",
-        "药学服务",
-        "HIS接口"
-      ],
+      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "3cdeff1163bd685a90ae5d8fb59f079bb6d242b2c79c50b267b7ac89628c15b2"
     },
@@ -175,12 +146,7 @@
       "source_domain": "www.sysu5.cn",
       "source_url": "https://www.sysu5.cn/biddingment/announcement/14131",
       "url_status": "ok",
-      "system_modules": [
-        "药学信息化",
-        "合理用药",
-        "药学服务",
-        "HIS接口"
-      ],
+      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "9055a27bd93dbcddd36d9bafe4e32896f34e196b829900ee78e210d481d3ec8b"
     },
@@ -201,14 +167,114 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm",
       "url_status": "ok",
-      "system_modules": [
-        "药学信息化",
-        "合理用药",
-        "药学服务",
-        "HIS接口"
-      ],
+      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "cb610967fdc6a26b5b3a678782c1ed4ab0b71768dac23908e6e5c64388450b40"
+    },
+    {
+      "category": "药学信息化项目 · 辽宁·盘锦",
+      "title": "药学信息化系统（集采药品智能管控系统、住院药学监护系统）（第三次）结果公告",
+      "source_title": "药学信息化系统（集采药品智能管控系统、住院药学监护系统）（第三次）结果公告",
+      "fact_summary": "盘锦市中心医院药学信息化系统（集采药品智能管控系统、住院药学监护系统）（第三次）结果公告。沈阳芳萱商贸有限公司以54.5万元中标（评审91.92分），品牌为美康。产品包括美康智慧药学服务平台V1.0子系统（PASS住院药学监护系统V1.1，单价32.5万元）和PASS集采药品智能管控系统V1.0（单价22万元）。",
+      "publisher": "中国政府采购网",
+      "region": "辽宁·盘锦",
+      "date": "2026-08-13",
+      "source_type": "中标（成交）结果公告",
+      "system_scope": "住院药学监护系统、集采药品智能管控系统",
+      "purchaser": "盘锦市中心医院",
+      "budget": "58万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260813_27125615.htm",
+      "url_status": "ok",
+      "system_modules": ["住院药学监护", "集采药品管控", "药学信息化", "美康产品"],
+      "sales_insight": "美康以代理商（沈阳芳萱）中标盘锦药学信息化系统，覆盖住院药学监护与集采管控两条产品线，评审91.92分。竞品在药学信息化新建项目中的产品组合和定价策略值得重点关注。",
+      "dedupe_fingerprint": "4ed98ae9b82554d0ac736796ea736be6857744c58daa313bda9281f0607a7369"
+    },
+    {
+      "category": "药学信息化项目 · 吉林·吉林市",
+      "title": "吉林医药学院附属医院药师审方干预系统公开招标公告",
+      "source_title": "吉林医药学院附属医院药师审方干预系统公开招标公告",
+      "fact_summary": "吉林医药学院附属医院就药师审方干预系统公开招标，预算及最高限价71万元，合同签订后60日历天内完成供货、安装及调试。2026-08-19至2026-08-26获取招标文件，2026-09-21 09:00开标。全流程电子化项目，通过政采云平台在线投标。",
+      "publisher": "中国政府采购网",
+      "region": "吉林·吉林市",
+      "date": "2026-08-19",
+      "source_type": "公开招标",
+      "system_scope": "药师审方干预系统",
+      "purchaser": "吉林医药学院附属医院",
+      "budget": "71万元",
+      "registration_deadline": "2026-08-26",
+      "bid_opening_time": "2026-09-21 09:00",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260819_27165550.htm",
+      "url_status": "ok",
+      "system_modules": ["审方干预", "处方审核", "药学信息化"],
+      "sales_insight": "医学院附属医院采购药师审方干预系统，体现临床药学信息化在教学医院的需求。71万元体量适中，关注竞品定价与功能覆盖。",
+      "dedupe_fingerprint": "5b89c6d6457e4adefc64353bd413b07531f7f39bf39f7e571048dbc7de987560"
+    },
+    {
+      "category": "药学信息化项目 · 河北·张家口·沽源",
+      "title": "沽源县人民医院紧密型医共体审方中心建设项目(二次)公开招标公告",
+      "source_title": "沽源县人民医院紧密型医共体审方中心建设项目(二次)公开招标公告",
+      "fact_summary": "沽源县人民医院紧密型医共体审方中心建设项目（二次）公开招标，预算120万元，专门面向中小企业采购。建设区域审方中心平台，实现紧密型县域医共体内门诊处方、住院医嘱的前置审方服务，开展处方点评和用药指导，促进药师资源共享及药学服务下沉。合同签订后40个日历日内上线。2026-09-08 08:45开标。",
+      "publisher": "河北省公共资源交易服务平台",
+      "region": "河北·张家口·沽源",
+      "date": "2026-08-14",
+      "source_type": "公开招标",
+      "system_scope": "区域审方中心平台、前置审方、处方点评、药师资源共享",
+      "purchaser": "沽源县人民医院",
+      "budget": "120万元",
+      "registration_deadline": "2026-08-21",
+      "bid_opening_time": "2026-09-08 08:45",
+      "source_domain": "ssl.hebpr.cn",
+      "source_url": "https://ssl.hebpr.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260814/bbc4d9db-d6ae-418c-a20e-b6223b3ffca5.html",
+      "url_status": "ok",
+      "system_modules": ["审方中心", "前置审方", "处方点评", "医共体", "药学信息化"],
+      "sales_insight": "县域医共体审方中心二次招标，120万元体量。需求覆盖前置审方+处方点评+药师资源共享，体现基层药学信息化的标准化需求。",
+      "dedupe_fingerprint": "08cbc44ef5d60ea689c4a7f6c1c8a8cd1851edda51c537e7461e20cc7351d4f7"
+    },
+    {
+      "category": "药学信息化项目 · 青海·海南州",
+      "title": "海南州中心（云）药房及远程审方系统建设项目公开招标公告",
+      "source_title": "海南州中心（云）药房及远程审方系统建设项目公开招标公告",
+      "fact_summary": "海南藏族自治州卫生健康委员会就海南州中心（云）药房及远程审方系统建设项目公开招标，预算365万元。项目通过政采云平台在线获取招标文件，2026-09-14 10:00开标。具体功能清单详见招标文件。",
+      "publisher": "青海省公共资源交易网",
+      "region": "青海·海南州",
+      "date": "2026-08-21",
+      "source_type": "公开招标",
+      "system_scope": "中心（云）药房、远程审方系统",
+      "purchaser": "海南藏族自治州卫生健康委员会",
+      "budget": "365万元",
+      "registration_deadline": "2026-08-28",
+      "bid_opening_time": "2026-09-14 10:00",
+      "source_domain": "www.qhggzyjy.gov.cn",
+      "source_url": "https://www.qhggzyjy.gov.cn/hain/jyxx/001002/001002001/20260821/2408780452643526.html",
+      "url_status": "ok",
+      "system_modules": ["中心药房", "云药房", "远程审方", "药学信息化"],
+      "sales_insight": "州级卫健委采购中心云药房+远程审方系统，365万元体量，体现青海区域药学信息化的集中部署需求。远程审方能力成为新增长点。",
+      "dedupe_fingerprint": "a7edd75ef3c86e2af36b75285874684c768bc18c19e342b8434748c32da20111"
+    },
+    {
+      "category": "药学信息化项目 · 四川·眉山",
+      "title": "西南医科大学附属第四医院药学管理平台采购项目招标公告",
+      "source_title": "西南医科大学附属第四医院药学管理平台采购项目招标公告",
+      "fact_summary": "西南医科大学附属第四医院就药学管理平台采购项目公开招标，预算60万元（最高限价60万元）。合同签订后84日内完成安装调试并验收合格。2026-09-03 10:00开标。不接受联合体投标。",
+      "publisher": "中国政府采购网",
+      "region": "四川·眉山",
+      "date": "2026-08-12",
+      "source_type": "公开招标",
+      "system_scope": "药学管理平台",
+      "purchaser": "西南医科大学附属第四医院",
+      "budget": "60万元",
+      "registration_deadline": "2026-08-19",
+      "bid_opening_time": "2026-09-03 10:00",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260812_27121966.htm",
+      "url_status": "ok",
+      "system_modules": ["药学管理平台", "药学信息化"],
+      "sales_insight": "医学院附属医院采购药学管理平台，60万元体量。药学管理平台为综合性药学信息化系统，关注竞品在该细分市场的布局。",
+      "dedupe_fingerprint": "c85e84ae85ac47ddaf0fc6108ca06c9354a6b4c4d2a7d4661144f721576f6168"
     }
   ]
 }

@@ -1,238 +1,370 @@
 {
   "report_title": "药学政策与竞品动向周报",
-  "period_start": "2026-08-10",
-  "period_end": "2026-08-17",
-  "generated_at": "2026-08-21T11:12:00+08:00",
-  "collection_note": "本期统计区间 2026-08-10 至 2026-08-17；内容由官方来源采集，回溯 60 天，新增入库 1 条药学信息化项目，已屏蔽纯药品采购内容。",
+  "period_start": "2026-08-17",
+  "period_end": "2026-08-24",
+  "generated_at": "2026-08-22T13:53:00+08:00",
+  "collection_note": "本期统计区间 2026-08-17 至 2026-08-24；内容由官方来源采集，回溯 60 天，新入库 5 条药学信息化项目事实，已屏蔽纯药品采购内容。",
   "regional_procurements": [
     {
-      "region": "辽宁·盘锦",
+      "region": "青海·海南州",
       "stage": "公开招标",
-      "purchaser": "盘锦市中心医院",
-      "project_name": "药学信息化系统（住院药学监护与院内管控）第三次招标公告",
-      "products": "住院药学监护、合理用药审查、药物重整、药学记录、HIS接口及院内管控",
-      "budget": "58万元",
-      "registration_deadline": "2026-07-28",
-      "bid_opening_time": "2026-08-12 09:30",
+      "purchaser": "海南藏族自治州卫生健康委员会",
+      "project_name": "海南州中心（云）药房及远程审方系统建设项目",
+      "products": "中心云药房、远程审方系统",
+      "budget": "365万元",
+      "registration_deadline": "2026-08-28",
+      "bid_opening_time": "2026-09-14 10:00",
+      "source_name": "青海省公共资源交易网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.qhggzyjy.gov.cn",
+      "source_url": "https://www.qhggzyjy.gov.cn/hain/jyxx/001002/001002001/20260821/2408780452643526.html",
+      "is_new": true
+    },
+    {
+      "region": "贵州·息烽",
+      "stage": "公开招标",
+      "purchaser": "息烽县人民医院",
+      "project_name": "县域医共体中心（云）药房和集中（云）审方中心建设项目",
+      "products": "云药房、云审方中心",
+      "budget": "269万元",
+      "registration_deadline": "2026-08-24",
+      "bid_opening_time": "2026-08-25 09:30",
       "source_name": "中国政府采购网",
       "source_level": "官方项目公告",
       "source_domain": "www.ccgp.gov.cn",
-      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202607/t20260720_26965406.htm"
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260804_27068957.htm"
     },
     {
-      "region": "广东·珠海",
-      "stage": "政府采购意向",
-      "purchaser": "中山大学附属第五医院",
-      "project_name": "中山五院HIS系统维保（含药学管理模块）采购意向",
-      "products": "HIS维保、药学管理、医保结算、物价管控、接口运维与流程优化",
-      "budget": "220万元",
-      "registration_deadline": "以正式采购公告为准",
-      "bid_opening_time": "预计2026年08月",
-      "source_name": "中山大学附属第五医院",
+      "region": "河北·沽源",
+      "stage": "公开招标（二次）",
+      "purchaser": "沽源县人民医院",
+      "project_name": "紧密型医共体审方中心建设项目（二次）",
+      "products": "区域审方中心、前置审方、处方点评",
+      "budget": "120万元",
+      "registration_deadline": "2026-08-21",
+      "bid_opening_time": "2026-09-08 08:45",
+      "source_name": "河北省公共资源交易平台",
       "source_level": "官方项目公告",
-      "source_domain": "www.sysu5.cn",
-      "source_url": "https://www.sysu5.cn/biddingment/announcement/14131"
+      "source_domain": "ssl.hebpr.cn",
+      "source_url": "https://ssl.hebpr.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260814/bbc4d9db-d6ae-418c-a20e-b6223b3ffca5.html",
+      "is_new": true
     },
     {
-      "region": "内蒙古·锡林郭勒盟",
-      "stage": "中标（成交）结果公告",
-      "purchaser": "锡林郭勒盟安神医院",
-      "project_name": "锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告",
-      "products": "HIS、合理用药、处方点评、门诊叫号、线上挂号缴费、临床路径、院感、传染病上报等全院智慧医疗信息化体系维保",
-      "budget": "未披露",
-      "registration_deadline": "以原公告为准",
-      "bid_opening_time": "以原公告为准",
+      "region": "湖南·郴州",
+      "stage": "公开招标",
+      "purchaser": "郴州市第三人民医院",
+      "project_name": "北湖区紧密型区域医共体集中审方中心和中心药房建设",
+      "products": "区域集中审方中心、中心药房",
+      "budget": "140万元",
+      "registration_deadline": "2026-07-31",
+      "bid_opening_time": "2026-08-18 09:30",
       "source_name": "中国政府采购网",
       "source_level": "官方项目公告",
       "source_domain": "www.ccgp.gov.cn",
-      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm"
-    }
-  ],
-  "highlights": [
-    "本次成功抓取 3 个官方来源，识别 1 条此前未入库的药学信息化项目动态。",
-    "本期只保留药学信息化项目；采购标的、接口和执行边界仍需核验原文附件。",
-    "当前重点方向：住院药学监护、合理用药审查、药物重整、药学记录、HIS接口与药学管理模块。",
-    "2026-07-20：药学信息化系统（住院药学监护与院内管控）第三次招标公告",
-    "2026-07-13：中山五院HIS系统维保（含药学管理模块）采购意向",
-    "2026-07-06：锡林郭勒盟安神医院信息系统维保服务中标（成交）结果公告"
-  ],
-  "facts": [
-    {
-      "id": "F-20260819-004",
-      "category": "政策动态",
-      "title": "三部门部署基本药物优先配备使用：信息系统须标识提示",
-      "region": "全国",
-      "institution": "国家卫生健康委、国家中医药局、国家疾控局",
-      "project_name": "关于做好基本药物优先配备使用工作的通知",
-      "scope": "信息系统基本药物标识、处方审核点评重点纳入、用药目录动态管理",
-      "budget": "未披露",
-      "deadline": "2026-08-19成文",
-      "bid_opening": "未披露",
-      "source": "河北省卫健委官网（转发全文）",
-      "source_url": "https://wsjkw.hebei.gov.cn/zcfg2/421156.jhtml",
-      "publish_date": "2026-08-19",
-      "verification_status": "ok",
-      "insight": "基本药物信息系统标识、处方审核点评重点纳入、用药目录动态管理成为刚性要求，直接拉动HIS/合理用药系统的目录管理与审方规则升级需求。",
-      "tags": [
-        "基本药物",
-        "信息系统标识",
-        "处方审核点评",
-        "医联体用药目录"
-      ]
+      "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260817_27142884.htm"
     },
     {
-      "id": "F-20260819-005",
-      "category": "药学信息化项目",
-      "title": "广水市第一人民医院全市审方中心系统购置项目",
       "region": "湖北·广水",
-      "institution": "广水市第一人民医院",
-      "project_name": "广水市第一人民医院全市审方中心系统购置项目",
-      "scope": "全市审方中心系统、市直医疗机构及卫生院审方信息化",
-      "budget": "190万元",
-      "deadline": "2026-08-19中标",
-      "bid_opening": "已开标",
-      "source": "中国政府采购网",
+      "stage": "中标结果",
+      "purchaser": "广水市第一人民医院",
+      "project_name": "全市审方中心系统购置（含所有市直医疗机构、卫生院）",
+      "products": "全市审方中心、审方信息化",
+      "budget": "中标179.98万",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27163737.htm",
-      "publish_date": "2026-08-19",
-      "verification_status": "ok",
-      "insight": "全市审方中心覆盖市直+卫生院，区域审方平台型项目体量可观；美康以品牌方切入，需关注其区域审方方案的定价与交付模式。",
-      "tags": [
-        "审方中心",
-        "全市覆盖",
-        "美康品牌",
-        "处方审核"
-      ],
       "winner": "湖北乾讯网络科技有限公司",
-      "winning_amount": "179.98万元",
       "brand": "四川美康"
     },
     {
-      "id": "F-20260820-001",
-      "category": "药学信息化项目",
-      "title": "运城市盐湖区医疗集团中心药房信息系统采购项目（二次）",
       "region": "山西·运城",
-      "institution": "运城市盐湖区医疗集团",
-      "project_name": "运城市盐湖区医疗集团中心药房信息系统采购项目（二次）",
-      "scope": "医疗集团中心药房信息系统",
+      "stage": "公开招标（二次）",
+      "purchaser": "运城市盐湖区医疗集团",
+      "project_name": "中心药房信息系统采购（二次）",
+      "products": "医疗集团中心药房",
       "budget": "102.65万元",
-      "deadline": "2026-08-28（文件获取截止）",
-      "bid_opening": "2026-09-10 09:00",
-      "source": "中国政府采购网",
-      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260820_27176882.htm",
-      "publish_date": "2026-08-20",
-      "verification_status": "ok",
-      "insight": "二次招标项目需关注首次流标原因；医疗集团中心药房系统强调统一药品目录管理与上下级用药衔接能力。",
-      "tags": [
-        "中心药房",
-        "医疗集团",
-        "二次招标",
-        "中小企业"
-      ]
+      "registration_deadline": "2026-08-28",
+      "bid_opening_time": "2026-09-10 09:00",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260820_27176882.htm"
     },
     {
-      "id": "F-20260820-002",
-      "category": "药学信息化项目",
-      "title": "贵州医科大学第三附属医院合理用药+PASS临床药学管理系统维保（三次）",
+      "region": "广东·深圳",
+      "stage": "公开招标（第二次）",
+      "purchaser": "龙岗中心医院",
+      "project_name": "社康合理用药前置审方系统",
+      "products": "社康前置审方",
+      "budget": "49.98万元",
+      "registration_deadline": "2026-08-20",
+      "bid_opening_time": "2026-08-21 09:30",
+      "source_name": "深圳交易集团",
+      "source_level": "官方项目公告",
+      "source_domain": "szexgrp.com",
+      "source_url": "https://szexgrp.com/jyfw/details.html?contentId=20575029&crumb=zfcg"
+    },
+    {
+      "region": "吉林·吉林市",
+      "stage": "公开招标",
+      "purchaser": "吉林医药学院附属医院",
+      "project_name": "药师审方干预系统",
+      "products": "药师审方干预",
+      "budget": "71万元",
+      "registration_deadline": "2026-08-26",
+      "bid_opening_time": "2026-09-21 09:00",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260819_27165550.htm",
+      "is_new": true
+    },
+    {
+      "region": "四川·眉山",
+      "stage": "公开招标",
+      "purchaser": "西南医科大学附属第四医院",
+      "project_name": "药学管理平台采购",
+      "products": "药学管理平台",
+      "budget": "60万元",
+      "registration_deadline": "2026-08-19",
+      "bid_opening_time": "2026-09-03 10:00",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260812_27121966.htm",
+      "is_new": true
+    },
+    {
+      "region": "辽宁·盘锦",
+      "stage": "中标结果",
+      "purchaser": "盘锦市中心医院",
+      "project_name": "药学信息化系统（集采药品智能管控+住院药学监护）三次",
+      "products": "住院药学监护、集采药品管控",
+      "budget": "中标54.5万",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260813_27125615.htm",
+      "winner": "沈阳芳萱商贸有限公司",
+      "brand": "四川美康",
+      "is_new": true
+    },
+    {
       "region": "贵州·都匀",
-      "institution": "贵州医科大学第三附属医院",
-      "project_name": "合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（三次）",
-      "scope": "合理用药监测系统V4.3、PASS临床药学管理系统V.30维保",
-      "budget": "3.5万元/年（服务期3年）",
-      "deadline": "2026-08-24",
-      "bid_opening": "2026-08-25 10:00",
-      "source": "贵州医科大学第三附属医院官网",
-      "source_url": "https://www.sfy-gmc.com/listitem.php?cid=4&sid=31&id=8074",
-      "publish_date": "2026-08-20",
-      "verification_status": "ok",
-      "insight": "三次采购且此前废标，说明维保供应商衔接存在问题；可关注PASS系统维保市场的替代机会。",
-      "tags": [
-        "合理用药",
-        "PASS临床药学",
-        "系统维保",
-        "三次采购"
-      ]
+      "stage": "院内谈判（三次）",
+      "purchaser": "贵州医科大学第三附属医院",
+      "project_name": "合理用药监测系统+PASS临床药学管理系统维保",
+      "products": "合理用药、PASS临床药学维保",
+      "budget": "3.5万/年",
+      "registration_deadline": "2026-08-24",
+      "bid_opening_time": "2026-08-25 10:00",
+      "source_name": "医院官网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.sfy-gmc.com",
+      "source_url": "https://www.sfy-gmc.com/listitem.php?cid=4&sid=31&id=8074"
     },
     {
-      "id": "F-20260812-001",
-      "category": "药学信息化项目",
-      "title": "武汉滨湖双鹤药业2026年合理用药系统维保采购项目",
       "region": "湖北·武汉",
-      "institution": "武汉滨湖双鹤药业有限责任公司",
-      "project_name": "滨湖双鹤2026年合理用药系统维保采购项目",
-      "scope": "合理用药系统维保",
+      "stage": "单源直接采购",
+      "purchaser": "武汉滨湖双鹤药业",
+      "project_name": "2026年合理用药系统维保",
+      "products": "合理用药系统维保",
       "budget": "未披露",
-      "deadline": "以原公告为准",
-      "bid_opening": "以原公告为准",
-      "source": "华润集团守正电子招标平台",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "华润守正平台",
+      "source_level": "官方项目公告",
+      "source_domain": "szecp.crc.com.cn",
       "source_url": "http://szecp.crc.com.cn/zbxx/006002/006002003/20260812/SHCJGG202608120006.html",
+      "winner": "四川美康医药软件研究开发股份有限公司"
+    },
+    {
+      "region": "四川·成都",
+      "stage": "中标结果",
+      "purchaser": "成都市第七人民医院",
+      "project_name": "合理用药软件维保（二次）",
+      "products": "合理用药+PASS+审方干预维保",
+      "budget": "中标8.7万",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202608/t20260814_27137308.htm",
+      "winner": "四川美康医药软件研究开发股份有限公司"
+    },
+    {
+      "region": "浙江·绍兴",
+      "stage": "中标结果",
+      "purchaser": "绍兴市人民医院",
+      "project_name": "合理用药系统及临床药师系统维保",
+      "products": "合理用药、临床药师系统维保",
+      "budget": "中标26.7万",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260811_27113302.htm",
+      "winner": "杭州逸曜信息技术有限公司"
+    },
+    {
+      "region": "江苏·南京",
+      "stage": "中标结果",
+      "purchaser": "南京鼓楼医院",
+      "project_name": "临床药物警戒智慧平台",
+      "products": "ADR监测、智能上报、风险预警",
+      "budget": "中标41.8万",
+      "registration_deadline": "已开标",
+      "bid_opening_time": "已开标",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260814_27132116.htm",
+      "winner": "杭州逸曜信息技术有限公司"
+    }
+  ],
+  "highlights": [
+    "本期新入库 5 条药学信息化项目：吉林审方干预71万、沽源医共体审方中心120万、海南州云药房+远程审方365万、西南医科大药学管理平台60万、盘锦药学信息化美康中标54.5万。",
+    "政策：三部门（国卫药政发〔2026〕20号）要求信息系统基本药物标识提示优先使用，处方审核点评纳入基本药物优先使用情况。",
+    "盘锦药学信息化系统出结果：美康以代理商中标54.5万，覆盖PASS住院药学监护+集采药品管控双产品线。",
+    "县域医共体审方中心打包持续活跃：沽源120万（二次）、海南州365万（云药房+远程审方）、郴州北湖140万（08-18开标）、贵州息烽269万（08-25开标）。",
+    "运城中心药房102.65万二次招标仍在窗口（09-10开标）。",
+    "深圳龙岗社康前置审方49.98万已于08-21开标。"
+  ],
+  "facts": [
+    {
+      "id": "F-20260822-001",
+      "category": "药学信息化项目",
+      "title": "盘锦药学信息化系统（集采药品管控+住院药学监护）美康中标54.5万",
+      "region": "辽宁·盘锦",
+      "institution": "盘锦市中心医院",
+      "project_name": "药学信息化系统（集采药品智能管控系统、住院药学监护系统）（第三次）结果公告",
+      "scope": "住院药学监护系统、集采药品智能管控系统",
+      "budget": "54.5万元",
+      "deadline": "已开标",
+      "bid_opening": "已开标",
+      "source": "中国政府采购网",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260813_27125615.htm",
+      "publish_date": "2026-08-13",
+      "verification_status": "ok",
+      "insight": "美康以代理商（沈阳芳萱）中标盘锦药学信息化系统，覆盖住院药学监护与集采管控两条产品线，评审91.92分。",
+      "tags": ["美康中标", "住院药学监护", "集采管控", "结果公告"],
+      "winner": "沈阳芳萱商贸有限公司",
+      "brand": "四川美康"
+    },
+    {
+      "id": "F-20260822-002",
+      "category": "药学信息化项目",
+      "title": "吉林医药学院附属医院药师审方干预系统71万招标",
+      "region": "吉林·吉林市",
+      "institution": "吉林医药学院附属医院",
+      "project_name": "吉林医药学院附属医院药师审方干预系统",
+      "scope": "药师审方干预系统",
+      "budget": "71万元",
+      "deadline": "2026-08-26（文件获取截止）",
+      "bid_opening": "2026-09-21 09:00",
+      "source": "中国政府采购网",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260819_27165550.htm",
+      "publish_date": "2026-08-19",
+      "verification_status": "ok",
+      "insight": "医学院附属医院采购药师审方干预系统，71万元体量适中，关注竞品定价与功能覆盖。",
+      "tags": ["审方干预", "处方审核", "医学院附属"]
+    },
+    {
+      "id": "F-20260822-003",
+      "category": "药学信息化项目",
+      "title": "沽源县紧密型医共体审方中心120万招标（二次）",
+      "region": "河北·张家口·沽源",
+      "institution": "沽源县人民医院",
+      "project_name": "沽源县人民医院紧密型医共体审方中心建设项目（二次）",
+      "scope": "区域审方中心、前置审方、处方点评、药师资源共享",
+      "budget": "120万元",
+      "deadline": "2026-08-21",
+      "bid_opening": "2026-09-08 08:45",
+      "source": "河北省公共资源交易平台",
+      "source_url": "https://ssl.hebpr.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260814/bbc4d9db-d6ae-418c-a20e-b6223b3ffca5.html",
+      "publish_date": "2026-08-14",
+      "verification_status": "ok",
+      "insight": "县域医共体审方中心二次招标，120万元体量。需求覆盖前置审方+处方点评+药师资源共享。",
+      "tags": ["审方中心", "医共体", "二次招标"]
+    },
+    {
+      "id": "F-20260822-004",
+      "category": "药学信息化项目",
+      "title": "海南州中心（云）药房及远程审方系统365万招标",
+      "region": "青海·海南州",
+      "institution": "海南藏族自治州卫生健康委员会",
+      "project_name": "海南州中心（云）药房及远程审方系统建设项目",
+      "scope": "中心云药房、远程审方系统",
+      "budget": "365万元",
+      "deadline": "2026-08-28",
+      "bid_opening": "2026-09-14 10:00",
+      "source": "青海省公共资源交易网",
+      "source_url": "https://www.qhggzyjy.gov.cn/hain/jyxx/001002/001002001/20260821/2408780452643526.html",
+      "publish_date": "2026-08-21",
+      "verification_status": "ok",
+      "insight": "州级卫健委采购中心云药房+远程审方系统，365万元体量。远程审方能力成为新增长点。",
+      "tags": ["云药房", "远程审方", "州级卫健委"]
+    },
+    {
+      "id": "F-20260822-005",
+      "category": "药学信息化项目",
+      "title": "西南医科大附属第四医院药学管理平台60万招标",
+      "region": "四川·眉山",
+      "institution": "西南医科大学附属第四医院",
+      "project_name": "西南医科大学附属第四医院药学管理平台采购项目",
+      "scope": "药学管理平台",
+      "budget": "60万元",
+      "deadline": "2026-08-19",
+      "bid_opening": "2026-09-03 10:00",
+      "source": "中国政府采购网",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260812_27121966.htm",
       "publish_date": "2026-08-12",
       "verification_status": "ok",
-      "insight": "美康在华润体系内持续拓展维保客户，单源直接采购模式说明其合理用药系统在华润系医院有较高存量渗透率。",
-      "tags": [
-        "合理用药",
-        "系统维保",
-        "单源采购",
-        "华润体系"
-      ],
-      "winner": "四川美康医药软件研究开发股份有限公司"
+      "insight": "医学院附属医院采购药学管理平台，60万元体量。关注竞品在该细分市场的布局。",
+      "tags": ["药学管理平台", "医学院附属"]
     }
   ],
   "opportunity_actions": [
     {
       "priority": "P0",
-      "title": "核验药学系统采购边界",
-      "description": "确认药学监护、审方、合理用药、药学服务、规则库和HIS/EMR接口范围，避免把药品采购内容纳入产品线索。"
+      "title": "对齐基本药物信息系统标识与审方点评要求",
+      "description": "国卫药政发〔2026〕20号要求信息系统对基本药物标识提示优先使用、处方审核点评纳入基本药物优先使用情况。立即梳理我方合理用药系统的基药标识、审方规则与点评模板能力。"
+    },
+    {
+      "priority": "P0",
+      "title": "跟进县域医共体「审方中心+中心药房」打包机会",
+      "description": "海南州365万（09-14开标）、沽源120万（09-08开标）、运城102.65万（09-10开标）、贵州息烽269万（08-25开标）。"
+    },
+    {
+      "priority": "P0",
+      "title": "应对美康药学信息化系统产品线扩张",
+      "description": "美康以代理商+品牌方模式中标盘锦药学信息化系统（住院药学监护+集采管控双线），覆盖新建系统市场。"
     },
     {
       "priority": "P1",
-      "title": "建立系统接口需求表",
-      "description": "记录HIS、EMR、医嘱、检验检查、医保、移动端和数据交换接口，区分标准能力、定制开发与交付责任。"
+      "title": "提前布局药物警戒平台细分",
+      "description": "南京鼓楼医院案例确认ADR监测智慧平台已成医院级独立采购标的（40-50万元档），逸曜已入局。"
     },
     {
-      "priority": "P1",
-      "title": "跟进药师使用闭环",
-      "description": "关注处方审核、住院药学监护、药物重整、用药咨询、药学记录和统计分析等可验收业务闭环。"
+      "priority": "P2",
+      "title": "产品话术对齐药学服务价格新政",
+      "description": "重庆12项药学服务价格项目09-10执行，居家药学服务费、药学门诊诊查费落地。"
     }
   ],
-  "collection_meta": {
-    "run_at": "2026-08-17 09:00:00+0800",
-    "lookback_days": 60,
-    "source_fetch_status": [
-      {
-        "id": "gdmede-announcements",
-        "status": "ok",
-        "items": 0,
-        "new_items": 0
-      },
-      {
-        "id": "verified-pharmacy-information-projects",
-        "status": "ok",
-        "items": 2,
-        "new_items": 0
-      },
-      {
-        "id": "verified-hospital-pharmacy-information-maintenance",
-        "status": "ok",
-        "items": 1,
-        "new_items": 1
-      }
-    ],
-    "source_count": 3,
-    "new_item_count": 1,
-    "fresh_item_count": 3,
-    "content_scope": "pharmacy_information_systems_only"
-  },
-  "summary": "本期累计新增入库11条药学信息化项目与3条政策动态。本次08-21更新新增5条事实：三部门基本药物优先配备使用通知（国卫药政发〔2026〕20号）、广水全市审方中心中标179.98万元（美康品牌）、运城盐湖区中心药房招标102.65万元、贵州医科大三附院PASS维保3.5万元/年（三次采购）、华润滨湖双鹤美康维保。",
   "competitors": {
     "medicom": {
-      "summary": "美康本周三线并进：存量客户以「软件著作权 + 单一来源」锁定维保续约（成都七院 8.7 万元、华润滨湖双鹤），同时以品牌方身份中标广水全市审方中心系统 179.98 万元；药品目录智能匹配专利公开，知识库映射自动化与 AI 布局持续加码。",
-      "facts": [
-        "F-20260819-005",
-        "F-20260812-001"
-      ]
+      "summary": "美康本周以代理商+品牌方模式中标盘锦药学信息化系统54.5万元（住院药学监护+集采药品管控），此前已中标广水全市审方中心179.98万元，维保锁定成都七院8.7万元、华润滨湖双鹤。",
+      "facts": ["F-20260822-001"]
     },
     "yiyao": {
-      "summary": "逸曜本周两中标——绍兴市人民医院合理用药及临床药师系统维保 26.7 万元（评审 95.4 分）、南京鼓楼医院临床药物警戒智慧平台 41.8 万元，在合理用药维保与药物警戒平台两条线持续扩张。",
+      "summary": "逸曜本周两中标：绍兴市人民医院合理用药+临床药师系统维保26.7万元、南京鼓楼医院临床药物警戒智慧平台41.8万元，在合理用药维保与药物警戒平台两条线持续扩张。",
       "facts": []
     }
   },
@@ -240,27 +372,36 @@
     {
       "priority": "P0",
       "title": "对齐基本药物信息系统标识与审方点评要求",
-      "detail": "国卫药政发〔2026〕20号要求信息系统对基本药物标识提示优先使用、处方审核点评纳入基本药物优先使用情况。立即梳理我方合理用药系统的基药标识、审方规则与点评模板能力，形成合规升级方案。"
+      "detail": "立即梳理我方合理用药系统的基药标识、审方规则与点评模板能力，形成合规升级方案。"
     },
     {
       "priority": "P0",
-      "title": "跟进县域医共体「审方中心 + 中心药房」打包机会",
-      "detail": "郴州北湖项目 140 万元已于 08-18 开标，跟踪结果公告与采购人动态；息烽项目 269 万元 08-25 开标，仍在窗口期。运城盐湖区中心药房 102.65 万元 09-10 开标。三地均为医共体/医疗集团一体化打包。"
+      "title": "跟进县域医共体「审方中心+中心药房」打包机会",
+      "detail": "海南州365万、沽源120万、运城102.65万、贵州息烽269万，均为医共体/卫健委一体化打包。"
     },
     {
-      "priority": "P1",
-      "title": "应对美康品牌方+维保双线扩张",
-      "detail": "美康本周三线并进：成都七院维保锁定、广水审方中心品牌方中标 179.98 万元、华润滨湖双鹤维保承接。在区域审方与维保市场均形成攻势，需重点准备差异化竞争方案。"
+      "priority": "P0",
+      "title": "应对美康药学信息化系统产品线扩张",
+      "detail": "美康以代理商+品牌方模式中标盘锦药学信息化系统，需重点准备差异化竞争方案。"
     },
     {
       "priority": "P1",
       "title": "提前布局药物警戒平台细分",
-      "detail": "南京鼓楼医院案例确认 ADR 监测智慧平台已成医院级独立采购标的（预算 50 万元档），逸曜已入局。建议梳理我方不良反应监测、智能上报与预警能力，形成可投标方案。"
+      "detail": "南京鼓楼医院案例确认ADR监测智慧平台已成医院级独立采购标的，逸曜已入局。"
     },
     {
       "priority": "P2",
       "title": "产品话术对齐药学服务价格新政",
-      "detail": "重庆 12 项药学服务价格项目 09-10 执行，居家药学服务费、药学门诊诊查费落地。面向西南区域客户，将居家药学服务记录、药学门诊工作站等模块价值与收费项目直接对应。"
+      "detail": "重庆12项药学服务价格项目09-10执行，面向西南区域客户对应模块价值。"
     }
-  ]
+  ],
+  "summary": "本期新入库5条药学信息化项目：吉林审方干预71万、沽源医共体审方中心120万（二次）、海南州云药房+远程审方365万、西南医科大药学管理平台60万、盘锦药学信息化美康中标54.5万。累计入库13条项目事实与3条政策动态。",
+  "collection_meta": {
+    "run_at": "2026-08-22 13:53:00+0800",
+    "lookback_days": 60,
+    "source_count": 6,
+    "new_item_count": 5,
+    "fresh_item_count": 15,
+    "content_scope": "pharmacy_information_systems_only"
+  }
 }
