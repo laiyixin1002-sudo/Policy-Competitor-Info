@@ -18,7 +18,7 @@ h1{margin:0 0 8px;font-size:clamp(25px,6vw,38px);line-height:1.16}
 .share strong{color:var(--accent-s);font-size:14px}.share a{color:var(--accent);font-size:13px;text-decoration:none;line-height:1.4}.share .sn{color:var(--muted);font-size:12px}
 .toc{margin-top:14px}.toc a{flex:0 0 auto;min-width:0;color:var(--accent);text-decoration:none;border:1px solid #bedce2;background:rgba(255,255,255,.78);border-radius:999px;padding:7px 11px;font-size:13px;font-weight:700}
 .fn{position:fixed;z-index:20;right:8px;top:35%;display:grid;gap:6px}.fn a{width:44px;min-height:34px;display:grid;place-items:center;border-radius:12px;color:#fff;background:rgba(6,76,89,.92);box-shadow:0 10px 24px rgba(6,76,89,.2);text-decoration:none;font-size:12px;font-weight:700}
-.st{margin:24px 0 12px;font-size:19px}
+.st{margin:16px 0 10px;font-size:19px}
 .hl{margin:0;padding:0;list-style:none;display:grid;gap:9px;counter-reset:it}
 .hl li{counter-increment:it;background:rgba(255,255,255,.95);border:1px solid rgba(15,111,124,.16);border-radius:14px;padding:10px 12px 10px 42px;position:relative;box-shadow:0 10px 28px rgba(25,76,92,.07);font-size:14px}
 .hl li::before{content:counter(it);position:absolute;left:12px;top:11px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:12px;font-weight:800}
@@ -28,14 +28,14 @@ h1{margin:0 0 8px;font-size:clamp(25px,6vw,38px);line-height:1.16}
 .tb th{background:#e8f5f7;color:var(--accent-s);font-weight:800;white-space:nowrap;font-size:11px}
 .tb tr:last-child td{border-bottom:0}.tb a{color:var(--accent);font-weight:700}
 .badge{display:inline-block;padding:1px 5px;border-radius:999px;background:var(--green-b);color:var(--green);font-size:10px;font-weight:700;white-space:nowrap}
-.cs{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 10px 26px rgba(28,73,89,.07);display:inline-block;vertical-align:top;width:calc(50% - 7px);margin:0 0 14px}
+.cs{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 10px 26px rgba(28,73,89,.07);margin:0}
 .cs h4{margin:0 0 6px;font-size:15px;line-height:1.3}.cs p{margin:0 0 6px;font-size:13px;color:#33414f}.cs .sub{color:var(--muted);font-size:11px;margin-bottom:6px}
 .cs .tg{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
 .tg span{max-width:100%;padding:2px 7px;border-radius:999px;background:var(--accent-b);color:var(--accent);font-size:11px;white-space:nowrap}
 .tg .v{background:var(--amber-b);color:var(--amber)}
 .cs .sf{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:8px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
 .cs .sf a{color:var(--accent);font-weight:700;text-decoration:none;font-size:12px}
-.vn{margin:0 0 14px;padding:10px 12px;border-radius:14px;border:1px solid #bedce2;background:rgba(255,255,255,.84);color:#33414f;font-size:13px}
+.vn{margin:0 0 10px;padding:10px 12px;border-radius:14px;border:1px solid #bedce2;background:rgba(255,255,255,.84);color:#33414f;font-size:13px}
 .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .act{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 10px 26px rgba(28,73,89,.07)}
 .pri{display:inline-flex;margin-bottom:6px;padding:2px 8px;border-radius:999px;background:var(--green-b);color:var(--green);font-size:11px;font-weight:800}
@@ -81,7 +81,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px}
 
 <section id="policy">
 <h2 class="st">政策动向</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:14px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:12px">
 <article class="cs">
 <h4>三部门部署基本药物优先配备使用：信息系统须标识提示</h4>
 <p>国家卫生健康委、国家中医药局、国家疾控局联合发布《关于做好基本药物优先配备使用工作的通知》（国卫药政发〔2026〕20号，2026-08-19 成文）。要求公立医疗机构在新版国家基本药物目录实施后 2 个月内完成用药供应目录更新；信息系统须对基本药物进行标识提示优先使用；处方审核和点评须将基本药物优先使用情况作为重点。紧密型医联体强化统一用药目录管理。</p>
@@ -135,7 +135,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px}
 <section id="medicom">
 <h2 class="st">竞品动向 · 美康</h2>
 <p class="vn">美康本周以代理商+品牌方模式中标盘锦药学信息化系统 54.5 万元（住院药学监护+集采药品管控两条产品线），此前已中标广水全市审方中心 179.98 万元（品牌方），并以软件著作权单一来源锁定成都七院合理用药维保 8.7 万元、承接华润滨湖双鹤合理用药维保。</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:14px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:12px">
 <article class="cs">
 <h4>中标盘锦药学信息化系统（54.5 万，美康产品线双覆盖）</h4>
 <p>沈阳芳萱商贸有限公司以 54.5 万元中标（评审 91.92 分，预算 58 万），品牌为美康。产品包括：美康智慧药学服务平台 V1.0 子系统（PASS 住院药学监护系统 V1.1，32.5 万元）+ PASS 集采药品智能管控系统 V1.0（22 万元）。</p>
@@ -154,7 +154,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px}
 <section id="yiyao">
 <h2 class="st">竞品动向 · 逸曜</h2>
 <p class="vn">逸曜本周两中标：绍兴市人民医院合理用药及临床药师系统维保 26.7 万元（评审 95.4 分）、南京鼓楼医院临床药物警戒智慧平台 41.8 万元，在合理用药维保与药物警戒平台两条线持续扩张。</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:14px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:12px">
 <article class="cs">
 <h4>中标南京鼓楼医院临床药物警戒智慧平台（41.8 万元）</h4>
 <p>杭州逸曜以 41.8 万元中标（原预算 50 万、最高限价 45 万），评审 88.8 分。平台实现不良反应数据自动采集、智能识别、结构化生成与一键上报，以「规则+AI」机制实现药品安全风险早期预警与闭环管理，合同履行期 60 天。</p>
