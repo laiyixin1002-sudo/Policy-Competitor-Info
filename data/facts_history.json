@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "dedupe_rule": "sha256(title|date|domain)",
-  "last_collection_at": "2026-08-22 13:53 +0800",
+  "last_collection_at": "2026-08-31 13:03 +0800",
   "facts": [
     {
       "category": "药学信息化项目 · 湖北·广水",
@@ -20,7 +20,12 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27163737.htm",
       "url_status": "ok",
-      "system_modules": ["审方中心", "处方审核", "药学信息化", "合理用药"],
+      "system_modules": [
+        "审方中心",
+        "处方审核",
+        "药学信息化",
+        "合理用药"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "d4a6ee897fb9b3c9963dfa97dc0afbe51ac6d76ddc7835842ddcecc8bad957a4"
     },
@@ -41,7 +46,12 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260820_27176882.htm",
       "url_status": "ok",
-      "system_modules": ["中心药房", "药房信息化", "药学信息化", "HIS接口"],
+      "system_modules": [
+        "中心药房",
+        "药房信息化",
+        "药学信息化",
+        "HIS接口"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "9c0d4d2119d9d887391a5b93708564370d65f8b8f9b92d56664a8d94c6b13d72"
     },
@@ -62,7 +72,12 @@
       "source_domain": "www.sfy-gmc.com",
       "source_url": "https://www.sfy-gmc.com/listitem.php?cid=4&sid=31&id=8074",
       "url_status": "ok",
-      "system_modules": ["合理用药", "临床药学", "药学信息化", "系统维保"],
+      "system_modules": [
+        "合理用药",
+        "临床药学",
+        "药学信息化",
+        "系统维保"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "ff7b49bad1c9247e5cd481981795e886399eec3aaf56b9839b9abe3c5ee7ae26"
     },
@@ -83,7 +98,12 @@
       "source_domain": "wsjkw.hebei.gov.cn",
       "source_url": "https://wsjkw.hebei.gov.cn/zcfg2/421156.jhtml",
       "url_status": "ok",
-      "system_modules": ["基本药物标识", "处方审核", "药学信息化", "合理用药"],
+      "system_modules": [
+        "基本药物标识",
+        "处方审核",
+        "药学信息化",
+        "合理用药"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "bf764c4bd32dd2c2c50b3d8a2fb84ebc051e361faef66e216aef5822600e31a2"
     },
@@ -104,7 +124,11 @@
       "source_domain": "szecp.crc.com.cn",
       "source_url": "http://szecp.crc.com.cn/zbxx/006002/006002003/20260812/SHCJGG202608120006.html",
       "url_status": "ok",
-      "system_modules": ["合理用药", "药学信息化", "系统维保"],
+      "system_modules": [
+        "合理用药",
+        "药学信息化",
+        "系统维保"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "06fcb0e829d19c25c30637e100592e9057bf9e8e9f62df7e678f2d06a6a24ae4"
     },
@@ -125,7 +149,12 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202607/t20260720_26965406.htm",
       "url_status": "ok",
-      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "3cdeff1163bd685a90ae5d8fb59f079bb6d242b2c79c50b267b7ac89628c15b2"
     },
@@ -146,7 +175,12 @@
       "source_domain": "www.sysu5.cn",
       "source_url": "https://www.sysu5.cn/biddingment/announcement/14131",
       "url_status": "ok",
-      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "9055a27bd93dbcddd36d9bafe4e32896f34e196b829900ee78e210d481d3ec8b"
     },
@@ -167,7 +201,12 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/cjgg/202607/t20260706_26874787.htm",
       "url_status": "ok",
-      "system_modules": ["药学信息化", "合理用药", "药学服务", "HIS接口"],
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "cb610967fdc6a26b5b3a678782c1ed4ab0b71768dac23908e6e5c64388450b40"
     },
@@ -188,7 +227,12 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260813_27125615.htm",
       "url_status": "ok",
-      "system_modules": ["住院药学监护", "集采药品管控", "药学信息化", "美康产品"],
+      "system_modules": [
+        "住院药学监护",
+        "集采药品管控",
+        "药学信息化",
+        "美康产品"
+      ],
       "sales_insight": "美康以代理商（沈阳芳萱）中标盘锦药学信息化系统，覆盖住院药学监护与集采管控两条产品线，评审91.92分。竞品在药学信息化新建项目中的产品组合和定价策略值得重点关注。",
       "dedupe_fingerprint": "4ed98ae9b82554d0ac736796ea736be6857744c58daa313bda9281f0607a7369"
     },
@@ -209,7 +253,11 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260819_27165550.htm",
       "url_status": "ok",
-      "system_modules": ["审方干预", "处方审核", "药学信息化"],
+      "system_modules": [
+        "审方干预",
+        "处方审核",
+        "药学信息化"
+      ],
       "sales_insight": "医学院附属医院采购药师审方干预系统，体现临床药学信息化在教学医院的需求。71万元体量适中，关注竞品定价与功能覆盖。",
       "dedupe_fingerprint": "5b89c6d6457e4adefc64353bd413b07531f7f39bf39f7e571048dbc7de987560"
     },
@@ -230,7 +278,13 @@
       "source_domain": "ssl.hebpr.cn",
       "source_url": "https://ssl.hebpr.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260814/bbc4d9db-d6ae-418c-a20e-b6223b3ffca5.html",
       "url_status": "ok",
-      "system_modules": ["审方中心", "前置审方", "处方点评", "医共体", "药学信息化"],
+      "system_modules": [
+        "审方中心",
+        "前置审方",
+        "处方点评",
+        "医共体",
+        "药学信息化"
+      ],
       "sales_insight": "县域医共体审方中心二次招标，120万元体量。需求覆盖前置审方+处方点评+药师资源共享，体现基层药学信息化的标准化需求。",
       "dedupe_fingerprint": "08cbc44ef5d60ea689c4a7f6c1c8a8cd1851edda51c537e7461e20cc7351d4f7"
     },
@@ -251,7 +305,12 @@
       "source_domain": "www.qhggzyjy.gov.cn",
       "source_url": "https://www.qhggzyjy.gov.cn/hain/jyxx/001002/001002001/20260821/2408780452643526.html",
       "url_status": "ok",
-      "system_modules": ["中心药房", "云药房", "远程审方", "药学信息化"],
+      "system_modules": [
+        "中心药房",
+        "云药房",
+        "远程审方",
+        "药学信息化"
+      ],
       "sales_insight": "州级卫健委采购中心云药房+远程审方系统，365万元体量，体现青海区域药学信息化的集中部署需求。远程审方能力成为新增长点。",
       "dedupe_fingerprint": "a7edd75ef3c86e2af36b75285874684c768bc18c19e342b8434748c32da20111"
     },
@@ -272,9 +331,166 @@
       "source_domain": "www.ccgp.gov.cn",
       "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202608/t20260812_27121966.htm",
       "url_status": "ok",
-      "system_modules": ["药学管理平台", "药学信息化"],
+      "system_modules": [
+        "药学管理平台",
+        "药学信息化"
+      ],
       "sales_insight": "医学院附属医院采购药学管理平台，60万元体量。药学管理平台为综合性药学信息化系统，关注竞品在该细分市场的布局。",
       "dedupe_fingerprint": "c85e84ae85ac47ddaf0fc6108ca06c9354a6b4c4d2a7d4661144f721576f6168"
+    },
+    {
+      "category": "药学信息化项目 · 新疆·阿拉尔(兵团第一师)",
+      "title": "2026年阿拉尔市基层医疗服务能力提升工程项目(第一师医院)-第一师医院医共体中心药房及审方中心项目中标(成交)结果公告",
+      "source_title": "2026年阿拉尔市基层医疗服务能力提升工程项目(第一师医院)-第一师医院医共体中心药房及审方中心项目中标(成交)结果公告",
+      "fact_summary": "新疆生产建设兵团第一师医院医共体中心药房及审方中心项目中标结果。阿拉尔九州通医药有限公司以783万元中标(评审价704.7万元,得分95.83),品牌为艾隆。信息化软件部分:医共体(云)中心药房系统(艾隆区域中心药房管理系统V1.0,90万元)、医共体审方中心系统(艾隆区域处方前置审核系统软件V1.0,95万元);其余为自动化药房硬件(自动发药机240万元、嵌入式高发机40万元、高发机85万元、智能存取系统等)。",
+      "publisher": "中国政府采购网",
+      "region": "新疆·阿拉尔",
+      "date": "2026-08-19",
+      "source_type": "中标(成交)结果公告",
+      "system_scope": "医共体(云)中心药房系统、区域处方前置审核系统、自动化药房设备",
+      "purchaser": "新疆生产建设兵团第一师医院",
+      "budget": "783万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27163628.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "中心药房",
+        "审方中心",
+        "前置审方",
+        "自动化药房"
+      ],
+      "sales_insight": "自动化药房厂商(艾隆)以硬件+软件打包切入医共体中心药房与审方中心,软件部分185万元、硬件598万元。跨界竞品需关注其打包报价与软硬件一体化交付能力。",
+      "dedupe_fingerprint": "af5cc5272ed826467510577dcfa3070d6195f1661832048fbe4570a17f056c73"
+    },
+    {
+      "category": "药学信息化项目 · 贵州·黔南·长顺",
+      "title": "长顺县医疗集团中心医院前置审方系统建设项目中标(成交)公告",
+      "source_title": "长顺县医疗集团中心医院前置审方系统建设项目中标(成交)公告",
+      "fact_summary": "长顺县医疗集团中心医院前置审方系统建设项目中标结果。杭州逸曜信息技术有限公司以59.3万元中标。建设区域审方中心,打通与现有HIS、电子病历等系统的接口实现数据互联互通,录入符合国家规范与临床实际的智能审方规则库,实现医共体内处方审核标准统一,构建县乡一体化「系统实时拦截+药师在线复核」的前置审方模式。服务期3个月。",
+      "publisher": "贵州省公共资源交易云(黔南州)",
+      "region": "贵州·黔南",
+      "date": "2026-08-21",
+      "source_type": "中标(成交)结果公告",
+      "system_scope": "区域审方中心、HIS/EMR接口、智能审方规则库、县乡一体化前置审方",
+      "purchaser": "长顺县卫生健康局",
+      "budget": "59.3万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "ggzy.guizhou.gov.cn",
+      "source_url": "https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=1250670522673532928",
+      "url_status": "ok",
+      "system_modules": [
+        "前置审方",
+        "审方规则库",
+        "医共体",
+        "HIS接口"
+      ],
+      "sales_insight": "逸曜持续深耕贵州县域医共体前置审方市场,「系统实时拦截+药师在线复核」模式已成其标准打法。",
+      "dedupe_fingerprint": "6e69c7cf1ee189e037af5aad92dd86ed4011259ac5a3c387708385800ce187e4"
+    },
+    {
+      "category": "药学信息化项目 · 河北·保定·安新(雄安)",
+      "title": "安新县紧密型医共体中心(云)药房和集中(云)审方中心建设项目中标结果公告",
+      "source_title": "安新县紧密型医共体中心(云)药房和集中(云)审方中心建设项目中标结果公告",
+      "fact_summary": "安新县紧密型医共体中心(云)药房和集中(云)审方中心建设项目中标结果。北京冠新医卫软件科技有限公司以211.5万元中标(预算220.18万元)。建设周期75天,服务期限自平台上线运行之日起1年。",
+      "publisher": "中国政府采购网",
+      "region": "河北·保定·安新",
+      "date": "2026-08-19",
+      "source_type": "中标结果公告",
+      "system_scope": "紧密型医共体中心(云)药房、集中(云)审方中心",
+      "purchaser": "安新县卫生健康局",
+      "budget": "211.5万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260819_27162306.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "云药房",
+        "云审方中心",
+        "医共体"
+      ],
+      "sales_insight": "冠新医卫(北京)中标雄安新区安新县云药房+云审方中心,与曹妃甸项目形成河北区域连中,成为继美康、逸曜之后第三个需要重点跟踪的竞品。",
+      "dedupe_fingerprint": "08c066abb0403a3c01e13388942025fa202461b036c6e78a0f1f18e35e70b405"
+    },
+    {
+      "category": "药学信息化项目 · 河北·唐山·曹妃甸",
+      "title": "公立医院高质量发展项目-A包:中心药房、审方中心、转诊中心、慢病中心建设公开招标中标公告",
+      "source_title": "公立医院高质量发展项目-A包:中心药房、审方中心、转诊中心、慢病中心建设公开招标中标公告",
+      "fact_summary": "曹妃甸区医院公立医院高质量发展项目A包中标结果。北京冠新医卫软件科技有限公司以251.8万元中标。标的范围:慢病中心、转诊中心、医共体云审方中心、医共体共享药房;品牌冠新,产品包括医防融合慢病综合管理平台V1.0、冠新区域双向转诊系统V1.0、医共体智能审方中心系统V1.0、医共体智慧共享药房管理平台V1.0。",
+      "publisher": "中国政府采购网",
+      "region": "河北·唐山",
+      "date": "2026-08-28",
+      "source_type": "中标公告",
+      "system_scope": "医共体云审方中心、共享药房、慢病中心、转诊中心",
+      "purchaser": "曹妃甸区医院",
+      "budget": "251.8万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260828_27226027.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "云审方中心",
+        "共享药房",
+        "慢病管理",
+        "双向转诊"
+      ],
+      "sales_insight": "冠新医卫以「审方中心+共享药房+慢病+转诊」四合一打包拿下曹妃甸251.8万元,体现其平台化整合能力,与我方形成正面竞争。",
+      "dedupe_fingerprint": "6e99acbdf28581e9e7d7ee4dbf5b24d80434eb1a24144a2c24851aa2db2d3eb1"
+    },
+    {
+      "category": "药学信息化项目 · 湖南·郴州",
+      "title": "郴州市第三人民医院郴州市北湖区紧密型区域医共体集中审方中心和中心药房建设公开招标中标公告",
+      "source_title": "郴州市第三人民医院郴州市北湖区紧密型区域医共体集中审方中心和中心药房建设公开招标中标公告",
+      "fact_summary": "郴州市北湖区紧密型区域医共体集中审方中心和中心药房建设项目中标结果(上期跟踪项目闭环)。湖南云善信息技术有限公司以138.65万元中标(预算140万元,评分82.31),企业类型为小微企业。采购项目于2026-08-18结束,品目为行业应用软件开发服务。",
+      "publisher": "中国政府采购网",
+      "region": "湖南·郴州",
+      "date": "2026-08-27",
+      "source_type": "中标公告",
+      "system_scope": "区域医共体集中审方中心、中心药房",
+      "purchaser": "郴州市第三人民医院",
+      "budget": "138.65万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "已开标",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202608/t20260827_27212866.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "集中审方中心",
+        "中心药房",
+        "医共体"
+      ],
+      "sales_insight": "上期跟踪的郴州北湖140万元项目出结果,由本地小微企业湖南云善以138.65万元中标,非头部厂商拿下,说明区域项目存在本地集成商机会。",
+      "dedupe_fingerprint": "d0d03abbb861acd1969693a8af5ab9cf7fed242891b50e434265c227288fafe0"
+    },
+    {
+      "category": "药学信息化项目 · 广西·柳州",
+      "title": "云之龙咨询集团有限公司关于柳州市工人医院药学管理系统项目的竞争性磋商公告",
+      "source_title": "云之龙咨询集团有限公司关于柳州市工人医院药学管理系统项目的竞争性磋商公告",
+      "fact_summary": "柳州市工人医院药学管理系统项目竞争性磋商公告。预算及最高限价74万元,专门面向中小微企业。需求包括:药品全量信息查询(可查看完整药品说明书)、药品字典信息查询与编辑(要点提示、注意事项、FDA妊娠分级、避光标识、易跌倒药物标识、滴速提示、高危药品标识、输液稳定时间、皮试标识等)。合同签订后10个工作日内进场,3个月内完成上线。2026-09-09 09:20开启。",
+      "publisher": "中国政府采购网",
+      "region": "广西·柳州",
+      "date": "2026-08-27",
+      "source_type": "竞争性磋商",
+      "system_scope": "药学管理系统、药品信息查询、药品字典与用药标识管理",
+      "purchaser": "柳州市工人医院",
+      "budget": "74万元",
+      "registration_deadline": "2026-09-03",
+      "bid_opening_time": "2026-09-09 09:20",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202608/t20260827_27219373.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "药学管理系统",
+        "药品字典",
+        "用药标识",
+        "合理用药"
+      ],
+      "sales_insight": "药学管理系统需求细化到用药标识(避光/易跌倒/滴速/高危/皮试),与我方产品能力直接对应,是西南区域可跟进的中小体量机会。",
+      "dedupe_fingerprint": "4093e4af53096607daa2b1a4540286b68e34b784d029ef8c3d20696aa34d4b1f"
     }
   ]
 }
