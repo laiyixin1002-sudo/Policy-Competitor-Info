@@ -30,6 +30,50 @@
       ]
     },
     {
+      "id": "shaanxi-pharmacy-procurement",
+      "name": "陕西省药学信息化采购公告（政府采购与公共资源交易）",
+      "url": "http://www.ccgp-shaanxi.gov.cn/",
+      "kind": "regional_procurement",
+      "official_domains": [
+        "www.ccgp-shaanxi.gov.cn",
+        "www.sxggzyjy.cn"
+      ],
+      "regions": [
+        "陕西"
+      ],
+      "required": false,
+      "scope_note": "招标与预招标信息区域须覆盖陕西省（含西安及各地市、省属医院、紧密型医共体）",
+      "include_keywords": [
+        "药学信息化",
+        "临床药学",
+        "合理用药",
+        "合理用药系统",
+        "处方前置审核",
+        "前置审方",
+        "审方中心",
+        "审方系统",
+        "处方点评",
+        "药学监护",
+        "药学管理系统",
+        "中心药房",
+        "云药房",
+        "智慧药房",
+        "药品字典",
+        "HIS药学模块",
+        "药学服务平台"
+      ],
+      "exclude_keywords": [
+        "药品挂网",
+        "药品集采",
+        "药品价格确认",
+        "中选产品信息",
+        "同步药品挂网",
+        "药品交易",
+        "药品配送",
+        "药品目录"
+      ]
+    },
+    {
       "id": "verified-pharmacy-information-projects",
       "name": "已核验药学信息化项目公告",
       "kind": "verified_items",
