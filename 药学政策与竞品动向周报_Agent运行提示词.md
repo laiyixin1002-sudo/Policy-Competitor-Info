@@ -77,7 +77,10 @@ python scripts/update_report_period.py --now 2026-08-17T09:00:00+08:00
 - `config/collection_sources.json`
 - `https://www.gdmede.com.cn/announcement/announcement/index`
 - 中国政府采购网（`ccgp.gov.cn`）医院药学信息化公告；
+- 陕西省政府采购网（`ccgp-shaanxi.gov.cn`）与陕西省公共资源交易服务平台（`sxggzyjy.cn`）；
 - 已核验医院官网采购公告或采购意向。
+
+> 区域范围要求：周报「区域药学系统招标与项目动态」（即招标 / 预招标信息区域）的信息范围必须覆盖 **陕西省**（含西安市及各地市、省属医院、紧密型医共体）。每期须主动检索陕西省的药学信息化招标、预招标与采购意向公告，不得遗漏；未检索到时须在报告中显式说明「本期陕西省未检索到新增招标/预招标信息」。
 
 若现有来源没有新条目，按以下顺序扩大检索：
 
