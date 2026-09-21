@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "dedupe_rule": "sha256(title|date|domain)",
-  "last_collection_at": "2026-09-21 08:18 +0800",
+  "last_collection_at": "2026-09-21 08:26 +0800",
   "facts": [
     {
       "category": "药学信息化项目 · 美康·中标动态",
