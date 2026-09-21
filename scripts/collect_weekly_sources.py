@@ -218,13 +218,18 @@ def main() -> None:
     report = json.loads(args.report.read_text(encoding="utf-8"))
     collected_fp = {item.get("dedupe_fingerprint") for item in collected}
     period_start = str(report.get("period_start", ""))
-    recent = sorted(
-        (item for item in history
-         if item.get("date", "") >= cutoff and is_allowed_fact(item)
-         and (item.get("date", "") >= period_start or item.get("dedupe_fingerprint") in collected_fp)),
-        key=lambda item: (item.get("date", ""), item.get("title", "")), reverse=True)
-    report["facts"] = recent[:12]
-    report["regional_procurements"] = build_regional_rows(recent[:12])
+    recent = [item for item in history
+              if item.get("date", "") >= cutoff and is_allowed_fact(item)
+              and (item.get("date", "") >= period_start or item.get("dedupe_fingerprint") in collected_fp)]
+    # 优先完整展示本期新采集的全部事实，再按时间补入本周期内的历史事实，避免裁掉新线索
+    collected_items = [item for item in recent if item.get("dedupe_fingerprint") in collected_fp]
+    other_items = [item for item in recent if item.get("dedupe_fingerprint") not in collected_fp]
+    display_cap = max(len(collected_items), 16)
+    collected_items.sort(key=lambda item: (item.get("date", ""), item.get("title", "")), reverse=True)
+    other_items.sort(key=lambda item: (item.get("date", ""), item.get("title", "")), reverse=True)
+    recent = collected_items + other_items[: max(0, display_cap - len(collected_items))]
+    report["facts"] = recent
+    report["regional_procurements"] = build_regional_rows(recent)
     report["highlights"] = build_highlights(recent, source_count, len(collected))
     report["collection_note"] = (
         f"本期统计区间 {report.get('period_start')} 至 {report.get('period_end')}；"

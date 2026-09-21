@@ -172,6 +172,62 @@
       "source_level": "官方项目公告",
       "source_domain": "ggzy.zwfwb.tj.gov.cn",
       "source_url": "https://ggzy.zwfwb.tj.gov.cn/jyxxcggg/1772142.jhtml"
+    },
+    {
+      "region": "美康·中标动态",
+      "stage": "成交结果公告",
+      "purchaser": "仙桃市第一人民医院",
+      "project_name": "仙桃市第一人民医院区域审方中心建设成交结果公告（四川美康）",
+      "products": "区域审方中心（四川美康医药软件研究开发股份有限公司成交）",
+      "budget": "19.5万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_name": "湖北全过程工程咨询有限公司",
+      "source_level": "官方项目公告",
+      "source_domain": "qgcgczx.cn",
+      "source_url": "http://qgcgczx.cn/news.asp?aid=c2816"
+    },
+    {
+      "region": "河北·张家口·涿鹿",
+      "stage": "公开招标",
+      "purchaser": "涿鹿县卫生健康局",
+      "project_name": "涿鹿县县域医共体审方中心及中心药房信息系统建设项目",
+      "products": "县域医共体审方中心及中心药房信息系统",
+      "budget": "122万元（最高限价110万元）",
+      "registration_deadline": "2026-09-14",
+      "bid_opening_time": "2026-09-29 09:00",
+      "source_name": "河北省公共资源交易服务平台",
+      "source_level": "官方项目公告",
+      "source_domain": "szj.hebei.gov.cn",
+      "source_url": "https://szj.hebei.gov.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260907/625415f8-6a76-4191-a1f3-9169121b0cda.html"
+    },
+    {
+      "region": "浙江·嘉兴",
+      "stage": "公开招标",
+      "purchaser": "嘉兴市第二医院",
+      "project_name": "嘉兴市第二医院药品智能审方系统公开招标公告",
+      "products": "药品智能审方系统",
+      "budget": "60万元",
+      "registration_deadline": "2026-09-28",
+      "bid_opening_time": "2026-09-28 14:00",
+      "source_name": "中国政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260905_27274958.htm"
+    },
+    {
+      "region": "湖北·武汉·蔡甸",
+      "stage": "竞争性磋商",
+      "purchaser": "武汉市蔡甸区人民医院",
+      "project_name": "武汉市蔡甸区区域中心药房信息平台建设项目（软件）竞争性磋商公告",
+      "products": "区域中心药房信息平台（软件），区域基层用药采供用报联动管理机制",
+      "budget": "75万元",
+      "registration_deadline": "2026-09-04",
+      "bid_opening_time": "2026-09-04 09:30",
+      "source_name": "湖北省政府采购网",
+      "source_level": "官方项目公告",
+      "source_domain": "ccgp-hubei.gov.cn",
+      "source_url": "https://ccgp-hubei.gov.cn/notice/202608/notice_1251779445065031680.html"
     }
   ],
   "highlights": [
@@ -496,6 +552,110 @@
       ],
       "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
       "dedupe_fingerprint": "bbdfd2f1b703bfede5f8819f90c00a418dbe9c2f75046ac20cba418d0ef95bd3"
+    },
+    {
+      "category": "药学信息化项目 · 美康·中标动态",
+      "title": "仙桃市第一人民医院区域审方中心建设成交结果公告（四川美康）",
+      "source_title": "医共体审方中心成交结果公告",
+      "fact_summary": "仙桃市第一人民医院区域审方中心建设成交结果公告（四川美康）。项目范围聚焦区域审方中心（四川美康医药软件研究开发股份有限公司成交），具体采购边界、接口要求和执行时间以官方原文及附件为准。",
+      "publisher": "湖北全过程工程咨询有限公司",
+      "region": "美康·中标动态",
+      "date": "2026-09-08",
+      "source_type": "成交结果公告",
+      "system_scope": "区域审方中心（四川美康医药软件研究开发股份有限公司成交）",
+      "purchaser": "仙桃市第一人民医院",
+      "budget": "19.5万元",
+      "registration_deadline": "以原公告为准",
+      "bid_opening_time": "以原公告为准",
+      "source_domain": "qgcgczx.cn",
+      "source_url": "http://qgcgczx.cn/news.asp?aid=c2816",
+      "url_status": "ok",
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
+      "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
+      "dedupe_fingerprint": "d233ee7a9f7639fef5a18897df9137f10abb1cb33fe7bf99ee36ad4264ca94d5"
+    },
+    {
+      "category": "药学信息化项目 · 河北·张家口·涿鹿",
+      "title": "涿鹿县县域医共体审方中心及中心药房信息系统建设项目",
+      "source_title": "涿鹿县县域医共体审方中心及中心药房信息系统建设项目",
+      "fact_summary": "涿鹿县县域医共体审方中心及中心药房信息系统建设项目。项目范围聚焦县域医共体审方中心及中心药房信息系统，具体采购边界、接口要求和执行时间以官方原文及附件为准。",
+      "publisher": "河北省公共资源交易服务平台",
+      "region": "河北·张家口·涿鹿",
+      "date": "2026-09-07",
+      "source_type": "公开招标",
+      "system_scope": "县域医共体审方中心及中心药房信息系统",
+      "purchaser": "涿鹿县卫生健康局",
+      "budget": "122万元（最高限价110万元）",
+      "registration_deadline": "2026-09-14",
+      "bid_opening_time": "2026-09-29 09:00",
+      "source_domain": "szj.hebei.gov.cn",
+      "source_url": "https://szj.hebei.gov.cn/hbggfwpt/jydt/003001/003001001/003001001001/20260907/625415f8-6a76-4191-a1f3-9169121b0cda.html",
+      "url_status": "ok",
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
+      "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
+      "dedupe_fingerprint": "6075eac0b5c67a907890e12332c98fb50db73d5ff63f70ed01793839c0f1acf7"
+    },
+    {
+      "category": "药学信息化项目 · 浙江·嘉兴",
+      "title": "嘉兴市第二医院药品智能审方系统公开招标公告",
+      "source_title": "浙江求是招标代理有限公司关于嘉兴市第二医院药品智能审方系统的公开招标公告",
+      "fact_summary": "嘉兴市第二医院药品智能审方系统公开招标公告。项目范围聚焦药品智能审方系统，具体采购边界、接口要求和执行时间以官方原文及附件为准。",
+      "publisher": "中国政府采购网",
+      "region": "浙江·嘉兴",
+      "date": "2026-09-05",
+      "source_type": "公开招标",
+      "system_scope": "药品智能审方系统",
+      "purchaser": "嘉兴市第二医院",
+      "budget": "60万元",
+      "registration_deadline": "2026-09-28",
+      "bid_opening_time": "2026-09-28 14:00",
+      "source_domain": "www.ccgp.gov.cn",
+      "source_url": "https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260905_27274958.htm",
+      "url_status": "ok",
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
+      "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
+      "dedupe_fingerprint": "9f891337c6d7e396944ea901b78543a178671712b34dc8d501105d6c511b4e22"
+    },
+    {
+      "category": "药学信息化项目 · 湖北·武汉·蔡甸",
+      "title": "武汉市蔡甸区区域中心药房信息平台建设项目（软件）竞争性磋商公告",
+      "source_title": "武汉市蔡甸区区域中心药房信息平台建设项目(软件)竞争性磋商公告",
+      "fact_summary": "武汉市蔡甸区区域中心药房信息平台建设项目（软件）竞争性磋商公告。项目范围聚焦区域中心药房信息平台（软件），区域基层用药采供用报联动管理机制，具体采购边界、接口要求和执行时间以官方原文及附件为准。",
+      "publisher": "湖北省政府采购网",
+      "region": "湖北·武汉·蔡甸",
+      "date": "2026-08-24",
+      "source_type": "竞争性磋商",
+      "system_scope": "区域中心药房信息平台（软件），区域基层用药采供用报联动管理机制",
+      "purchaser": "武汉市蔡甸区人民医院",
+      "budget": "75万元",
+      "registration_deadline": "2026-09-04",
+      "bid_opening_time": "2026-09-04 09:30",
+      "source_domain": "ccgp-hubei.gov.cn",
+      "source_url": "https://ccgp-hubei.gov.cn/notice/202608/notice_1251779445065031680.html",
+      "url_status": "ok",
+      "system_modules": [
+        "药学信息化",
+        "合理用药",
+        "药学服务",
+        "HIS接口"
+      ],
+      "sales_insight": "重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。",
+      "dedupe_fingerprint": "5b2e4d1d0c46a3c3c41fce784c947570347cb9abd795bbae596439cbaa48ce8b"
     }
   ],
   "opportunity_actions": [
@@ -579,7 +739,7 @@
   ],
   "summary": "本期新入库10条事实(冠新河北审方中心双杀110万+68.3万、陕西华氏智能化药房425万、陕西中医药大学预招标、西京医院废标待重招、三二〇一处方流转、运城中心药房98.64万、郑州维保10.9万、中山一附院广西48万、成飞接口)，累计入库40条。",
   "collection_meta": {
-    "run_at": "2026-09-21 08:18:09+0800",
+    "run_at": "2026-09-21 08:26:59+0800",
     "lookback_days": 60,
     "source_fetch_status": [
       {
