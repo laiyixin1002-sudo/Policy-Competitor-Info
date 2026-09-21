@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>药学情报周报_2026-09-14_2026-09-21</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef6f7;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #647382;
+      --line: #dce7eb;
+      --accent: #0f6f7c;
+      --accent-strong: #064c59;
+      --accent-soft: #e6f5f7;
+      --amber: #a56500;
+      --amber-soft: #fff4dc;
+      --green: #2f6f4e;
+      --green-soft: #edf7f0;
+    }
+    * { box-sizing: border-box; }
+    h1, h2, h3, h4, p, span, strong, a, li { overflow-wrap: anywhere; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 0 0, rgba(15, 111, 124, .2), transparent 34%),
+        linear-gradient(180deg, #e5f5f6 0, var(--bg) 280px, #f7fafb 100%);
+      color: var(--ink);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    .wrap {
+      width: min(1120px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 16px 0 48px;
+      overflow: hidden;
+    }
+    .hero-panel {
+      margin: 8px 0 20px;
+      border: 1px solid rgba(15, 111, 124, .18);
+      border-radius: 18px;
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(231,245,247,.92));
+      box-shadow: 0 18px 44px rgba(25, 76, 92, .14);
+      min-width: 0;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(25px, 6vw, 38px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0 0 12px;
+      color: #33414f;
+      font-size: 15px;
+    }
+    .meta, .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-width: 0;
+      max-width: 100%;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .share-box {
+      display: grid;
+      gap: 6px;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #bedce2;
+      background: rgba(255, 255, 255, .84);
+    }
+    .share-box strong {
+      color: var(--accent-strong);
+      font-size: 14px;
+    }
+    .share-box a {
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .toc {
+      margin-top: 14px;
+    }
+    .toc a {
+      flex: 0 0 auto;
+      min-width: 0;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid #bedce2;
+      background: rgba(255,255,255,.78);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .float-nav {
+      position: fixed;
+      z-index: 20;
+      right: 8px;
+      top: 35%;
+      display: grid;
+      gap: 6px;
+    }
+    .float-nav a {
+      width: 44px;
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(6, 76, 89, .92);
+      box-shadow: 0 10px 24px rgba(6, 76, 89, .2);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .section-title {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    .highlights {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      counter-reset: item;
+    }
+    .highlights li {
+      counter-increment: item;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 111, 124, .16);
+      border-radius: 14px;
+      padding: 11px 12px 11px 42px;
+      position: relative;
+      box-shadow: 0 10px 28px rgba(25, 76, 92, .07);
+    }
+    .highlights li::before {
+      content: counter(item);
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .procurement-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .procurement-table {
+      width: 100%;
+      min-width: 970px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .procurement-table th, .procurement-table td {
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+    .procurement-table th {
+      background: #e8f5f7;
+      color: var(--accent-strong);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .procurement-table tr:last-child td { border-bottom: 0; }
+    .procurement-table a { color: var(--accent); font-weight: 700; }
+    .group {
+      margin-top: 18px;
+    }
+    .group h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #263542;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .group h3::before {
+      content: "";
+      width: 8px;
+      height: 22px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(286px, 100%), 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: rgba(255,255,255,.96);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      min-height: 262px;
+      box-shadow: 0 12px 30px rgba(28, 73, 89, .08);
+      min-width: 0;
+    }
+    .card h4 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+    .fact {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .deal-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 0 0 10px;
+    }
+    .deal {
+      border-radius: 11px;
+      background: #f4fafb;
+      border: 1px solid #d7ebef;
+      padding: 7px 8px;
+      min-width: 0;
+    }
+    .deal.stage {
+      background: var(--amber-soft);
+      border-color: #f0d9aa;
+    }
+    .deal span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+    }
+    .deal strong {
+      display: block;
+      margin-top: 2px;
+      color: var(--accent-strong);
+      font-size: 13px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 4px 0 10px;
+    }
+    .tag {
+      max-width: 100%;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .insight {
+      margin: 0 0 12px;
+      color: #33414f;
+      font-size: 14px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+    .status {
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .action {
+      background: rgba(255,255,255,.96);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .priority {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .action h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .action p {
+      margin: 0;
+      color: #405060;
+      font-size: 14px;
+    }
+    .empty {
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 560px) {
+      .wrap {
+        width: calc(100vw - 24px);
+        padding: 12px 0 34px;
+      }
+      .grid, .actions { grid-template-columns: 1fr; }
+      .hero-panel { border-radius: 16px; }
+      .meta {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .pill {
+        width: 100%;
+        justify-content: flex-start;
+        white-space: normal;
+      }
+      .card { min-height: 0; }
+      .card-footer {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .btn { width: 100%; }
+      .toc {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .toc a {
+        width: 100%;
+        text-align: center;
+      }
+      .float-nav {
+        right: 8px;
+        left: auto;
+        top: 52%;
+        bottom: auto;
+        transform: none;
+        grid-template-columns: 1fr;
+        width: 44px;
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: blur(12px);
+        box-shadow: none;
+      }
+      .float-nav a {
+        width: 44px;
+        min-height: 38px;
+        border-radius: 13px 0 0 13px;
+      }
+      footer { padding-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero-panel">
+      <h1>药学政策与竞品动向周报</h1>
+      <p class="lead">本期统计区间 2026-09-14 至 2026-09-21；内容由官方来源采集，回溯 60 天，新增入库 16 条药学信息化项目，已屏蔽纯药品采购内容。</p>
+      <div class="meta">
+        <span class="pill">周报 + 统计区间 2026-09-14 ~ 2026-09-21</span>
+        <span class="pill">出报时间 2026-09-21 08:00</span>
+        <span class="pill">手机速读</span>
+      </div>
+      <div class="share-box">
+        <strong>药学政策与竞品动向周报（2026-09-14 ~ 2026-09-21）</strong>
+        <a href="https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-09-14_2026-09-21.html">https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-09-14_2026-09-21.html</a>
+      </div>
+      <nav class="toc" aria-label="目录">
+        <a href="#highlights">要点</a>
+        <a href="#policy">政策</a>
+        <a href="#medicom">美康</a>
+        <a href="#yiyao">逸耀</a>
+        <a href="#actions">动作</a>
+      </nav>
+    </header>
+
+    <nav class="float-nav" aria-label="浮动快速目录">
+      <a href="#highlights">要点</a>
+      <a href="#policy">政策</a>
+      <a href="#medicom">美康</a>
+      <a href="#yiyao">逸耀</a>
+      <a href="#actions">动作</a>
+    </nav>
+
+    <section id="highlights">
+      <h2 class="section-title">本周要点速览</h2>
+      <ol class="highlights">
+        <li>本次成功抓取 6 个官方来源，识别 16 条此前未入库的药学信息化项目动态。</li>
+        <li>本期只保留药学信息化项目；采购标的、接口和执行边界仍需核验原文附件。</li>
+        <li>当前重点方向：住院药学监护、合理用药审查、药物重整、药学记录、HIS接口与药学管理模块。</li>
+        <li>2026-09-16：贵州省人民医院合理用药系统维保服务中标（成交）公告（四川美康）</li>
+        <li>2026-09-16：新疆医科大学附属肿瘤医院2026年住院药学监护系统、PASS集采药品智能管控系统采购项目公开招标公告</li>
+        <li>2026-09-15：皖西卫生职业学院附属医院临床药学监护系统项目中标结果公示</li>
+        <li>2026-09-15：浏阳市人民医院医疗卫生强基工程（医共体审方中心及中心药房项目）合同公告（四川美康）</li>
+        <li>2026-09-14：贵州医科大学第三附属医院合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（五次）采购谈判公告</li>
+      </ol>
+    </section>
+
+    <section id="regional-procurements">
+      <h2 class="section-title">区域药学系统招标、挂网与预采购</h2>
+      <div class="procurement-table-wrap">
+        <table class="procurement-table">
+          <thead>
+            <tr>
+              <th>区域</th><th>阶段</th><th>招标/采购单位</th><th>项目名称</th><th>涉及产品/模块</th>
+              <th>预算</th><th>报名截止</th><th>开标/解密时间</th><th>出处 URL / 核验级别</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>美康·中标动态</td>
+              <td>中标（成交）公告</td>
+              <td>贵州省人民医院</td>
+              <td>贵州省人民医院合理用药系统维保服务中标（成交）公告（四川美康）</td>
+              <td>合理用药系统维保服务（四川美康医药软件研究开发股份有限公司中标）</td>
+              <td>9.34万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://aiqicha.baidu.com/tenderbidding/detail?dataId=2379a6375df1c7de017b395616d441028f43de01&amp;pid=55313661811279" target="_blank" rel="noopener">爱企查招投标（聚合官方公告）</a></td>
+            </tr><tr>
+              <td>新疆·乌鲁木齐</td>
+              <td>公开招标</td>
+              <td>新疆医科大学附属肿瘤医院</td>
+              <td>新疆医科大学附属肿瘤医院2026年住院药学监护系统、PASS集采药品智能管控系统采购项目公开招标公告</td>
+              <td>住院药学监护系统、PASS集采药品智能管控系统</td>
+              <td>70万元</td>
+              <td>2026-09-22</td>
+              <td>2026-10-13 11:00</td>
+              <td>官方项目公告<br><a href="https://ggzy.xinjiang.gov.cn/xinjiangggzy_new/jyxx/001004/001004003/20260916/2df8d830-5cb0-4aad-bdaf-24a28ec153f2.html" target="_blank" rel="noopener">新疆公共资源交易网</a></td>
+            </tr><tr>
+              <td>安徽·六安</td>
+              <td>中标（成交）结果公告</td>
+              <td>皖西卫生职业学院附属医院</td>
+              <td>皖西卫生职业学院附属医院临床药学监护系统项目中标结果公示</td>
+              <td>临床药学监护系统</td>
+              <td>29.5万元（成交价）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://ggzy.luan.gov.cn/jyxx/001008/001008002/20260915/ef233e46-552f-4d7b-851d-aff2779b20f9.html" target="_blank" rel="noopener">六安市公共资源交易中心</a></td>
+            </tr><tr>
+              <td>美康·中标动态</td>
+              <td>合同公告</td>
+              <td>浏阳市人民医院</td>
+              <td>浏阳市人民医院医疗卫生强基工程（医共体审方中心及中心药房项目）合同公告（四川美康）</td>
+              <td>美康智慧药学服务平台V2.0及中心(云)药房智能监管系统V1.0（四川美康成交）</td>
+              <td>67.5万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.infochina.cn/rili-zhongbiao-20260826140036025983.html" target="_blank" rel="noopener">谛听招标网（聚合官方公告）</a></td>
+            </tr><tr>
+              <td>美康·中标动态</td>
+              <td>单一来源谈判公告</td>
+              <td>贵州医科大学第三附属医院</td>
+              <td>贵州医科大学第三附属医院合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（五次）采购谈判公告</td>
+              <td>合理用药监测系统V4.3、PASS临床药学管理系统V.30维保（四川美康单一来源）</td>
+              <td>3.98万元/年（服务期3年）</td>
+              <td>2026-09-17</td>
+              <td>2026-09-18 10:30</td>
+              <td>官方项目公告<br><a href="https://www.sfy-gmc.com/listitem.php?cid=4&amp;id=8199&amp;sid=31" target="_blank" rel="noopener">贵州医科大学第三附属医院</a></td>
+            </tr><tr>
+              <td>陕西·西安</td>
+              <td>政府采购合同公告</td>
+              <td>西安市第三医院</td>
+              <td>西安市第三医院药品追溯码和出入库智能管理系统采购项目合同公告</td>
+              <td>药品追溯码和出入库智能管理系统（追溯码信息化管理系统V2.0），药房药库出入库与药品追溯信息化</td>
+              <td>39.4万元</td>
+              <td>以原公告为准</td>
+              <td>合同签订2026-09-11，履约至2029-09-10</td>
+              <td>官方项目公告<br><a href="https://www.sxggzyjy.cn/jydt/001001/001001004/001001004007/20260914/8a69c5fba0102df001a09d4f60501ea2.html" target="_blank" rel="noopener">陕西省公共资源交易中心</a></td>
+            </tr><tr>
+              <td>湖北·鄂州</td>
+              <td>中标（成交）结果公告</td>
+              <td>鄂州市中心医院</td>
+              <td>智慧医共体智慧药学信息化服务项目中标（成交）结果公告</td>
+              <td>智慧医共体智慧药学信息化服务</td>
+              <td>71.432万元（成交价）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://ccgp-hubei.gov.cn/notice/202609/notice_db954276219c4d73bb9108a1aa70924f.html" target="_blank" rel="noopener">湖北省政府采购网</a></td>
+            </tr><tr>
+              <td>山西·忻州</td>
+              <td>公开招标</td>
+              <td>忻州市中心医院</td>
+              <td>忻州市中心医院忻府区医疗集团进销存和追溯码信息采集及建设中心（云）药房项目公开招标公告</td>
+              <td>中心(云)药房：SPD系统、区域审方、共享中药房、处方流转、基层HIS相关接口</td>
+              <td>469.205795万元</td>
+              <td>以原公告为准</td>
+              <td>2026-10-08 09:30</td>
+              <td>官方项目公告<br><a href="https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260911_27315171.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>广东·中山</td>
+              <td>结果公示</td>
+              <td>中山火炬开发区人民医院</td>
+              <td>中山火炬开发区人民医院药学智慧化建设项目（二次）结果公示</td>
+              <td>药学智慧化建设</td>
+              <td>未披露</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.zshjkfqyy.com/showzbtb.asp?id=10102" target="_blank" rel="noopener">中山火炬开发区人民医院</a></td>
+            </tr><tr>
+              <td>广东·江门</td>
+              <td>公开招标</td>
+              <td>江门市新会区人民医院</td>
+              <td>江门市新会区区域智慧药学平台建设项目招标公告</td>
+              <td>区域智慧药学平台（行业应用软件开发服务），区域药学信息化与药事管理</td>
+              <td>130万元</td>
+              <td>2026-09-16</td>
+              <td>2026-09-30 09:30</td>
+              <td>官方项目公告<br><a href="https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260909_27298973.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>浙江·嘉兴·海宁</td>
+              <td>政府采购意向</td>
+              <td>海宁市人民医院</td>
+              <td>海宁市人民医院区域智能审方系统采购意向</td>
+              <td>区域智能审方中心系统，区域合理用药及智能审方中心平台建设</td>
+              <td>187万元</td>
+              <td>预计采购时间2026-10</td>
+              <td>预计2026-10</td>
+              <td>官方项目公告<br><a href="https://zfcg.czt.zj.gov.cn/site/detail?parentId=600007&amp;articleId=iq44r7qF6pvMrFRcfbTdeg%3D%3D" target="_blank" rel="noopener">浙江政府采购网</a></td>
+            </tr><tr>
+              <td>天津·滨海新区</td>
+              <td>公开招标</td>
+              <td>天津市滨海新区中医医院</td>
+              <td>天津市滨海新区中医医院智慧中药房信息化建设项目公开招标公告</td>
+              <td>智慧中药房信息化：中药饮片溯源、中药合理用药、处方点评、中药前置审方、智能煎药管理</td>
+              <td>270万元</td>
+              <td>以原公告为准</td>
+              <td>2026-09-30 10:00</td>
+              <td>官方项目公告<br><a href="https://ggzy.zwfwb.tj.gov.cn/jyxxcggg/1772142.jhtml" target="_blank" rel="noopener">天津市公共资源交易平台</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="facts">
+      <h2 class="section-title">正式事实</h2>
+      <div class="group" id="medicom">
+        <h3>药学信息化项目 · 美康·中标动态</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>贵州省人民医院合理用药系统维保服务中标（成交）公告（四川美康）</h4>
+          <p class="fact">贵州省人民医院合理用药系统维保服务中标（成交）公告（四川美康）。项目范围聚焦合理用药系统维保服务（四川美康医药软件研究开发股份有限公司中标），具体采购边界、接…</p>
+          <div class="sub">爱企查招投标（聚合官方公告） · 美康·中标动态 · 2026-09-16</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">aiqicha.baidu.com · ok</span>
+            <a class="btn" href="https://aiqicha.baidu.com/tenderbidding/detail?dataId=2379a6375df1c7de017b395616d441028f43de01&amp;pid=55313661811279" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        <article class="card">
+          <h4>浏阳市人民医院医疗卫生强基工程（医共体审方中心及中心药房项目）合同公告（四川美康）</h4>
+          <p class="fact">浏阳市人民医院医疗卫生强基工程（医共体审方中心及中心药房项目）合同公告（四川美康）。项目范围聚焦美康智慧药学服务平台V2.0及中心(云)药房智能监管系统V1.…</p>
+          <div class="sub">谛听招标网（聚合官方公告） · 美康·中标动态 · 2026-09-15</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.infochina.cn · ok</span>
+            <a class="btn" href="https://www.infochina.cn/rili-zhongbiao-20260826140036025983.html" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        <article class="card">
+          <h4>贵州医科大学第三附属医院合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（五次）采购谈判公告</h4>
+          <p class="fact">贵州医科大学第三附属医院合理用药监测系统V4.3、PASS临床药学管理系统V.30维保项目（五次）采购谈判公告。项目范围聚焦合理用药监测系统V4.3、PASS…</p>
+          <div class="sub">贵州医科大学第三附属医院 · 美康·中标动态 · 2026-09-14</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.sfy-gmc.com · ok</span>
+            <a class="btn" href="https://www.sfy-gmc.com/listitem.php?cid=4&amp;id=8199&amp;sid=31" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 新疆·乌鲁木齐</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>新疆医科大学附属肿瘤医院2026年住院药学监护系统、PASS集采药品智能管控系统采购项目公开招标公告</h4>
+          <p class="fact">新疆医科大学附属肿瘤医院2026年住院药学监护系统、PASS集采药品智能管控系统采购项目公开招标公告。项目范围聚焦住院药学监护系统、PASS集采药品智能管控系…</p>
+          <div class="sub">新疆公共资源交易网 · 新疆·乌鲁木齐 · 2026-09-16</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">ggzy.xinjiang.gov.cn · ok</span>
+            <a class="btn" href="https://ggzy.xinjiang.gov.cn/xinjiangggzy_new/jyxx/001004/001004003/20260916/2df8d830-5cb0-4aad-bdaf-24a28ec153f2.html" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 安徽·六安</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>皖西卫生职业学院附属医院临床药学监护系统项目中标结果公示</h4>
+          <p class="fact">皖西卫生职业学院附属医院临床药学监护系统项目中标结果公示。项目范围聚焦临床药学监护系统，具体采购边界、接口要求和执行时间以官方原文及附件为准。</p>
+          <div class="sub">六安市公共资源交易中心 · 安徽·六安 · 2026-09-15</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">ggzy.luan.gov.cn · ok</span>
+            <a class="btn" href="https://ggzy.luan.gov.cn/jyxx/001008/001008002/20260915/ef233e46-552f-4d7b-851d-aff2779b20f9.html" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 陕西·西安</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>西安市第三医院药品追溯码和出入库智能管理系统采购项目合同公告</h4>
+          <p class="fact">西安市第三医院药品追溯码和出入库智能管理系统采购项目合同公告。项目范围聚焦药品追溯码和出入库智能管理系统（追溯码信息化管理系统V2.0），药房药库出入库与药品…</p>
+          <div class="sub">陕西省公共资源交易中心 · 陕西·西安 · 2026-09-14</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.sxggzyjy.cn · ok</span>
+            <a class="btn" href="https://www.sxggzyjy.cn/jydt/001001/001001004/001001004007/20260914/8a69c5fba0102df001a09d4f60501ea2.html" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 湖北·鄂州</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>智慧医共体智慧药学信息化服务项目中标（成交）结果公告</h4>
+          <p class="fact">智慧医共体智慧药学信息化服务项目中标（成交）结果公告。项目范围聚焦智慧医共体智慧药学信息化服务，具体采购边界、接口要求和执行时间以官方原文及附件为准。</p>
+          <div class="sub">湖北省政府采购网 · 湖北·鄂州 · 2026-09-11</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">ccgp-hubei.gov.cn · ok</span>
+            <a class="btn" href="https://ccgp-hubei.gov.cn/notice/202609/notice_db954276219c4d73bb9108a1aa70924f.html" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 山西·忻州</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>忻州市中心医院忻府区医疗集团进销存和追溯码信息采集及建设中心（云）药房项目公开招标公告</h4>
+          <p class="fact">忻州市中心医院忻府区医疗集团进销存和追溯码信息采集及建设中心（云）药房项目公开招标公告。项目范围聚焦中心(云)药房：SPD系统、区域审方、共享中药房、处方流转…</p>
+          <div class="sub">中国政府采购网 · 山西·忻州 · 2026-09-11</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.ccgp.gov.cn · ok</span>
+            <a class="btn" href="https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260911_27315171.htm" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 广东·中山</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>中山火炬开发区人民医院药学智慧化建设项目（二次）结果公示</h4>
+          <p class="fact">中山火炬开发区人民医院药学智慧化建设项目（二次）结果公示。项目范围聚焦药学智慧化建设，具体采购边界、接口要求和执行时间以官方原文及附件为准。</p>
+          <div class="sub">中山火炬开发区人民医院 · 广东·中山 · 2026-09-10</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.zshjkfqyy.com · ok</span>
+            <a class="btn" href="https://www.zshjkfqyy.com/showzbtb.asp?id=10102" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 广东·江门</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>江门市新会区区域智慧药学平台建设项目招标公告</h4>
+          <p class="fact">江门市新会区区域智慧药学平台建设项目招标公告。项目范围聚焦区域智慧药学平台（行业应用软件开发服务），区域药学信息化与药事管理，具体采购边界、接口要求和执行时间…</p>
+          <div class="sub">中国政府采购网 · 广东·江门 · 2026-09-09</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">www.ccgp.gov.cn · ok</span>
+            <a class="btn" href="https://www.ccgp.gov.cn/cggg/dfgg/gkzb/202609/t20260909_27298973.htm" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 浙江·嘉兴·海宁</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>海宁市人民医院区域智能审方系统采购意向</h4>
+          <p class="fact">海宁市人民医院区域智能审方系统采购意向。项目范围聚焦区域智能审方中心系统，区域合理用药及智能审方中心平台建设，具体采购边界、接口要求和执行时间以官方原文及附件…</p>
+          <div class="sub">浙江政府采购网 · 浙江·嘉兴·海宁 · 2026-09-08</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">zfcg.czt.zj.gov.cn · ok</span>
+            <a class="btn" href="https://zfcg.czt.zj.gov.cn/site/detail?parentId=600007&amp;articleId=iq44r7qF6pvMrFRcfbTdeg%3D%3D" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+      <div class="group">
+        <h3>药学信息化项目 · 天津·滨海新区</h3>
+        <div class="grid">
+        <article class="card">
+          <h4>天津市滨海新区中医医院智慧中药房信息化建设项目公开招标公告</h4>
+          <p class="fact">天津市滨海新区中医医院智慧中药房信息化建设项目公开招标公告。项目范围聚焦智慧中药房信息化：中药饮片溯源、中药合理用药、处方点评、中药前置审方、智能煎药管理，具…</p>
+          <div class="sub">天津市公共资源交易平台 · 天津·滨海新区 · 2026-09-08</div>
+          <div class="tags">
+          <span class="tag">药学信息化</span>
+          <span class="tag">合理用药</span>
+          <span class="tag">药学服务</span>
+          <span class="tag">HIS接口</span>
+          </div>
+          <p class="insight"><strong>销售启发：</strong>重点关注药学业务闭环、HIS/EMR接口、规则库维护、药师工作量与上线交付边界。</p>
+          <div class="card-footer">
+            <span class="status">ggzy.zwfwb.tj.gov.cn · ok</span>
+            <a class="btn" href="https://ggzy.zwfwb.tj.gov.cn/jyxxcggg/1772142.jhtml" target="_blank" rel="noopener">🔗 来源</a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="actions">
+      <h2 class="section-title">售前机会与建议</h2>
+      <div class="actions">
+        <article class="action">
+          <span class="priority">P0</span>
+          <h3>核验药学系统采购边界</h3>
+          <p>确认药学监护、审方、合理用药、药学服务、规则库和HIS/EMR接口范围，避免把药品采购内容纳入产品线索。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>建立系统接口需求表</h3>
+          <p>记录HIS、EMR、医嘱、检验检查、医保、移动端和数据交换接口，区分标准能力、定制开发与交付责任。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>跟进药师使用闭环</h3>
+          <p>关注处方审核、住院药学监护、药物重整、用药咨询、药学记录和统计分析等可验收业务闭环。</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      数据流：结构化事实表 weekly_report.json → HTML 渲染。URL 无法访问或命中禁用域名的信息不进入本页。
+    </footer>
+  </main>
+</body>
+</html>

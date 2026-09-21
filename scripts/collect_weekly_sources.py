@@ -216,7 +216,13 @@ def main() -> None:
     history_payload = {"schema_version": "1.0", "dedupe_rule": "sha256(title|date|domain)", "last_collection_at": as_of.strftime("%Y-%m-%d %H:%M %z"), "facts": history}
 
     report = json.loads(args.report.read_text(encoding="utf-8"))
-    recent = sorted((item for item in history if item.get("date", "") >= cutoff and is_allowed_fact(item)), key=lambda item: (item.get("date", ""), item.get("title", "")), reverse=True)
+    collected_fp = {item.get("dedupe_fingerprint") for item in collected}
+    period_start = str(report.get("period_start", ""))
+    recent = sorted(
+        (item for item in history
+         if item.get("date", "") >= cutoff and is_allowed_fact(item)
+         and (item.get("date", "") >= period_start or item.get("dedupe_fingerprint") in collected_fp)),
+        key=lambda item: (item.get("date", ""), item.get("title", "")), reverse=True)
     report["facts"] = recent[:12]
     report["regional_procurements"] = build_regional_rows(recent[:12])
     report["highlights"] = build_highlights(recent, source_count, len(collected))
