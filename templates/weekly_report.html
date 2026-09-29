@@ -196,134 +196,6 @@
     }
     .procurement-table tr:last-child td { border-bottom: 0; }
     .procurement-table a { color: var(--accent); font-weight: 700; }
-    .group {
-      margin-top: 18px;
-    }
-    .group h3 {
-      margin: 0 0 10px;
-      font-size: 16px;
-      color: #263542;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .group h3::before {
-      content: "";
-      width: 8px;
-      height: 22px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(286px, 100%), 1fr));
-      gap: 14px;
-    }
-    .card {
-      background: rgba(255,255,255,.96);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      min-height: 262px;
-      box-shadow: 0 12px 30px rgba(28, 73, 89, .08);
-      min-width: 0;
-    }
-    .card h4 {
-      margin: 0 0 8px;
-      font-size: 17px;
-      line-height: 1.35;
-      letter-spacing: 0;
-    }
-    .fact {
-      margin: 0 0 10px;
-      font-size: 15px;
-    }
-    .sub {
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-    .deal-strip {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin: 0 0 10px;
-    }
-    .deal {
-      border-radius: 11px;
-      background: #f4fafb;
-      border: 1px solid #d7ebef;
-      padding: 7px 8px;
-      min-width: 0;
-    }
-    .deal.stage {
-      background: var(--amber-soft);
-      border-color: #f0d9aa;
-    }
-    .deal span {
-      display: block;
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.2;
-    }
-    .deal strong {
-      display: block;
-      margin-top: 2px;
-      color: var(--accent-strong);
-      font-size: 13px;
-      line-height: 1.25;
-      overflow-wrap: anywhere;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 4px 0 10px;
-    }
-    .tag {
-      max-width: 100%;
-      padding: 3px 8px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 12px;
-      white-space: nowrap;
-    }
-    .insight {
-      margin: 0 0 12px;
-      color: #33414f;
-      font-size: 14px;
-    }
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-top: auto;
-      padding-top: 10px;
-      border-top: 1px solid var(--line);
-    }
-    .status {
-      color: var(--muted);
-      font-size: 12px;
-      overflow-wrap: anywhere;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 36px;
-      padding: 8px 12px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-      white-space: nowrap;
-      font-weight: 700;
-    }
     .actions {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -372,7 +244,7 @@
         width: calc(100vw - 24px);
         padding: 12px 0 34px;
       }
-      .grid, .actions { grid-template-columns: 1fr; }
+      .actions { grid-template-columns: 1fr; }
       .hero-panel { border-radius: 16px; }
       .meta {
         display: grid;
@@ -383,12 +255,6 @@
         justify-content: flex-start;
         white-space: normal;
       }
-      .card { min-height: 0; }
-      .card-footer {
-        align-items: stretch;
-        flex-direction: column;
-      }
-      .btn { width: 100%; }
       .toc {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -436,18 +302,14 @@
       </div>
       <nav class="toc" aria-label="目录">
         <a href="#highlights">要点</a>
-        <a href="#policy">政策</a>
-        <a href="#medicom">美康</a>
-        <a href="#yiyao">逸耀</a>
+        <a href="#regional-procurements">招标动态</a>
         <a href="#actions">动作</a>
       </nav>
     </header>
 
     <nav class="float-nav" aria-label="浮动快速目录">
       <a href="#highlights">要点</a>
-      <a href="#policy">政策</a>
-      <a href="#medicom">美康</a>
-      <a href="#yiyao">逸耀</a>
+      <a href="#regional-procurements">招标</a>
       <a href="#actions">动作</a>
     </nav>
 
@@ -461,11 +323,6 @@
     <section id="regional-procurements">
       <h2 class="section-title">区域药学系统招标、挂网与预采购</h2>
       {{ regional_procurements_html }}
-    </section>
-
-    <section id="facts">
-      <h2 class="section-title">正式事实</h2>
-      {{ facts_html }}
     </section>
 
     <section id="actions">
