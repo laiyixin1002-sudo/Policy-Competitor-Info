@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import html
 import json
-from collections import OrderedDict
 from pathlib import Path
 from urllib.parse import quote
 
@@ -79,87 +78,6 @@ def render_regional_procurements(items: list[dict]) -> str:
       </div>"""
 
 
-def render_deal_strip(fact: dict) -> str:
-    amount = fact.get("amount")
-    stage = fact.get("stage")
-    if not amount and not stage:
-        return ""
-    amount = amount or "未披露"
-    stage = stage or fact.get("source_type") or "信息"
-    return f"""<div class="deal-strip">
-            <div class="deal"><span>金额</span><strong>{esc(amount)}</strong></div>
-            <div class="deal stage"><span>阶段</span><strong>{esc(stage)}</strong></div>
-          </div>"""
-
-
-def render_fact_card(fact: dict) -> str:
-    title = esc(fact.get("title"))
-    summary = esc(clip_text(fact.get("fact_summary", ""), 80))
-    publisher = esc(fact.get("publisher"))
-    region = esc(fact.get("region"))
-    date = esc(fact.get("date"))
-    domain = esc(fact.get("source_domain"))
-    source_url = esc(fact.get("source_url"))
-    status = esc(fact.get("url_status"))
-    insight = esc(clip_text(fact.get("sales_insight", ""), 60))
-    modules = fact.get("system_modules") or []
-    tags = "\n          ".join(f'<span class="tag">{esc(module)}</span>' for module in modules[:4])
-    deal_strip = render_deal_strip(fact)
-    deal_markup = f"          {deal_strip}\n" if deal_strip else ""
-
-    return f"""<article class="card">
-          <h4>{title}</h4>
-          <p class="fact">{summary}</p>
-          <div class="sub">{publisher} · {region} · {date}</div>
-{deal_markup}          <div class="tags">
-          {tags}
-          </div>
-          <p class="insight"><strong>销售启发：</strong>{insight}</p>
-          <div class="card-footer">
-            <span class="status">{domain} · {status}</span>
-            <a class="btn" href="{source_url}" target="_blank" rel="noopener">🔗 来源</a>
-          </div>
-        </article>"""
-
-
-def group_facts(items: list[dict]) -> OrderedDict[str, list[dict]]:
-    grouped: OrderedDict[str, list[dict]] = OrderedDict()
-    for item in items:
-        category = str(item.get("category") or "未分组")
-        grouped.setdefault(category, []).append(item)
-    return grouped
-
-
-def category_anchor(category: str) -> str:
-    if "美康" in category:
-        return "medicom"
-    if "逸曜" in category or "逸耀" in category:
-        return "yiyao"
-    if "政策" in category:
-        return "policy"
-    return ""
-
-
-def render_grouped_cards(items: list[dict]) -> str:
-    if not items:
-        return '<div class="empty">暂无信息</div>'
-
-    groups = []
-    for category, facts in group_facts(items).items():
-        cards = "\n        ".join(render_fact_card(item) for item in facts)
-        anchor = category_anchor(category)
-        anchor_attr = f' id="{anchor}"' if anchor else ""
-        groups.append(
-            f"""<div class="group"{anchor_attr}>
-        <h3>{esc(category)}</h3>
-        <div class="grid">
-        {cards}
-        </div>
-      </div>"""
-        )
-    return "\n      ".join(groups)
-
-
 def render_opportunity_actions(items: list[dict]) -> str:
     if not items:
         return '<div class="empty">暂无建议</div>'
@@ -232,7 +150,6 @@ def build_report_html(data: dict) -> str:
         "share_url": esc(report_share_url(output_name)),
         "highlights_html": render_highlights(data.get("highlights") or []),
         "regional_procurements_html": render_regional_procurements(data.get("regional_procurements") or []),
-        "facts_html": render_grouped_cards(data.get("facts") or []),
         "opportunity_actions_html": render_opportunity_actions(data.get("opportunity_actions") or []),
     }
 
