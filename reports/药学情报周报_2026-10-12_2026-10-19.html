@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>药学情报周报_2026-10-12_2026-10-19</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef6f7;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #647382;
+      --line: #dce7eb;
+      --accent: #0f6f7c;
+      --accent-strong: #064c59;
+      --accent-soft: #e6f5f7;
+      --amber: #a56500;
+      --amber-soft: #fff4dc;
+      --green: #2f6f4e;
+      --green-soft: #edf7f0;
+    }
+    * { box-sizing: border-box; }
+    h1, h2, h3, h4, p, span, strong, a, li { overflow-wrap: anywhere; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 0 0, rgba(15, 111, 124, .2), transparent 34%),
+        linear-gradient(180deg, #e5f5f6 0, var(--bg) 280px, #f7fafb 100%);
+      color: var(--ink);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    .wrap {
+      width: min(1120px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 16px 0 48px;
+      overflow: hidden;
+    }
+    .hero-panel {
+      margin: 8px 0 20px;
+      border: 1px solid rgba(15, 111, 124, .18);
+      border-radius: 18px;
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(231,245,247,.92));
+      box-shadow: 0 18px 44px rgba(25, 76, 92, .14);
+      min-width: 0;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(25px, 6vw, 38px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0 0 12px;
+      color: #33414f;
+      font-size: 15px;
+    }
+    .meta, .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-width: 0;
+      max-width: 100%;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .share-box {
+      display: grid;
+      gap: 6px;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #bedce2;
+      background: rgba(255, 255, 255, .84);
+    }
+    .share-box strong {
+      color: var(--accent-strong);
+      font-size: 14px;
+    }
+    .share-box a {
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .toc {
+      margin-top: 14px;
+    }
+    .toc a {
+      flex: 0 0 auto;
+      min-width: 0;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid #bedce2;
+      background: rgba(255,255,255,.78);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .float-nav {
+      position: fixed;
+      z-index: 20;
+      right: 8px;
+      top: 35%;
+      display: grid;
+      gap: 6px;
+    }
+    .float-nav a {
+      width: 44px;
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(6, 76, 89, .92);
+      box-shadow: 0 10px 24px rgba(6, 76, 89, .2);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .section-title {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    .highlights {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      counter-reset: item;
+    }
+    .highlights li {
+      counter-increment: item;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 111, 124, .16);
+      border-radius: 14px;
+      padding: 11px 12px 11px 42px;
+      position: relative;
+      box-shadow: 0 10px 28px rgba(25, 76, 92, .07);
+    }
+    .highlights li::before {
+      content: counter(item);
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .procurement-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .procurement-table {
+      width: 100%;
+      min-width: 970px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .procurement-table th, .procurement-table td {
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+    .procurement-table th {
+      background: #e8f5f7;
+      color: var(--accent-strong);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .procurement-table tr:last-child td { border-bottom: 0; }
+    .procurement-table a { color: var(--accent); font-weight: 700; }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .action {
+      background: rgba(255,255,255,.96);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .priority {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .action h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .action p {
+      margin: 0;
+      color: #405060;
+      font-size: 14px;
+    }
+    .empty {
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 560px) {
+      .wrap {
+        width: calc(100vw - 24px);
+        padding: 12px 0 34px;
+      }
+      .actions { grid-template-columns: 1fr; }
+      .hero-panel { border-radius: 16px; }
+      .meta {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .pill {
+        width: 100%;
+        justify-content: flex-start;
+        white-space: normal;
+      }
+      .toc {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .toc a {
+        width: 100%;
+        text-align: center;
+      }
+      .float-nav {
+        right: 8px;
+        left: auto;
+        top: 52%;
+        bottom: auto;
+        transform: none;
+        grid-template-columns: 1fr;
+        width: 44px;
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: blur(12px);
+        box-shadow: none;
+      }
+      .float-nav a {
+        width: 44px;
+        min-height: 38px;
+        border-radius: 13px 0 0 13px;
+      }
+      footer { padding-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero-panel">
+      <h1>药学政策与竞品动向周报</h1>
+      <p class="lead">本期统计区间 2026-10-12 至 2026-10-19；内容由官方来源采集，回溯 60 天，新增入库 7 条药学信息化项目，已屏蔽纯药品采购内容。</p>
+      <div class="meta">
+        <span class="pill">周报 + 统计区间 2026-10-12 ~ 2026-10-19</span>
+        <span class="pill">出报时间 2026-10-19 09:00</span>
+        <span class="pill">手机速读</span>
+      </div>
+      <div class="share-box">
+        <strong>药学政策与竞品动向周报（2026-10-12 ~ 2026-10-19）</strong>
+        <a href="https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-10-12_2026-10-19.html">https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-10-12_2026-10-19.html</a>
+      </div>
+      <nav class="toc" aria-label="目录">
+        <a href="#highlights">要点</a>
+        <a href="#regional-procurements">招标动态</a>
+        <a href="#actions">动作</a>
+      </nav>
+    </header>
+
+    <nav class="float-nav" aria-label="浮动快速目录">
+      <a href="#highlights">要点</a>
+      <a href="#regional-procurements">招标</a>
+      <a href="#actions">动作</a>
+    </nav>
+
+    <section id="highlights">
+      <h2 class="section-title">本周要点速览</h2>
+      <ol class="highlights">
+        <li>本次成功核验 5 个来源站点，识别 7 条此前未入库的药学信息化项目动态。</li>
+        <li>本期已检索陕西省（ccgp-shaanxi.gov.cn / sxggzyjy.cn，含西安及地市），未检索到新的药学信息化项目公告。</li>
+        <li>2026-10-16：内蒙古自治区中医医院药学・人事・云胶片综合信息化项目（二次）招标公告（住院药学监护系统28万）</li>
+        <li>2026-10-15：南安市总医院集中（云）审方中心项目结果公告（深圳政康科技79.5万）</li>
+        <li>2026-10-14：托里县医共体合理用药管理软件（二次）竞争性磋商公告（预算130万，10-29开启响应）</li>
+        <li>2026-10-14：德化县医院医共体审方中心软件结果公告（美康产品，上饶市医投167.8万）</li>
+        <li>2026-10-14：洪湖市人民医院医共体一张处方系统改造询价公告（15万）</li>
+        <li>2026-10-14：洪湖市人民医院医共体码上放心平台对接项目询价公告（20万）</li>
+        <li>2026-10-12：HIS、门急诊电子病历、智慧药学、肺功能等系统维保(三次)公开招标公告（福州大学附属省立医院80万）</li>
+      </ol>
+    </section>
+
+    <section id="regional-procurements">
+      <h2 class="section-title">区域药学系统招标、挂网与预采购</h2>
+      <div class="procurement-table-wrap">
+        <table class="procurement-table">
+          <thead>
+            <tr>
+              <th>区域</th><th>阶段</th><th>招标/采购单位</th><th>项目名称</th><th>涉及产品/模块</th>
+              <th>预算</th><th>报名截止</th><th>开标/解密时间</th><th>出处 URL / 核验级别</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>内蒙古·呼和浩特</td>
+              <td>公开招标公告（二次）</td>
+              <td>内蒙古自治区中医医院</td>
+              <td>内蒙古自治区中医医院药学・人事・云胶片综合信息化项目（二次）招标公告（包1住院药学监护系统）</td>
+              <td>住院药学监护系统（包1；项目整体含药学、人事、云胶片综合信息化，青岛建通代理）</td>
+              <td>28万元（包1）</td>
+              <td>2026-10-23（获取文件截止）</td>
+              <td>2026-11-05 14:30</td>
+              <td>官方项目公告<br><a href="http://www.nmgzyyy.cn/yydt/info_22107.html" target="_blank" rel="noopener">内蒙古自治区中医医院</a></td>
+            </tr><tr>
+              <td>福建·泉州</td>
+              <td>中标（成交）结果公告</td>
+              <td>南安市医院（南安市总医院）</td>
+              <td>南安市总医院集中（云）审方中心项目结果公告（采购包1）（深圳政康科技79.5万）</td>
+              <td>集中（云）审方中心系统，对接31家医共体成员单位，点评结果上传泉州市卫健集中点评中心，含南安市医院HIS第三方接口</td>
+              <td>79.5万元（成交）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准（结果公告）</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202610/t20261015_27494620.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>美康·中标动态</td>
+              <td>中标结果公告（聚合）</td>
+              <td>德化县医院</td>
+              <td>德化县医院医共体审方中心软件结果公告（采购包1）（美康产品，上饶市医投167.8万）</td>
+              <td>区域审方平台：美康智慧药学服务平台V2.0、PASS集采药品智能管控系统V1.0（中标方上饶市医投医疗器械有限公司）</td>
+              <td>167.8万元（中标）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准（结果公告）</td>
+              <td>聚合核验<br><a href="https://www.yfbzb.com/winbid/detail/20261014_638564371.html" target="_blank" rel="noopener">乙方宝（聚合官方中标公告）</a></td>
+            </tr><tr>
+              <td>湖北·荆州</td>
+              <td>询价公告</td>
+              <td>洪湖市人民医院</td>
+              <td>洪湖市人民医院医共体一张处方系统改造询价公告（15万）</td>
+              <td>医共体一张处方系统改造（落实省“一张处方”改革部署，采购需求见公告参数附件）</td>
+              <td>15万元</td>
+              <td>2026-10-19（获取文件截止）</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.hhrmyy.cn/show/930.html" target="_blank" rel="noopener">洪湖市人民医院</a></td>
+            </tr><tr>
+              <td>湖北·荆州</td>
+              <td>询价公告</td>
+              <td>洪湖市人民医院</td>
+              <td>洪湖市人民医院关于医共体码上放心平台对接项目询价公告（20万）</td>
+              <td>医共体码上放心平台对接（药品追溯码平台对接信息化，采购需求见公告参数附件）</td>
+              <td>20万元</td>
+              <td>2026-10-19（获取文件截止）</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.hhrmyy.cn/show/933.html" target="_blank" rel="noopener">洪湖市人民医院</a></td>
+            </tr><tr>
+              <td>新疆·塔城</td>
+              <td>竞争性磋商公告（二次）</td>
+              <td>托里县人民医院</td>
+              <td>托里县医共体合理用药管理软件（二次）竞争性磋商公告（预算130万）</td>
+              <td>合理用药管理软件及配套设备（政采云线上获取文件，服务期5年，面向中小企业）</td>
+              <td>130万元（最高限价）</td>
+              <td>2026-10-22（获取文件截止）</td>
+              <td>2026-10-29 10:30</td>
+              <td>官方项目公告<br><a href="http://ggzyjy.xjtc.gov.cn/jyxx/002004/002004001/20261014/9c638391-e468-41db-ac9b-ea4b98156ff6.html" target="_blank" rel="noopener">新疆塔城公共资源交易网</a></td>
+            </tr><tr>
+              <td>福建·福州</td>
+              <td>公开招标公告（三次）</td>
+              <td>福州大学附属省立医院（福建省立医院）</td>
+              <td>HIS、门急诊电子病历、智慧药学、肺功能等系统维保(三次)公开招标公告（80万）</td>
+              <td>包1：HIS、门急诊电子病历、智慧药学等维保（78万）；包2：肺功能系统维保（2万），软件运维服务</td>
+              <td>80万元（包1 78万+包2 2万）</td>
+              <td>2026-10-19（获取文件截止）</td>
+              <td>2026-11-03 09:00</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202610/t20261012_27473752.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="actions">
+      <h2 class="section-title">售前机会与建议</h2>
+      <div class="actions">
+        <article class="action">
+          <span class="priority">P0</span>
+          <h3>核验药学系统采购边界</h3>
+          <p>确认药学监护、审方、合理用药、药学服务、规则库和HIS/EMR接口范围，避免把药品采购内容纳入产品线索。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>建立系统接口需求表</h3>
+          <p>记录HIS、EMR、医嘱、检验检查、医保、移动端和数据交换接口，区分标准能力、定制开发与交付责任。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>跟进药师使用闭环</h3>
+          <p>关注处方审核、住院药学监护、药物重整、用药咨询、药学记录和统计分析等可验收业务闭环。</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      数据流：结构化事实表 weekly_report.json → HTML 渲染。URL 无法访问或命中禁用域名的信息不进入本页。
+    </footer>
+  </main>
+</body>
+</html>
