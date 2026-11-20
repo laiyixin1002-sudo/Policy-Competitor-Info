@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>药学情报周报_2026-11-09_2026-11-16</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef6f7;
+      --panel: #ffffff;
+      --ink: #17202a;
+      --muted: #647382;
+      --line: #dce7eb;
+      --accent: #0f6f7c;
+      --accent-strong: #064c59;
+      --accent-soft: #e6f5f7;
+      --amber: #a56500;
+      --amber-soft: #fff4dc;
+      --green: #2f6f4e;
+      --green-soft: #edf7f0;
+    }
+    * { box-sizing: border-box; }
+    h1, h2, h3, h4, p, span, strong, a, li { overflow-wrap: anywhere; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 0 0, rgba(15, 111, 124, .2), transparent 34%),
+        linear-gradient(180deg, #e5f5f6 0, var(--bg) 280px, #f7fafb 100%);
+      color: var(--ink);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    .wrap {
+      width: min(1120px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 16px 0 48px;
+      overflow: hidden;
+    }
+    .hero-panel {
+      margin: 8px 0 20px;
+      border: 1px solid rgba(15, 111, 124, .18);
+      border-radius: 18px;
+      padding: 16px;
+      background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(231,245,247,.92));
+      box-shadow: 0 18px 44px rgba(25, 76, 92, .14);
+      min-width: 0;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(25px, 6vw, 38px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0 0 12px;
+      color: #33414f;
+      font-size: 15px;
+    }
+    .meta, .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-width: 0;
+      max-width: 100%;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .share-box {
+      display: grid;
+      gap: 6px;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #bedce2;
+      background: rgba(255, 255, 255, .84);
+    }
+    .share-box strong {
+      color: var(--accent-strong);
+      font-size: 14px;
+    }
+    .share-box a {
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .toc {
+      margin-top: 14px;
+    }
+    .toc a {
+      flex: 0 0 auto;
+      min-width: 0;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid #bedce2;
+      background: rgba(255,255,255,.78);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .float-nav {
+      position: fixed;
+      z-index: 20;
+      right: 8px;
+      top: 35%;
+      display: grid;
+      gap: 6px;
+    }
+    .float-nav a {
+      width: 44px;
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(6, 76, 89, .92);
+      box-shadow: 0 10px 24px rgba(6, 76, 89, .2);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .section-title {
+      margin: 24px 0 12px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    .highlights {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      counter-reset: item;
+    }
+    .highlights li {
+      counter-increment: item;
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(15, 111, 124, .16);
+      border-radius: 14px;
+      padding: 11px 12px 11px 42px;
+      position: relative;
+      box-shadow: 0 10px 28px rgba(25, 76, 92, .07);
+    }
+    .highlights li::before {
+      content: counter(item);
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .procurement-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .procurement-table {
+      width: 100%;
+      min-width: 970px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .procurement-table th, .procurement-table td {
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+    .procurement-table th {
+      background: #e8f5f7;
+      color: var(--accent-strong);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .procurement-table tr:last-child td { border-bottom: 0; }
+    .procurement-table a { color: var(--accent); font-weight: 700; }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .action {
+      background: rgba(255,255,255,.96);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 10px 26px rgba(28, 73, 89, .07);
+    }
+    .priority {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .action h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .action p {
+      margin: 0;
+      color: #405060;
+      font-size: 14px;
+    }
+    .empty {
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 560px) {
+      .wrap {
+        width: calc(100vw - 24px);
+        padding: 12px 0 34px;
+      }
+      .actions { grid-template-columns: 1fr; }
+      .hero-panel { border-radius: 16px; }
+      .meta {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .pill {
+        width: 100%;
+        justify-content: flex-start;
+        white-space: normal;
+      }
+      .toc {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .toc a {
+        width: 100%;
+        text-align: center;
+      }
+      .float-nav {
+        right: 8px;
+        left: auto;
+        top: 52%;
+        bottom: auto;
+        transform: none;
+        grid-template-columns: 1fr;
+        width: 44px;
+        padding: 0;
+        border-radius: 0;
+        background: transparent;
+        backdrop-filter: blur(12px);
+        box-shadow: none;
+      }
+      .float-nav a {
+        width: 44px;
+        min-height: 38px;
+        border-radius: 13px 0 0 13px;
+      }
+      footer { padding-bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero-panel">
+      <h1>药学政策与竞品动向周报</h1>
+      <p class="lead">本期统计区间 2026-11-09 至 2026-11-16；内容由官方来源采集，回溯 60 天，新增入库 15 条药学信息化项目，已屏蔽纯药品采购内容。</p>
+      <div class="meta">
+        <span class="pill">周报 + 统计区间 2026-11-09 ~ 2026-11-16</span>
+        <span class="pill">出报时间 2026-11-16 09:00</span>
+        <span class="pill">手机速读</span>
+      </div>
+      <div class="share-box">
+        <strong>药学政策与竞品动向周报（2026-11-09 ~ 2026-11-16）</strong>
+        <a href="https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-11-09_2026-11-16.html">https://laiyixin1002-sudo.github.io/Policy-Competitor-Info/reports/%E8%8D%AF%E5%AD%A6%E6%83%85%E6%8A%A5%E5%91%A8%E6%8A%A5_2026-11-09_2026-11-16.html</a>
+      </div>
+      <nav class="toc" aria-label="目录">
+        <a href="#highlights">要点</a>
+        <a href="#regional-procurements">招标动态</a>
+        <a href="#actions">动作</a>
+      </nav>
+    </header>
+
+    <nav class="float-nav" aria-label="浮动快速目录">
+      <a href="#highlights">要点</a>
+      <a href="#regional-procurements">招标</a>
+      <a href="#actions">动作</a>
+    </nav>
+
+    <section id="highlights">
+      <h2 class="section-title">本周要点速览</h2>
+      <ol class="highlights">
+        <li>本期核验 9 个官方来源域名、15 个官方详情页，识别 15 条此前未入库的药学信息化项目动态（含回溯补录此前未发布周期的首次发现）。</li>
+        <li>陕西省本期检索到 2 条：渭南蒲城县医院合理用药维保中标公示、商洛镇安县医院云药房审方中心二次招标；省政采与省公共资源平台未检索到新增条目。</li>
+        <li>当前重点方向：区域审方中心、中心（云）药房、住院药学监护、合理用药维保、药品追溯码与智慧中药房。</li>
+        <li>2026-11-13：阿勒泰地区中医医院智慧中药房全流程信息化管理系统项目中标（新疆中小企业信息服务60万元）</li>
+        <li>2026-11-12：河南中医药大学第一附属医院中药合理用药智能管理系统成交（中电信数智河南分公司65万元）</li>
+        <li>2026-11-11：定远县总医院中心药房审方中心软件项目中标（武汉药道97.51万元）</li>
+        <li>2026-11-10：蒲城县医院合理用药系统维保中标公示（四川美康2.4万元）；中山市古镇人民医院合理用药系统升级维护询价成交（四川美康）</li>
+      </ol>
+    </section>
+
+    <section id="regional-procurements">
+      <h2 class="section-title">区域药学系统招标、挂网与预采购</h2>
+      <div class="procurement-table-wrap">
+        <table class="procurement-table">
+          <thead>
+            <tr>
+              <th>区域</th><th>阶段</th><th>招标/采购单位</th><th>项目名称</th><th>涉及产品/模块</th>
+              <th>预算</th><th>报名截止</th><th>开标/解密时间</th><th>出处 URL / 核验级别</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>新疆·阿勒泰</td>
+              <td>中标（成交）结果公告</td>
+              <td>阿勒泰地区中医医院（阿勒泰地区哈萨克医医院）</td>
+              <td>阿勒泰地区中医医院（阿勒泰地区哈萨克医医院）智慧中药房全流程信息化管理系统项目中标(成交)结果公告（新疆中小企业信息服务）</td>
+              <td>智慧中药房全流程信息化管理系统</td>
+              <td>60万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202611/t20261113_27676149.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>浙江·舟山</td>
+              <td>结果公告</td>
+              <td>舟山市第二人民医院</td>
+              <td>舟山市第二人民医院用药指导单功能采购项目结果公告（杭州逸遥4.4万元）</td>
+              <td>用药指导单功能模块（HIS用药指导单功能开发）</td>
+              <td>4.4万元（预算4.5万元）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.zsjsby.org.cn/view/3631.html" target="_blank" rel="noopener">舟山市第二人民医院官网</a></td>
+            </tr><tr>
+              <td>河南·郑州</td>
+              <td>成交公告</td>
+              <td>河南中医药大学第一附属医院</td>
+              <td>河南中医药大学第一附属医院中药合理用药智能管理系统采购项目成交公告（中电信数智河南分公司65万元）</td>
+              <td>中药合理用药智能管理系统（竞争性磋商）</td>
+              <td>65万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.hnzhy.com/NewsDetail-20126.html" target="_blank" rel="noopener">河南中医药大学第一附属医院官网</a></td>
+            </tr><tr>
+              <td>安徽·滁州</td>
+              <td>中标结果公告</td>
+              <td>定远县总医院</td>
+              <td>定远县总医院中心药房审方中心软件项目中标结果公告（武汉药道97.51万元）</td>
+              <td>中心药房审方中心软件（系统开发、部署、调试、上线运行，含3年免费运维）</td>
+              <td>97.51万元（招标预算150万元）</td>
+              <td>以原公告为准</td>
+              <td>2026-11-09 08:50（首次开标）</td>
+              <td>官方项目公告<br><a href="https://www.ahtba.org.cn/site/trade/affiche/detail/c126e73b-ddb8-11f1-b7f6-00163e1f3e9b" target="_blank" rel="noopener">安徽省招标投标信息网</a></td>
+            </tr><tr>
+              <td>陕西·渭南</td>
+              <td>中标结果公示</td>
+              <td>蒲城县医院</td>
+              <td>蒲城县医院信息管理系统子系统-合理用药系统维保中标结果公示（四川美康2.4万元）</td>
+              <td>信息管理系统子系统-合理用药系统维保</td>
+              <td>2.4万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.pcxyy.com/app/common/content.chtml?id=Vbym2a" target="_blank" rel="noopener">蒲城县医院官网</a></td>
+            </tr><tr>
+              <td>美康·中标动态</td>
+              <td>询价结果公告</td>
+              <td>中山市古镇人民医院</td>
+              <td>中山市古镇人民医院合理用药系统升级维护项目询价结果公告（四川美康）</td>
+              <td>合理用药系统升级维护</td>
+              <td>3万元（采购上限价）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.zsgzyy.com/ywgk1/cgxx/content_4363" target="_blank" rel="noopener">中山市古镇人民医院官网（搜索快照核验）</a></td>
+            </tr><tr>
+              <td>浙江·杭州</td>
+              <td>院内招标中标公告</td>
+              <td>杭州市老年病医院（杭州市第一人民医院城北院区）</td>
+              <td>杭州市第一人民医院城北院区自动发药机追溯码管理系统项目院内招标中标公告（杭州旭元8.35万元）</td>
+              <td>自动发药机追溯码管理系统</td>
+              <td>8.35万元（最高限价9万元/年）</td>
+              <td>以原公告为准</td>
+              <td>2026-11-06 14:00（开标并定标）</td>
+              <td>官方项目公告<br><a href="https://www.hz-hospital.com/content/details/id/229881" target="_blank" rel="noopener">杭州市第一人民医院官网</a></td>
+            </tr><tr>
+              <td>内蒙古·呼和浩特</td>
+              <td>中标结果公告</td>
+              <td>内蒙古自治区中医医院</td>
+              <td>内蒙古自治区中医医院药学・人事・云胶片综合信息化项目（二次）中标结果公告（包1住院药学监护系统，内蒙古万树27万元）</td>
+              <td>包1：住院药学监护系统（二次公开招标）</td>
+              <td>27万元（预算28万元）</td>
+              <td>以原公告为准</td>
+              <td>2026-11-05 14:30</td>
+              <td>官方项目公告<br><a href="http://www.nmgzyyy.cn/yydt/info_22237.html" target="_blank" rel="noopener">内蒙古自治区中医医院官网</a></td>
+            </tr><tr>
+              <td>陕西·商洛</td>
+              <td>公开招标公告（二次）</td>
+              <td>镇安县医院</td>
+              <td>镇安县医院中心（云）药房和集中审方中心信息系统采购项目(二次)招标公告</td>
+              <td>中心（云）药房和集中审方中心信息系统</td>
+              <td>178.3383万元</td>
+              <td>2026-11-09（获取文件截止）</td>
+              <td>2026-11-24 10:00</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202611/t20261102_27604776.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>山东·潍坊</td>
+              <td>单一来源采购公示</td>
+              <td>昌邑市人民医院</td>
+              <td>昌邑市人民医院医共体区域药学管理系统升级服务项目单一来源采购公示（山东维克特，后续成交39万元）</td>
+              <td>医共体中心药房药学管理系统升级（支撑审方中心前置审方落地）</td>
+              <td>40万元</td>
+              <td>公示期2026-11-03至11-10</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202611/t20261103_27607788.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>美康·中标动态</td>
+              <td>中标（成交）结果公告</td>
+              <td>山东省立第三医院</td>
+              <td>山东省立第三医院合理用药信息系统维保服务项目结果公告（采购包1）（四川美康5.7万元）</td>
+              <td>合理用药信息系统维保服务（合同期一年）</td>
+              <td>5.7万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261029_27587982.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>辽宁·沈阳</td>
+              <td>中标公告</td>
+              <td>中国医科大学附属第四医院</td>
+              <td>中国医科大学附属第四医院医院医保药品追溯码信息采集与应用实施软件采购中标公告（大连强世23.26万元）</td>
+              <td>医院医保药品追溯码信息采集与应用实施软件</td>
+              <td>23.26万元（自筹预算24.8万元）</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="https://www.cmu4h.cn/home/article/view/id/3461.html" target="_blank" rel="noopener">中国医科大学附属第四医院官网</a></td>
+            </tr><tr>
+              <td>吉林·通化</td>
+              <td>竞争性磋商公告</td>
+              <td>通化县人民医院</td>
+              <td>通化县政府采购中心关于医共体审方中心采购项目的竞争性磋商公告</td>
+              <td>医共体审方中心</td>
+              <td>59万元（预算59万元）</td>
+              <td>2026-10-30（获取文件截止）</td>
+              <td>2026-11-02 13:00</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202610/t20261023_27555460.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>重庆·九龙坡</td>
+              <td>中标（成交）结果公告</td>
+              <td>重庆市九龙坡区人民医院</td>
+              <td>九龙坡区医共体中心（云）药房采购项目(JLP26C00117)中标（成交）结果公告（中渝软通153.56万元）</td>
+              <td>九龙坡区医共体中心（云）药房（信息系统设计服务）</td>
+              <td>153.559万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261020_27521673.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr><tr>
+              <td>山西·临汾</td>
+              <td>结果公告</td>
+              <td>汾西县医疗集团</td>
+              <td>汾西县医疗集团竞争性磋商汾西县医疗集团审方中心建设项目结果公告（山西创联中科48万元）</td>
+              <td>审方中心建设（实时审方信息系统、审方信息统计系统、区域处方点评信息系统）</td>
+              <td>48万元</td>
+              <td>以原公告为准</td>
+              <td>以原公告为准</td>
+              <td>官方项目公告<br><a href="http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202610/t20261019_27516343.htm" target="_blank" rel="noopener">中国政府采购网</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:#647382;font-size:12px;margin:8px 0 0;">事实摘要备查：阿勒泰（项目编号ADCG-JZ(2026)-52号，中标供应商新疆中小企业信息服务有限公司，响应报价600000元，评审得分91.83，公告2026-11-13发布）；舟山（项目编号EYCG-Y.F.T-2026-027，自行采购竞争性谈判，采购公告11-04发布、11-10评审、11-13发布结果，中标人杭州逸遥信息技术有限公司4.4万元，杭州逸遥与杭州逸曜为不同主体）；河南中医一附院（项目编号WXZB2026-0140-21301，竞争性磋商，磋商公告10-21发布、11-05评审、11-12发布成交公告，成交供应商中电信数智科技有限公司河南分公司650000元）；定远（项目编号czdycg202610-009，中标供应商武汉药道医疗科技有限公司975100元，150个日历天内上线并通过验收后提供3年免费运维，首次招标公告10-20在中国政府采购网发布、11-09开标）；蒲城（10-27发布招标公告，11-06与11-10组织招标议价，合理用药系统维保由四川美康医药软件研究开发股份有限公司中标24000元，公示期11-11至11-13）；古镇（11-03发布报价邀请函，上限价30000元、最低价中选，11-10询价并当日发布结果，成交供应商四川美康医药软件研究开发股份有限公司）；杭州一院城北（项目编号HZSY-CB-XXZX-2026102801，招标公告10-28发布，11-06开标并定标，中标人杭州旭元智能设备有限公司83500元）；内蒙古中医医院（项目编号JT26OI271-1，二次招标公告10-16发布，11-05开标并发布中标结果，包1住院药学监护系统由内蒙古万树智能科技有限公司中标270000元，综合得分85.71）；镇安（项目编号ZXZB-2026-S013.1B1，预算1783383元，获取文件11-03至11-09，11-24 10:00递交投标文件并开标，首次招标已于10-30发布结果公告后重新组织）；昌邑（采购预算400000元，单一来源理由为山东维克特信息技术有限公司系医院及医共体基层医疗机构HIS与药学管理系统唯一承建单位，公示期11-03至11-10，后续成交结果公告于11-12发布、成交金额39万元，成交公告详情以原公告为准）；山东省立三院（项目编号SDGP370000000202602009583，成交供应商四川美康医药软件研究开发股份有限公司57000元，服务期一年，10-20曾发布单一来源公示）；中国医科大四院（招标编号YDSY20260804，中标人大连强世科技有限公司232600元，首次招标曾于10-09因通过符合性审查供应商不足3家废标后重新组织）；通化（项目编号采购计划-[2026]-00141号-20261022-00141，预算590000元，获取文件10-23至10-30，响应文件递交与开启均为11-02 13:00，需现场考察）；九龙坡（项目号JLP26C00117，公开招标，中标供应商中渝软通（重庆）信息技术有限公司1535590元，评审合计95.2分居首，10-20发布结果公告）；汾西（项目编号1410342026CCS00084，竞争性磋商，中标供应商山西创联中科科技有限公司480000元，评审得分87.55，合同签订后45天内完成安装调试并上线投入使用，10-19发布结果公告）。</p>
+    </section>
+
+    <section id="actions">
+      <h2 class="section-title">售前机会与建议</h2>
+      <div class="actions">
+        <article class="action">
+          <span class="priority">P0</span>
+          <h3>跟进镇安二次招标窗口期</h3>
+          <p>商洛镇安县医院云药房与集中审方中心二次招标预算178.3383万元，11-24开标，为本期金额最大的药学信息化在建项目；同步跟踪通化县医共体审方中心（11-02已开标）与定远审方中心后续合同公告。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>盯住美康维保市场连续中标</h3>
+          <p>美康本期连续拿下蒲城（2.4万元）、古镇（上限3万元）、山东省立三院（5.7万元）三笔维保/升级小单，续约与基层续费市场是其渗透重点；建议梳理各区域合理用药系统到期维保清单，提前介入比价窗口。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P1</span>
+          <h3>关注追溯码与智慧中药房新场景</h3>
+          <p>中国医科大四院医保药品追溯码（23.26万元）、杭州市一城北院区自动发药机追溯码（8.35万元）、阿勒泰智慧中药房（60万元）显示追溯码采集与智慧中药房进入落地期，可作为差异化方案切入。</p>
+        </article>
+        <article class="action">
+          <span class="priority">P2</span>
+          <h3>参照低价中标与长运维报价策略</h3>
+          <p>定远审方中心软件以97.51万元中标（预算150万元）并附3年免费运维，区域审方中心软件竞争激烈；重庆九龙坡云药房153.56万元大单花落本地供应商，属地化交付能力仍是关键评分项。</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      数据流：官方来源逐条核验（详情页逐个打开确认可访问）后写入本页。URL 无法访问或命中禁用域名的信息不进入本页。
+    </footer>
+  </main>
+</body>
+</html>
